@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "id": 8000,
+            "thumb": "./assets/images/special-thumb.jpg",
+            "sub01": "./assets/images/special-thumb-sub01.jpg",
+            "sub02": "./assets/images/special-thumb-sub02.jpg",
+            "sub03": "./assets/images/special-thumb-sub03.jpg",
+            "title01": "22년 명품 BEST 연말 마지막 특가",
+            "title02": "",
+            "brand": "이마트몰",
+            "info": "22FW 명품 아우터 BEST",
+            "cost": 638966
+        },
+        {
+            "id": 8001,
+            "thumb": "./assets/images/special-thumb02.jpg",
+            "sub01": "./assets/images/special-thumb02-sub01.jpg",
+            "sub02": "./assets/images/special-thumb02-sub02.jpg",
+            "sub03": "./assets/images/special-thumb02-sub03.jpg",
+            "title01": "올인원 청소도구",
+            "title02": "청소도구세트특가전",
+            "brand": "신세계몰",
+            "info": "우리집 완벽한 청소를 위한 프로4Z 베스트 모음전",
+            "cost": 638966
+        }
+ 
+
+    ]
+}

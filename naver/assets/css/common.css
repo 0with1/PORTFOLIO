@@ -1,0 +1,77 @@
+body { font-size: 12px; line-height: 16px; color: #202020; font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif; } 
+.container { width: 1130px; margin: 0 auto; padding: 20px 0; } 
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; } 
+
+.wrapper { } 
+.thumb-bd::after { content: ''; position: absolute; top: 0; left: 0; bottom: 0; right: 0; border: 1px solid #000; opacity: 0.1; } 
+.runtime-wrap { position: absolute; right: 8px; bottom: 6px; padding: 2px 4px; border-radius: 2px; font-size: 11px; line-height: 14px; color: #fff; } 
+.runtime-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: .7; background-color: #000; border-radius: 2px; color: transparent; } 
+.runtime-wrap .time { position: relative; z-index: 1; } 
+.play-icon::before { content: ''; display: inline-block; width: 24px; height: 28px; background-position: -246px -342px; vertical-align: top; position: absolute; bottom: 9px; left: 12px; } 
+
+
+
+
+
+
+
+
+.header .search-area .btn-submit::after, 
+.service-area a::after, 
+.gnb .nav-area .nav-item .mail::before,
+.sc-news .group-issue .link-cartar::before,
+.sc-login .link-login::before,
+.sc-sidenews .nav-wrap .btn-nav::after,
+.sc-story .info-area .btn-set::before, 
+footer .group-notice p:last-child a::after,
+.sc-shopmall .group-container .btn.prev::before,
+.sc-shopmall .group-container .btn.next::before, 
+.group-funding h3:after,
+.header .search-area .ico-keyboard,
+.header .gnb .nav-area .nav-item .nav.shop::before,
+.header .gnb .nav-area .nav-item .nav.shop-live::before,
+.sc-news .group-issue .link-media:after,
+.sc-login .link-id:before,
+.sc-login .link-join:before,
+.sc-news .group-title .link-title:before,
+.sc-news .group-title .link-title:after,
+.sc-story .info:after,
+.sc-story .group-tap .btn-nav.prev::before,
+.sc-story .group-tap .btn-nav.next::before,
+.sc-story .play-icon::before,
+.header .btn-more:after,
+.sc-sidenews .btn-nav.prev::after,
+.sc-sidenews .btn-nav.next::after,
+.sc-news .btn-set::before,
+.ico-more { background-image: url(../images/sp-bg.png); background-repeat: no-repeat; background-size: 442px; } 
+
+
+.header .gnb .weather-area a::before { background-image: url(../images/weather.png); background-repeat: no-repeat; background-size: 215px; } 
+
+
+.gnb .weather-area .degree-box .max::before { background-image: url(../images/2023-sp-bg.png); background-repeat: no-repeat; background-size: 457px; } 
+
+
+.sc-shopmall .btn-wrap .btn:before, .sc-shopmall .event-wrap:after,.sc-shopmall .shop-area h2 a:after,
+.sc-shopmall .deal-area .thumb-wrap .thumb-box+.thumb-box:before,
+.sc-shopmall .deal-area .link-logo:before,
+.sc-shopmall .group-header .link-shop a:before,
+.sc-shopmall .thumb-box .one-plus-label
+ {
+ background-image: url(../images/shopmall-bg.png); background-repeat: no-repeat; background-size:129px; } 
+
+
+.weather-area a:hover .location,
+.sc-news .group-issue .link-issue:hover,
+.link-start:hover,
+
+[class*="-item"]:hover h4.title, 
+.column-right [class*="-item"] a:hover .title-box>*,
+.sc-login .sub-area [class*="link-"]:hover,
+.sc-sidenews .news-wrap:hover .news,
+.sc-shopmall .group-header .link-shop a:hover,
+.sc-shopmall .group-container .title-wrap h2 a:hover,
+.event-wrap:hover p,
+.footer .member-item ul li a:hover,
+.footer .group-notice a:hover,
+.footer .group-corp .corp-item a:hover { text-decoration: underline; } 

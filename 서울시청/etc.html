@@ -1,0 +1,953 @@
+<!-- 
+    [point]
+    1.개발자모드
+    2.마크업구조
+
+    sc-,section-,main-
+
+
+    wrapper
+
+        1티어 header,footer,section,article,gnb
+            2. group-000
+                3.000-area
+                    4.000-wrap
+                        5.000-box
+
+        ul - 000-list
+            li - 000-item
+
+        a link-000 
+        a btn-000 [role=button] - 스크립트
+
+        btn data불러온다던가 from안에서 
+
+        wai-aria
+
+        span, i, div -> 디자인태그
+
+        이미지2배?->
+        --------------
+        dpi -> 1인치안에 들어가는 도트의 수 
+        피씨 -> 10   50*50
+        모바일,테블릿 -> 100 100*100 -> 50줄여버림
+
+        img -- 데이터,시시때때로바뀌는,개발자가건드는느낌
+        background --- 의미없는 배경,꾸밈,아이콘,로고
+
+
+        ctrl + alt + c
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="group-flex">
+        <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
+
+        <div class="search-area">
+          <form action="" method="get">
+            <fieldset>
+              <legend class="blind">검색</legend>
+              <div class="inner">
+                <input type="text" class="input-text">
+                <button type="button" class="btn-submit"><span class="blind">검색</span></button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="service-area">
+          <a href="" class="link-start">네이버를 시작페이지로</a>
+          <i class="bar"></i>
+          <a href="" class="link-junior"><span class="blind">쥬니어네이버</span></a>
+          <a href="" class="link-bin"><span class="blind">해피빈</span></a>
+        </div>
+      </div>
+      <nav class="gnb">
+        <div class="inner">
+          <div class="group-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="" class="nav mail">메일</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav">메일</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav">메일</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav">메일</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav">메일</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav">메일</a>
+              </li>
+            </ul>
+          </div>
+          <div class="group-weather">
+            날씨영역
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="column-left">
+        <aside class="ad-wrap">
+          <a href="" class="thumb-box">
+            <img src="./assets/images/ad1.jpg" alt="설명">
+          </a>
+        </aside>
+
+        <section class="sc-news">
+          <h2 class="blind">뉴스영역</h2>
+
+          <div class="group-issue">
+            <div class="issue-area">
+              <a href="" class="link-media">연합뉴스</a>
+              <a href="" class="link-issue">[1보] 이재명~~</a>
+            </div>
+            <div class="direct-area">
+              <a href="" class="link-cartar"><span class="blind">카타르월드컵</span></a>
+              <a href="" class="link-home">뉴스홈</a>
+              <a href="" class="link-direct">연예</a>
+              <a href="" class="link-direct">스포츠</a>
+              <a href="" class="link-direct">경제</a>
+            </div>
+          </div>
+          <div class="group-title">
+            <a href="" class="link-title">뉴스스탠드</a>
+            <div class="sort-area" role="tablist">
+              <a href="" class="btn-sort active" role="tab" aria- >구독한 언론사</a>
+              <a href="" class="btn-sort" role="tab">전체 언론사</a>
+            </div>
+
+            <div class="set-area" role="tablist">
+              <a href="" class="btn-set ic-list" role="tab" aria-selected="true">
+                <span class="blind">리스트형</span>
+              </a>
+              <a href="" class="btn-set" role="tab" aria-selected="false"><span class="blind">썸네일형</span></a>
+              <a href="" class="btn-set" aria-selected="false"><span class="blind">뉴스설정</span></a>
+            </div>
+          </div>
+          <div class="group-media">
+            <ul class="media-list">
+              <li class="media-item">
+                <a href="" class="media">
+                  <img src="./assets/images/news.png" alt="">
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="" class="media">
+                  <img src="./assets/images/news.png" alt="">
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="" class="media">
+                  <img src="./assets/images/news.png" alt="">
+                </a>
+              </li>
+              <i class="vt-line vt1"></i>
+              <i class="vt-line vt2"></i>
+              <i class="vt-line vt3"></i>
+              <i class="vt-line vt4"></i>
+              <i class="vt-line vt5"></i>
+              <i class="hr-line hr1"></i><i class="hr-line hr2"></i><i class="hr-line hr3"></i>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sc-story">
+          <h2 class="blind">오늘 읽을만한 글 영역</h2>
+          <div class="group-title">
+            <div class="title-area">
+              <h3 class="title">오늘 읽을만한 글</h3>
+              <p>주제별로 분류된 다양한 글 모음</p>
+            </div>
+            <div class="info-area">
+              <span class="info">
+                <strong class="new">681</strong> 
+                개의 글
+              </span>
+              <i class="bar"></i>
+              <a href="#" role="button" class="btn-set">관심주제 설정</a>
+            </div>
+          </div>
+          <div class="group-tap">
+            <ul class="story-list">
+              <li class="story-item"><a href="">엔터</a></li>
+              <li class="story-item"><a href="">스포츠</a></li>
+              <li class="story-item"><a href="">자동차</a></li>
+              <li class="story-item"><a href="">웹툰</a></li>
+              <li class="story-item"><a href="">경제</a></li>
+              <li class="story-item"><a href="" >추천구독</a></li>
+              <li class="story-item"><a href="" aria-selected="true">레시피</a></li>
+              <li class="story-item"><a href="">리빙</a></li>
+            </ul>
+          </div>
+          <div class="group-recipe">
+            <h3 class="blind">레시피영역</h3>
+            
+            <div class="group-topstory">
+              <ul class="topstory-list">
+                <li class="topstory-item">
+                  <a href="">
+                    <div class="topstory-img">
+                      <img src="./assets/images/1.jpg" alt="">
+                    </div>
+                    
+                    
+                    <div class="topstory-info">
+                      <strong>[오늘의 푸드TV] 최쓰리네 매일매일 집밥</strong>
+                      <h4 class="title">고소하고 부드러운 들깨 무나물 볶음 레시피</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eaque, molestias?</p>
+                      <span>#제철반찬 #가을무</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="topstory-item">
+                  <a href="">
+                    <div class="topstory-img">
+                      <img src="./assets/images/2.jpg" alt="">
+                    </div>
+                    <div class="topstory-info">
+                      <strong>[오늘의 푸드TV] 최쓰리네 매일매일 집밥</strong>
+                      <h4 class="title">고소하고 부드러운 들깨 무나물 볶음 레시피</h4>
+                      <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                      <span>#제철반찬 #가을무</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-theme">
+              <ul class="theme-list">
+                <li class="theme-item ad-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <div class="ad-wrap">
+                        <strong>다이슨</strong>
+                      </div>
+                      
+                      <h4 class="title">NEW 다이슨 Gen5 디텍트</h4>
+                      <p>2배 더 많은 먼지를 보여주는 최신 기술로<br> 깨끗하게 청소하세요</p>
+                      <div class="source-box">
+                        <span class="content-landing">더 알아보기</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">
+                          <span class="source-inner">산뜻한 요리</span>
+                        </span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-tv">
+              <ul class="tv-list">
+                <li class="tv-item">
+                  <a href="">
+                    <div class="tv-img">
+                      <img src="./assets/images/1.jpg" alt="">
+                    </div>
+                    
+                    <div class="tv-info">
+                      <strong>개운하고 깔끔한 콩나물국 만드는 방법</strong>
+                      <div class="source-box">
+                        <img src="./assets/images/tv.jpg" alt="">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="tv-item">
+                  <a href="">
+                    <div class="tv-img">
+                      <img src="./assets/images/1.jpg" alt="">
+                    </div>
+                    
+                    <div class="tv-info">
+                      <strong>개운하고 깔끔한 콩나물국 만드는 방법</strong>
+                      <div class="source-box">
+                        <img src="./assets/images/tv.jpg" alt="">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="tv-item">
+                  <a href="">
+                    <div class="tv-img">
+                      <img src="./assets/images/1.jpg" alt="">
+                    </div>
+                    
+                    <div class="tv-info">
+                      <strong>개운하고 깔끔한 콩나물국 만드는 방법</strong>
+                      <div class="source-box">
+                        <img src="./assets/images/tv.jpg" alt="">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-theme">
+              <ul class="theme-list">
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="">
+                    <div class="theme-img">
+                      <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                    <div class="theme-info">
+                      <strong>레시피</strong>
+                      <h4 class="title">어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류)</h4>
+                      <p>어리굴젓 만들기, 숙성시켜 만드는 어리굴젓 굴무침 양념 보관 유통기한!(제철반찬 밑반찬 종류) 11월 제철 해산물 굴요리 한번 갈까요? 굴을 숙성시켜 제대로 마드는 어리굴젓 만들기인데요, 젓갈종류 만들기 생각보다 어렵지 않아서 제철반찬으로 집에서 만들업 볼 수 있어요. 진짜 너무 너무 간단한 밑반찬 종류 만들기로 하실 수 있어요. 어리굴젓을 생굴무침으로 만</p>
+                      <div class="source-box">
+                        <span class="source">산뜻한 요리</span>
+                        <span class="date">3주일 전</span>
+						          </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-funding">
+              <h3><a href="">마음까지 채우는 클릭</a></h3>
+              <ul class="funding-list">
+                <li class="funding-item">
+                  <a href="">
+                    <div class="funding-img"><img src="./assets/images/funding01.jpg" alt=""></div>
+                    <div class="funding-info">
+                      <strong>채식으로 건강하게 즐기는 치킨과 꿔바로우</strong>
+                      <div class="source-box">
+                        <span class="source"><span class="source-inner">위미트</span></span>
+                        <span class="dsc"><em>696%</em> 달성</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="funding-item">
+                  <a href="">
+                    <div class="funding-img"><img src="./assets/images/funding01.jpg" alt=""></div>
+                    <div class="funding-info">
+                      <strong>채식으로 건강하게 즐기는 치킨과 꿔바로우</strong>
+                      <div class="source-box">
+                        <span class="source"><span class="source-inner">위미트</span></span>
+                        <span class="dsc"><em>696%</em> 달성</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="funding-item">
+                  <a href="">
+                    <div class="funding-img"><img src="./assets/images/funding01.jpg" alt=""></div>
+                    <div class="funding-info">
+                      <strong>채식으로 건강하게 즐기는 치킨과 꿔바로우</strong>
+                      <div class="source-box">
+                        <span class="source"><span class="source-inner">위미트</span></span>
+                        <span class="dsc"><em>696%</em> 달성</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="btn-more-wrap">
+              <button type="button" class="btn-more">
+                <i class="ico-more"></i>
+                새로운 글 더보기
+              </button>
+            </div>
+          </div>
+
+      </div>
+          
+      <div class="column-right">
+        <section class="sc-login">
+          <h2 class="blind">로그인</h2>
+          <p class="login-msg">네이버를 ~</p>
+          <a href="" class="link-login">
+            <span class="blind">네이버</span> 로그인
+          </a>
+
+          <div class="sub-area">
+            <a href="" class="link-id">아이디</a>
+            <a href="" class="link-find">비</a>
+            <a href="" class="link-join">회</a>
+          </div>
+        </section>
+        <section  class="sc-sidenews">
+          <h2 class="blind">사이드 뉴스</h2>
+          <a href="" class="news-wrap">
+            <a href="" class="badge">이슈</a>
+            <a href="" class="news">코로나바이러스</a>
+          </a>
+          <div class="nav-wrap">
+            <a href="" class="btn-nav prev">
+              <span class="blind">이전</span>
+            </a>
+            <a href="" class="btn-nav next">
+              <span class="blind">다음</span>
+            </a>
+          </div>
+        </section>
+        <aside class="ad-wrap">
+          <a href="" class="thumb-box">
+            <img src="./assets/images/ad2.jpg" alt="설명">
+          </a>
+        </aside>
+        <section class="sc-shopmall">
+          <div class="group-header">
+			      <h2 class="link-shop">
+              <a href="">트렌드쇼핑</a>
+            </h2>
+
+			
+            <ul class="tab-list">
+              <li class="tab-item">
+                <a href="#" class="tab" >상품</a>
+              </li>
+              <li class="tab-item">
+                <a href="#" class="tab" aria-selected=true>쇼핑몰</a>
+              </li>
+              <li class="tab-item">
+                <a href="#" class="tab">MEN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="group-container">
+            <div class="trend-area">
+              <div class="title-wrap">
+                <h2><a href=""><span class="">NAWELL</span></a></h2>
+                <div class="control-wrap">
+                  <div class="num-box"><span>1</span> / 13</div>
+                  <div class="btn-box">
+                    <a href="" class="btn prev"></a>
+                    <a href="" class="btn next"></a>
+                  </div>
+                </div>
+              </div>
+              <ul class="goods-list">
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm01.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm02.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm03.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm04.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm05.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm06.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm07.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="goods-item">
+                  <a href="">
+                    <div class="goods-img"><img src="./assets/images/spm08.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="event-wrap">
+                <strong>신상특가</strong>
+                <p>최대90% SALE 단색 블랙프라이데이</p>
+              </div>
+              <div class="page-wrap">
+                <a href="" class="btn prev"></a>
+                <div class="num-box"><span>1</span> / 13</div>
+                <a href="" class="btn next"></a>
+              </div>
+            </div>
+            <div class="shop-area">
+              <div class="title-wrap">
+                <h2 class=""><a href="">예뫼솔가구</a></h2>
+                <div class="control-wrap">
+                  <div class="num-box"><span>1</span> / 13</div>
+                  <div class="btn-box">
+                    <a href="" class="btn prev"></a>
+                    <a href="" class="btn next"></a>
+                  </div>
+                </div>
+              </div>
+              <ul class="shop-list">
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm09.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm10.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm11.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="title-wrap">
+                <h2 class=""><a href="">예뫼솔가구</a></h2>
+              </div>
+              <ul class="shop-list">
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm09.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm10.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm11.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="title-wrap">
+                <h2 class=""><a href="">아라크네</a></h2>
+              </div>
+              <ul class="shop-list">
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm09.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm10.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="">
+                    <div class="shop-img"><img src="./assets/images/spm11.jpg" alt=""></div>
+                    <div class="title-box">
+                      <strong>그날밤 샐걱정없이 푹자요</strong>
+                      <p>입는 오버나이트 팬티</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="deal-area">
+              <div class="title-wrap">
+                <h2 class="title"><a href="" class="link-logo">
+                  <span class="blind">원쁠딜</span>
+                  </a>원쁠딜 전 상품 무료배송!</h2>
+                <div class="control-wrap">
+                  <div class="num-box"><span>1</span> / 13</div>
+                  <div class="btn-box">
+                    <a href="" class="btn prev"></a>
+                    <a href="" class="btn next"></a>
+                  </div>
+                </div>
+              </div>
+              <ul class="deal-list">
+                <li class="deal-item">
+                  <a href="">
+                    <div class="thumb-wrap">
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-1.jpg" alt="">
+                      </div>
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-2.jpg" alt="">
+                        <span class="thumb-bd"></span>
+                      </div>
+                    </div>
+
+                    <div class="title-box">
+                      <p>럭스 아이섀도우  1개 + 럭스 립 메트로레드 1개</p>
+                      <div class="price-wrap">
+                        <span class="discount">55%</span>
+                        <span class="price">9,900원</span>
+                      </div>
+                    </div>
+                    
+                  </a>
+                </li>
+                <li class="deal-item">
+                  <a href="">
+                    <div class="thumb-wrap">
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-1.jpg" alt="">
+                      </div>
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-2.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="title-box">
+                      <p>럭스 아이섀도우  1개 + 럭스 립 메트로레드 1개</p>
+                      <div class="price-wrap">
+                        <span class="discount">55%</span>
+                        <span class="price">9,900원</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="deal-item">
+                  <a href="">
+                    <div class="thumb-wrap">
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-1.jpg" alt="">
+                      </div>
+                      <div class="thumb-box">
+                        <img src="./assets/images/deal01-2.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="title-box">
+                      <p>럭스 아이섀도우  1개 + 럭스 립 메트로레드 1개</p>
+                      <div class="price-wrap">
+                        <span class="discount">55%</span>
+                        <span class="price">9,900원</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="group-planning">
+          <ul class="planning-list">
+            <li class="planning-item">
+              <a href="">
+                <div class="planning-img"><img src="./assets/images/footer01.jpg" alt=""></div>
+                <div class="planning-info">
+                  <strong>네이버 펫 X 유한양행펫</strong>
+                  <h4 class="title">11월의 러빙펫 캠페인</h4>
+                  <p>보호소 유기견들의 입양을 응원합니다.</p>
+                </div>
+              </a>
+            </li>
+            <li class="planning-item">
+              <a href="">
+                <div class="planning-img"><img src="./assets/images/footer01.jpg" alt=""></div>
+                <div class="planning-info">
+                  <strong>네이버 펫 X 유한양행펫</strong>
+                  <h4 class="title">11월의 러빙펫 캠페인</h4>
+                  <p>보호소 유기견들의 입양을 응원합니다.</p>
+                </div>
+              </a>
+            </li>
+            <li class="planning-item">
+              <a href="">
+                <div class="planning-img"><img src="./assets/images/footer01.jpg" alt=""></div>
+                <div class="planning-info">
+                  <strong>네이버 펫 X 유한양행펫</strong>
+                  <h4 class="title">11월의 러빙펫 캠페인</h4>
+                  <p>보호소 유기견들의 입양을 응원합니다.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="group-notice">
+          <p><a href="">공지사항</a></p>
+          <p><a href="">서비스 전체보기</a></p>
+        </div>
+        <div class="group-member">
+          <div class="member-area">
+            <ul class="member-list">
+              <li class="member-item">
+                <strong>Creators</strong>
+                <ul>
+                  <li><a href="">크리에이터</a></li>
+                  <li><a href="">스몰비즈니스</a></li>
+                </ul>
+              </li>
+              <li class="member-item">
+                <strong>Partners</strong>
+                <ul>
+                  <li><a href="">SME 풀케어 시스템</a></li>
+                  <li><a href="">비즈니스 · 광고</a></li>
+                  <li><a href="">스토어 개설</a></li>
+                  <li><a href="">지역업체 등록</a></li>
+                  <li><a href="">엑스퍼트 등록</a></li>
+                </ul>
+              </li>
+              <li class="member-item">
+                <strong>Developers</strong>
+                <ul>
+                  <li><a href="">네이버 개발자 센터</a></li>
+                  <li><a href="">오픈 API</a></li>
+                  <li><a href="">오픈소스</a></li>
+                  <li><a href="">네이버 D2</a></li>
+                  <li><a href="">네이버 D2SF</a></li>
+                  <li><a href="">네이버 랩스</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+          <div class="etc-area">
+            <div class="etc-wrap">
+              <div class="title-box">
+                <strong>웨일 브라우저</strong>
+                <a href="">다운받기</a>
+              </div>
+              <img src="./assets/images/whale.png" alt="">
+            </div>
+            <div class="etc-wrap">
+              <div class="title-box">
+                <strong>프로젝트 꽃</strong>
+                <a href="">바로가기</a>
+              </div>
+              <img src="./assets/images/flower.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="group-corp">
+          <ul class="corp-list">
+                  <li class="corp-item"><a href="">회사소개</a></li>
+                  <li class="corp-item"><a href="">인재채용</a></li>
+                  <li class="corp-item"><a href="">제휴제안</a></li>
+                  <li class="corp-item"><a href="">이용약관</a></li>
+                  <li class="corp-item"><a href=""><strong>개인정보처리방침</strong></a></li>
+                  <li class="corp-item"><a href="">청소년보호정책</a></li>
+                  <li class="corp-item"><a href="">네이버 정책</a></li>
+                  <li class="corp-item"><a href="">고객센터</a></li>
+          </ul>
+          <address class="addr">
+            <a href="">ⓒ NAVER Corp.</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

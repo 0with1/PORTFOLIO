@@ -1,0 +1,29 @@
+
+body { font-family: 'Nanum Gothic', sans-serif; letter-spacing: -0.05em; } 
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; } 
+
+
+.wrapper {}
+
+header .inner1 .logo a::before,
+.header .inner2 .search-area .btn-submit::after,
+.footer .inner6 .qna-area::before,
+main .group-news .title-area a::after, 
+.inner4 .sc-board a.link-more::before,
+.sc-banner2 .control-area .prev,
+.sc-banner2 .control-area .next, 
+.sc-banner2 .control-area .btn.autoplay, 
+.sc-banner2 .control-area .btn.autoplay.paused {background-image: url(../images/cc-icon-bg.png);background-repeat: no-repeat;background-size: 300px; } 
+
+ .sc-visual .control-area .prev, 
+ .sc-visual .control-area .next,
+ .sc-visual .control-area .btn.autoplay,
+ .sc-visual .control-area .btn.autoplay.paused {background-image: url(../images/cc-icon-bg02.png);background-repeat: no-repeat;background-size: 300px; } 
+
+.sc-service .service-item a::before { background-image: url(../images/cc-mnservice.png); background-repeat: no-repeat; background-size: 1200px; } 
+
+.sc-media .group-sns .wrap .seoul-icon,.sc-media .group-sns .sns-item a::after { background: url(../images/cc-ssns.png); background-repeat: no-repeat; background-size:280px; } 
+
+.sc-visual .slide1 h3 a:before,.sc-visual .slide2 h3 a:before { background: url(../images/cc-main-icon.png); background-repeat: no-repeat; background-size: 300px; } 
+
+.inner { background: #fff; height: auto; width: 1152px; margin: 0 auto; position: relative;} 

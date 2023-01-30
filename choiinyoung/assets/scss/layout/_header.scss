@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 10;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+    width: calc(100% - 30px);
+    @include desktop {
+      padding: 20px 0;
+      width: calc(100% - 30px);
+    }
+
+    .logo {
+      a {
+        font-weight: 600;
+        font-size: clamp(30px, 4vw, 50px);
+      }
+
+    }
+  }
+
+  &.on {
+    background: #fff;
+    transition: 0.5s;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0px;
+      align-items: center;
+
+      .logo {
+        a {
+          font-size: 2vw;
+          @include mobile {
+              font-size: 4vw;
+            }
+        }
+      }
+    }
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+    transition: 0.5s;
+  }
+}

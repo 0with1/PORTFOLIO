@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "thumb": "./assets/images/recommend-product01.png",
+            "title": "최대 8만원 혜택",
+            "info": "쓸 때마다 최대 12% 적립"
+        },
+        {
+            "id": 2,
+            "thumb": "./assets/images/recommend-product02.png",
+            "title": "더 강력해진 SSG.COM 삼성카드",
+            "info": "SSG MONEY 최대 15% 적립 + 스마일클럽 월이용료 할인"
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/recommend-product03.png",
+            "title": "2023 설 신세계백화점",
+            "info": "고품격 기프트를 만나보세요!"
+        }
+       
+
+    ]
+}

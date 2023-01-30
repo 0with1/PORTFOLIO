@@ -1,0 +1,27 @@
+{
+    "items": [
+        {
+            "id": 3000,
+            "logo": "./assets/images/belif-chicor-logo.png",
+            "thumb": "./assets/images/belif-chicor.png",
+            "brandName": "chicor",
+            "title": "신세계백화점이 엄선한 뷰티 스페셜티 스토어"
+        },
+        {
+            "id": 3001,
+            "logo": "./assets/images/belif-casamia-logo.png",
+            "thumb": "./assets/images/belif-casamia.png",
+            "brandName": "casamia",
+            "title": "신세계까사를 대표하는 라이프스타일 브랜드"
+        },
+        {
+            "id": 3002,
+            "logo": "./assets/images/belif-outlet-logo.png",
+            "thumb": "./assets/images/belif-outlet.png",
+            "brandName": "outlet",
+            "title": "프리미엄 아울렛 득템의 신세계"
+        }
+       
+
+    ]
+}

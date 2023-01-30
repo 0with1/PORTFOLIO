@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "id": 7000,
+            "thumb": "./assets/images/exhi01.png",
+            "title": "바이레도",
+            "exhiInfo" :"홀리데이"
+        },
+        {
+            "id": 7001,
+            "thumb": "./assets/images/exhi02.png",
+            "title": "SSG",
+            "exhiInfo": "몽블랑 베스트셀링 기획전"
+        },
+        {
+            "id": 7002,
+            "thumb": "./assets/images/exhi03.png",
+            "title": "신년맞이 리빙 특별전 가구/침구/주방SALE 우리집 새단장!",
+            "exhiInfo": ""
+        },
+        {
+            "id": 7003,
+            "thumb": "./assets/images/exhi04.png",
+            "title": "금주의 추천상품",
+            "exhiInfo": "지금 행사중인 이마트 점포상품"
+        }
+       
+
+    ]
+}

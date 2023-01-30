@@ -1,0 +1,64 @@
+{
+    "items":[
+        {
+            "id":0,
+            "thumb":"./assets/images/brand-chanel.png",
+            "title":"샤넬"
+        },
+        {
+            "id":1,
+            "thumb":"./assets/images/brand-montblanc.jpg",
+            "title":"몽블랑"
+        },
+        {
+            "id": 2,
+            "thumb": "./assets/images/brand-guzzi.jpg",
+            "title": "구찌"
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/brand-md.png",
+            "title": "마시모두띠"
+        },
+        {
+            "id": 4,
+            "thumb": "./assets/images/brand-nobrand.png",
+            "title": "노브랜드"
+        },
+        {
+            "id": 5,
+            "thumb": "./assets/images/brand-daiz.png",
+            "title": "데이즈"
+        },
+        {
+            "id": 6,
+            "thumb": "./assets/images/brand-ferra.jpg",
+            "title": "페라가모"
+        },
+        {
+            "id": 7,
+            "thumb": "./assets/images/brand-polo.png",
+            "title": "랄프로렌"
+        },
+        {
+            "id": 8,
+            "thumb": "./assets/images/brand-burberry.png",
+            "title": "버버리"
+        },
+        {
+            "id": 9,
+            "thumb": "./assets/images/brand-lulu.png",
+            "title": "룰루레몬"
+        },
+        {
+            "id": 10,
+            "thumb": "./assets/images/brand-peacock.png",
+            "title": "피코크"
+        },
+        {
+            "id": 11,
+            "thumb": "./assets/images/brand-jaju.png",
+            "title": "자주"
+        }
+    ]
+}

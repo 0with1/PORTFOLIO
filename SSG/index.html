@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>SSG</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="group-logo">
+        <h1 class="logo"><span class="blind"></span></h1>
+        <i class="logo-arrow"></i> <!-- 제이쿼리 클릭 위해서 가상선택자에서 바꿈 -->
+      </div>
+      
+      <div class="group-search">
+        <form action="" method="get">
+          <fieldset>
+            <legend class="blind">검색</legend>
+              <div class="wrap">
+                <input type="text" class="input-text" placeholder="">
+                <button type="button" class="btn-submit"><span class="blind">검색</span></button>
+              </div>
+          </fieldset>
+        </form>
+      </div>
+      <a href="" class="link-cart"><span class="blind">카트</span></a>
+    </header>
+
+    <nav class="stiky-nav">
+      <ul class="maintab-list">
+        <li class="maintab-item on"><a href=""><span>홈</span></a></li>
+        <li class="maintab-item"><a href=""><span>설날</span><i class="new-icon">N</i></a></li>
+        <li class="maintab-item"><a href=""><span>특가</span></a></li>
+        <li class="maintab-item"><a href=""><span>랭킹</span></a></li>
+        <li class="maintab-item"><a href=""><span>SSG.TV</span></a></li>
+        <li class="maintab-item"><a href=""><span>명품관</span></a></li>
+        <li class="maintab-item"><a href=""><span>브랜드</span></a></li>
+      </ul>
+    </nav>
+
+
+    <main class="container">
+
+      <section class="sc-visual">
+        <h2 class="blind">슬라이드 비주얼 탭</h2>
+        <div class="swiper visual-slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide01.jpg" alt="비주얼 슬라이드1">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide02.jpg" alt="비주얼 슬라이드2">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide03.jpg" alt="비주얼 슬라이드3">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide04.jpg" alt="비주얼 슬라이드4">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide05.jpg" alt="비주얼 슬라이드5">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide06.jpg" alt="비주얼 슬라이드6">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/visual-slide07.jpg" alt="비주얼 슬라이드7">
+              </a>
+            </li>
+          </ul>
+          <div class="control-area">
+            <div class="fraction"></div>
+            <button class="btn autoplay"><span class="blind">자동재생 정지</span></button>
+          </div>
+        </div>
+      </section>
+  
+      <section class="sc-menu">
+        <h2 class="blind">메뉴</h2>
+        <div class="scroll-wrap">
+          <ul class="menu-list" id="cateData">
+          
+          </ul>
+        </div>
+      </section>
+        
+      <section class="sc-banner">
+         <h2 class="blind">배너 슬라이드</h2>
+         <div class="swiper banner-slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/banner-slide01.jpg" alt="비주얼 슬라이드1">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="./assets/images/banner-slide02.jpg" alt="비주얼 슬라이드2">
+              </a>
+            </li>
+          </ul>
+          <div class="control-area">
+            <div class="fraction"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sc-gift">
+        <div class="group-tit">
+          <h2 class="">2023 설 기프트 준비해요</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <a href="" class="banner-wrap">
+          <img src="./assets/images/gift-banner.jpg" alt="기프트 배너">
+        </a>
+        <ul class="ssg-list" id="giftData">
+        </ul>
+      </section>
+
+
+
+    
+      <section class="sc-promotion">
+        <div class="group-tit02">
+          <h2>이번 주 카드 프로모션</h2>
+          <p class="sub-txt">SSGPAY로 결제하셔도 혜택 받을 수 있어요</p>
+        </div>
+        <ul class="promotion-list" id="cardPromotionData">
+
+        </ul>
+        <a class="banner-wrap">
+          <img src="./assets/images/promotion-banner.png" alt="프로모션 배너">
+        </a>
+      </section>
+
+      <section class="sc-belif">
+
+        <div class="group-tit">
+          <h2>믿고 사는 즐거움 SSG.</h2>
+        </div>
+
+        <ul class="belif-list" id="beliefData">
+
+        </ul>
+      </section>
+
+   
+      <section class="sc-guide">
+        <div class="group-tit">
+          <h2>스페셜 쇼핑 가이드</h2>
+        </div>
+        <ul class="tab-list" >
+          <li class="tab-item on" data-target="#acc" ><a href="" data-cate="1">ACC</a></li>
+          <li class="tab-item" data-target="#living"><a href="" data-cate="2" >LIVING</a></li>
+          <li class="tab-item" data-target="#beauty"><a href="" data-cate="3">BEAUTY</a></li>
+          <li class="tab-item" data-target="#bag"><a href="" data-cate="4">BAG</a></li>
+          <li class="tab-item" data-target="#shoes"><a href="" data-cate="5">SHOES</a></li>
+        </ul>
+
+
+        <div class="swiper guide-slide on" id="acc">
+          <div class="swiper-wrapper" id="productData1">
+            <div class="swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product02.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">펜디(FENDI)</p>
+                  <p class="product-cost"><em>114,300</em><span>원</span></p>
+                </div>
+              </a>
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product03.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product04.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product05.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product06.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product07.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product08.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="guide-pagi"></div>
+        </div>
+
+        <div class="swiper guide-slide" id="living">
+          <div class="swiper-wrapper" id="productData1">
+            <div class="swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/guide-product.jpg" alt="가이드 제품">
+                </div>
+                <div class="txt-wrap">
+                  <p class="product-tit">모로칸오일(MOROCCANOIL)</p>
+                  <p class="product-cost"><em>58,000</em><span>원</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="guide-pagi"></div>
+        </div>
+
+      </section>
+
+       
+      <section class="sc-recommend">
+        <div class="group-tit">
+          <h2>SSG가 자신있게 추천드려요</h2>
+        </div>
+        <ul class="ssg02-list" id="recommendData">
+        </ul>
+      </section>
+ 
+      <section class="sc-concept">
+        <div class="group-tit">
+          <h2>WAKE UP YOUR CONCEPT</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <a class="banner-wrap">
+          <img src="./assets/images/concept-banner.png" alt="프로모션 배너">
+        </a>
+        <ul class="concept-list">
+          <li class="concept-item on">
+            <a href="" data-cate="60">
+              <img src="./assets/images/concept-tab01.png" alt="아우터 탭 이미지">
+              아우터
+            </a>
+          </li>
+          <li class="concept-item">
+            <a href="" data-cate="61">
+              <img src="./assets/images/concept-tab02.png" alt="아우터 탭 이미지">
+              원피스
+            </a>
+          </li>
+          <li class="concept-item">
+            <a href="" data-cate="62">
+              <img src="./assets/images/concept-tab03.png" alt="아우터 탭 이미지">
+              블라우스/셔츠
+            </a>
+          </li>
+          <li class="concept-item">
+            <a href="" data-cate="63">
+              <img src="./assets/images/concept-tab04.png" alt="아우터 탭 이미지">
+              티셔츠
+            </a>
+          </li>
+          <li class="concept-item">
+            <a href="" data-cate="64">
+              <img src="./assets/images/concept-tab05.png" alt="아우터 탭 이미지">
+              스커트
+            </a>
+          </li>
+        </ul>
+        <div class="swiper concept-slide">
+          <div class="swiper-wrapper" id="conceptData1">
+            
+          </div>
+          <div class="concept-pagi"></div>
+        </div>
+      </section>
+
+       
+      <section class="sc-exhi">
+        <div class="group-tit">
+          <h2>금주의 추천 기획전</h2>
+        </div>
+        <ul class="exhi-list" id="exhiData">
+          <li class="exhi-item">
+            <a href="">
+              <div class="img-wrap">
+                <img src="./assets/images/exhi01.png" alt="바이레도">
+              </div>
+              <div class="txt-wrap">
+                <strong>바이레도</strong>
+                <span>홀리데이</span>
+              </div>
+            </a>
+          </li>
+          <li class="exhi-item">
+            <a href="">
+              <div class="img-wrap">
+                <img src="./assets/images/exhi01.png" alt="바이레도">
+              </div>
+              <div class="txt-wrap">
+                <strong>바이레도</strong>
+                <span>홀리데이</span>
+              </div>
+            </a>
+          </li>
+          <li class="exhi-item">
+            <a href="">
+              <div class="img-wrap">
+                <img src="./assets/images/exhi01.png" alt="바이레도">
+              </div>
+              <div class="txt-wrap">
+                <strong>바이레도</strong>
+                <span>홀리데이</span>
+              </div>
+            </a>
+          </li>
+          <li class="exhi-item">
+            <a href="">
+              <div class="img-wrap">
+                <img src="./assets/images/exhi01.png" alt="바이레도">
+              </div>
+              <div class="txt-wrap">
+                <strong>바이레도</strong>
+                <span>홀리데이</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+     
+      <section class="sc-live">
+        <div class="group-tit">
+          <h2>쇼핑 라이브의 신세계!</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <ul class="live-list">
+          <li class="live-item">
+            <a href="" class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+            </a>
+            <a href="" class="txt-wrap">
+              <strong>우수 소상공인 상생 라이브! 한우, 전복, 감귤 등 최대 65% OFF</strong>
+              <span class="count">11,282</span>
+            </a>
+          </li>
+          <li class="live-item">
+            <a href="">
+                <div class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                </div>
+            </a>
+             <a href="" class="txt-wrap">
+              <strong>우수 소상공인 상생 라이브! 한우, 전복, 감귤 등 최대 65% OFF</strong>
+              <span class="count">11,282</span>
+            </a>
+          </li>
+          <li class="live-item">
+            <a href="">
+                <div class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                </div>
+            </a>
+             <a href="" class="txt-wrap">
+              <strong>우수 소상공인 상생 라이브! 한우, 전복, 감귤 등 최대 65% OFF</strong>
+              <span class="count">11,282</span>
+            </a>
+          </li>
+          <li class="live-item">
+            <a href="">
+                <div class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                </div>
+            </a>
+             <a href="" class="txt-wrap">
+              <strong>우수 소상공인 상생 라이브! 한우, 전복, 감귤 등 최대 65% OFF</strong>
+              <span class="count">11,282</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+       
+      <section class="sc-warning">
+        <div class="group-tit">
+          <h2>놓쳐선 안 될 라이브 예고</h2>
+        </div>
+        <div class="group-warning">
+          <a class="img-wrap"><img src="./assets/images/warning-img.jpg" alt="다이슨 에어랩 컴플리트 S머니 5만원 적립 & 슈퍼소닉 3만원 적립 단 한시간! 사전알림 필수!"></a>
+          <div class="txt-wrap">
+            <a class="warning-tit">
+              <span>다이슨 에어랩 컴플리트 S머니 5만원 적립 & 슈퍼소닉 3만원 적립 단 한시간! 사전알림 필수!</span>
+              <strong>12/21 오후 7시 라이브</strong>
+            </a>
+            <a class="product-box">
+              <div class="product-img">
+                <img src="./assets/images/warning-product.jpg" alt="다이슨">
+              </div>
+              <div class="product-txt">
+                <span class="product-tit">다이슨 [SSG Live]★12.21_19시~19시59분, 단 한시간 5만원 S머니적립★ New 다이슨 에어랩™ 멀티 스타일러 컴플리트(블루/코퍼)</span>
+                <strong><em>699,000</em><span>원</span></strong>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="" class="link-more"><span>라이브 스케줄 전체보기</span></a>
+      </section>
+    
+      
+      <section class="sc-ssgtv">   
+        <div class="group-tit02">
+          <h2>SSG.TV</h2>
+          <p class="sub-txt">흥미로운 영상 쇼핑의 시작</p>
+        </div>
+        <ul class="live-list">
+          <li class="live-item">
+            <a href="" class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                  <div class="txt-wrap">
+                    <strong>미슐랭 2스타 정식당의 캐주얼 브랜드, 정식카페의 신상 케이크를 만나보세요.</strong>
+                    <span>크리스마스,파티용,디저트</span>
+                  </div>
+            </a>
+           
+          </li>
+          <li class="live-item">
+            <a href="" class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                  <div class="txt-wrap">
+                    <strong>미슐랭 2스타 정식당의 캐주얼 브랜드, 정식카페의 신상 케이크를 만나보세요.</strong>
+                    <span>크리스마스,파티용,디저트</span>
+                  </div>
+            </a>
+           
+          </li>
+          <li class="live-item">
+            <a href="" class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                  <div class="txt-wrap">
+                    <strong>미슐랭 2스타 정식당의 캐주얼 브랜드, 정식카페의 신상 케이크를 만나보세요.</strong>
+                    <span>크리스마스,파티용,디저트</span>
+                  </div>
+            </a>
+           
+          </li>
+          <li class="live-item">
+            <a href="" class="video-wrap">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/live.mp4" type="video/webm">
+                  </video>
+                  <div class="txt-wrap">
+                    <strong>미슐랭 2스타 정식당의 캐주얼 브랜드, 정식카페의 신상 케이크를 만나보세요.</strong>
+                    <span>크리스마스,파티용,디저트</span>
+                  </div>
+            </a>
+           
+          </li>
+          
+        </ul>
+        <a href="" class="link-more"><span>SSG.TV 전체보기</span></a>
+      </section>
+
+
+     
+      <section class="sc-ssgsv">
+        <div class="group-tit">
+          <h2>이런 서비스도 만나보세요</h2>
+        </div>
+        <ul class="ssg02-list" id="svData"></ul>
+      </section>
+
+       
+      <section class="sc-special">
+        <div class="group-tit">
+          <h2>가장 인기있는 특가상품!</h2>
+        </div>
+        <ul class="special-list" id="specialData"></ul>
+        <a href="" class="link-more"><span>특가 더보기</span></a>
+      </section>
+
+
+      <section class="sc-remarkable">
+        <div class="group-tit">
+          <h2>이번주 주목할만한 행사</h2>
+        </div>
+        <ul class="ssg02-list">
+          <li class="ssg02-item">
+            <a href="" class="img-wrap">
+              <img src="./assets/images/remarkable-product01.jpg" alt="가장 특별한 선물 다이슨">
+            </a>
+            <a href="" class="txt-wrap">
+              <strong>가장 특별한 선물 다이슨</strong>
+              <p>품격있는 기프트로 가치있게</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+   
+      <section class="sc-blossom">
+        <div class="group-tit">
+          <h2>BLOSSOM BRAND</h2>
+        </div>
+        <ul class="tab-list">
+          <li class="tab-item on"><a href="" data-cate="12">전체</a></li>
+          <li class="tab-item"><a href=""  data-cate="13">패션</a></li>
+          <li class="tab-item"><a href="" data-cate="14">뷰티&잡화</a></li>
+          <li class="tab-item"><a href="" data-cate="15">디지털&라이프</a></li>
+          <li class="tab-item"><a href="" data-cate="16">푸드</a></li>
+        </ul>
+        <ul class="blossom-list" id="blossomData1">
+        </ul>
+      </section>
+
+      <section class="sc-official">
+        <div class="group-tit">
+          <h2>SSG 인기 공식브랜드관</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <div class="scroll-wrap">
+          <ul class="official-list" id="officialData"></ul>
+        </div>
+      </section>
+
+     
+      <section class="sc-tryon">
+        <div class="group-tit02">
+          <h2>Let's Try-on</h2>
+          <p class="sub-txt">백화점 상품을 직접 입어보는 것처럼</p>
+        </div>
+        <div class="tryon-slide">
+          <ul class="tryon-list swiper-wrapper">
+            <li class="tryon-item swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/tryon01.jpg" alt="페어라이어">
+                </div>
+                <div class="txt-wrap">
+                  <strong>페어라이어</strong>
+                  <span class="tryon-tit">클래식과 모던한 무드 가득한 필드 셋업</span>
+                  <span class="tryon-txt">페어 라이어만의 클래식한 느낌을 살린 벨벳 소재 티셔츠와 퀼팅 포인트 셋업 착장으로 모던한 필드 룩 완성.</span>
+                </div>
+              </a>
+            </li>
+            <li class="tryon-item swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/tryon01.jpg" alt="페어라이어">
+                </div>
+                <div class="txt-wrap">
+                  <strong>페어라이어</strong>
+                  <span class="tryon-tit">클래식과 모던한 무드 가득한 필드 셋업</span>
+                  <span class="tryon-txt">페어 라이어만의 클래식한 느낌을 살린 벨벳 소재 티셔츠와 퀼팅 포인트 셋업 착장으로 모던한 필드 룩 완성.</span>
+                </div>
+              </a>
+            </li>
+            <li class="tryon-item swiper-slide">
+              <a href="">
+                <div class="img-wrap">
+                  <img src="./assets/images/tryon01.jpg" alt="페어라이어">
+                </div>
+                <div class="txt-wrap">
+                  <strong>페어라이어</strong>
+                  <span class="tryon-tit">클래식과 모던한 무드 가득한 필드 셋업</span>
+                  <span class="tryon-txt">페어 라이어만의 클래식한 느낌을 살린 벨벳 소재 티셔츠와 퀼팅 포인트 셋업 착장으로 모던한 필드 룩 완성.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="" class="link-more"><span>Try on 전체보기</span></a>
+      </section>
+    
+
+
+      <section class="sc-luxury">
+        <div class="group-tit">
+          <h2>SSG LUXURY</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <a class="banner-wrap">
+          <img src="./assets/images/luxury-banner.jpg" alt="럭셔리 배너">
+        </a>
+        <ul class="ssg-list" id="luxuryData">
+        </ul>
+      </section>
+
+     
+      <section class="sc-beauty">
+        <div class="group-tit">
+          <h2>PREMIUM BEAUTY</h2>
+        </div>
+        <ul class="ssg02-list">
+          <li class="ssg02-item">
+            <a href="" class="img-wrap">
+              <img src="./assets/images/beauty-product01.jpg" alt="프레쉬 홀리데이">
+            </a>
+            <a href="" class="txt-wrap">
+              <strong>프레쉬 홀리데이</strong>
+              <p>마법 같은 순간을 선물하세요</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      
+      <section class="sc-sale">
+        <div class="group-tit">
+          <h2>SPECIAL SALE</h2>
+        </div>
+        <ul class="ssg02-list">
+          <li class="ssg02-item">
+            <a href="" class="img-wrap">
+              <img src="./assets/images/special-product01.jpg" alt="폴로 랄프 로렌">
+            </a>
+            <a href="" class="txt-wrap">
+              <strong>폴로 랄프 로렌</strong>
+              <p>22 F/W SEASON OFF 30%</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+       <section class="sc-ititem">
+        <div class="group-tit">
+          <h2>오늘의 잇아이템 추천!</h2>
+        </div>
+        <ul class="ssg-list">
+          <li class="ssg-item">
+            <a href="" class="img-wrap">
+              <img src="./assets/images/ititem-product01.jpg" alt="필립스 에스프레소 머신">
+            </a>
+            <div class="basic-icon">
+              <a href="" class="heart"><span class="blind">하트</span></a>
+              <a href="" class="cart"><span class="blind">카트</span></a>
+            </div>
+            <a href="" class="txt-wrap">
+              <p><strong>이마트몰</strong> <span>필립스(PHILIPS)</span> [필립스] 에스프레소 머신 外 주방가전 모음 택1</p>
+              <div class="" class="amount-box">
+                <p class="cost"><span class="cost-num"></span><span class="cost-unit"></span></p>
+                <p class="dc"><span class="dc-per"></span><span class="dc-price">48,900</span><span class=dc-unit>원~</span></p>
+              </div>
+              <p class="eval"><span>★ 4.8</span><span>2,829건</span> </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="sc-category">
+        <div class="group-tit">
+          <h2>카테고리 인기 상품</h2>
+          <div class="view-wrap">
+				    <a href="" class="view">전체보기</a>
+				  </div>
+        </div>
+        <ul class="tab-list">
+          <li class="tab-item on"><a href="" data-cate="100">전체</a></li>
+          <li class="tab-item"><a href=""  data-cate="101">패션의류</a></li>
+          <li class="tab-item"><a href="" data-cate="102">패션잡화</a></li>
+          <li class="tab-item"><a href="" data-cate="103">뷰티</a></li>
+          <li class="tab-item"><a href="" data-cate="104">스포츠/레저</a></li>
+          <li class="tab-item"><a href="" data-cate="105">생활</a></li>
+        </ul>
+        <ul class="category-list" id="categoryData1">
+        </ul>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <section class="sc-notice">
+        <span class="notice-label">공지</span>
+        <a class="notice-txt" href="">아파트아이 SSG MONEY 사용가능금액 변경 안내 (...</a>
+        <i class="notice-arrow"><span class="blind">공지</span></i>
+      </section>
+      <section class="sc-service">
+        <div class="txt-wrap">
+          <div class="service-txt">
+             <p>SSG.COM 고객센터 / 전자금융거래 분쟁처리</p>
+              <p><strong>1577-3419 / </strong> <span>ssg@ssg.com</span></p>
+          </div>
+        </div>
+        <div class="service-btn">
+          <a href="">전화걸기</a>
+          <a href="">1:1 고객센터</a>
+        </div>
+      </section>
+      <ul class="btn-list">
+        <li class="btn-item"><a href="">로그인</a></li>
+        <li class="btn-item"><a href="">회원가입</a></li>
+        <li class="btn-item"><a href="">앱다운로드</a></li>
+        <li class="btn-item"><a href="">PC버전</a></li>
+      </ul>
+      <section class="sc-policy">
+        <div class="dotcom-wrap">
+          <span class="logo">(주)에스에스지닷컴</span>
+          <address>
+            <ul class="dotcom-list">
+              <li class="dotcom-item">대표자: 강희석|사업자등록번호: 870-88-01143</li>
+              <li class="dotcom-item">통신판매업 신고번호: 제2022-서울강남-03751호<a href="">사업자 정보확인</a></li>
+              <li class="dotcom-item">개인정보보호 책임자: 김우진<span class="dotcom-line"></span>주소: 서울특별시 강남구 테헤란로 231</li>
+              <li class="dotcom-item">호스팅서비스 사업자 : (주)에스에스지닷컴</li>
+            </ul>
+          </address>
+        </div>
+        <div class="guide-wrap">
+          <p>우리은행 채무지급보증 안내 <a href="">서비스가입사실 확인</a></p>
+          <span>
+          당사는 고객님이 현금 결제한 금액에 대해 우리은행과<br>
+          채무지급 보증 계약을 체결하여 안전거래를 보장하고 있습니다.
+          </span>
+        </div>
+        <ul class="policy-list">
+          <li class="policy-item"><a href="">회사소개</a></li>
+          <li class="policy-item"><a href="">이용약관</a></li>
+          <li class="policy-item"><a href="">전자금융거래이용약관</a></li>
+          <li class="policy-item"><a href="" class="private">개인정보처리방침</a></li>
+          <li class="policy-item"><a href="">청소년보호방침</a></li>
+          <li class="policy-item"><a href="">소비자분쟁해결기준</a></li>
+          <li class="policy-item"><a href="">입점상담</a></li>
+        </ul>
+        <ul class="noti-list">
+          <li class="noti-item">㈜에스에스지닷컴에서 판매되는 상품 중에는 개별 판매자가 판매하는 오픈마켓 상품이 포함되어 있습니다.</li>
+          <li class="noti-item">오픈마켓 상품의 경우, ㈜에스에스지닷컴은 통신판매중개자로서 거래 당사자가 아니며, 입점 판매사가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다.</li>
+          <li class="noti-item">㈜에스에스지닷컴 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의하여 엄격히 금지됩니다.</li>
+        </ul>
+        <div class="copyright-wrap">Copyright ⓒ SSG.COM Corp. All rights reserved.</div>
+      </section>
+    </footer>
+  </div>
+
+  
+  <!--로고 팝업-->
+  <div class="logopopup">
+    <div class="group-logopopup">
+      <h2><span class="blind">믿고 사는 즐거움 SSG.</span></h2>
+      <ul class="brand-list" id="logopopupData"></ul>
+      <ul class="ssg-mall-list">
+        <li class="ssg-mall-item"><a href="" class="ssgdotcom"><span class="blind">SSG.COM</span></a></li>
+        <li class="ssg-mall-item"><a href="" class="ssgmall"><span class="blind">SHINSEGAE MALL</span></a></li>
+        <li class="ssg-mall-item"><a href="" class="ssgdps"><span class="blind">SHINSEGAE 백화점</span></a></li>
+        <li class="ssg-mall-item"><a href="" class="emartmall"><span class="blind">EMART MALL</span></a></li>
+      </ul>
+    </div>
+    <i class="close"><span class="blind">닫기</span></i>
+  </div>
+
+  <!--고정 navi-->
+  <ul class="navi-list">
+    <li class="navi-item">
+      <a href="">
+        <i class="category"></i>
+        <span class="navi-tit">카테고리</span>
+      </a>
+    </li>
+    <li class="navi-item">
+      <a href="">
+        <i class="find"></i>
+        <span class="navi-tit">발견</span>
+      </a>
+    </li>
+    <li class="navi-item">
+      <a href="">
+        <i class="home"></i>
+        <span class="navi-tit">홈</span>
+      </a>
+    </li>
+    <li class="navi-item">
+      <a href="">
+        <i class="my"></i>
+        <span class="navi-tit">MY</span>
+      </a>
+    </li>
+    <li class="navi-item">
+      <a href="">
+        <i class="recent"></i>
+        <span class="navi-tit">최근본</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="fix-wrap">
+    <a href="" class="fix-talk">
+        <span class="blind">고정 TALK 버튼</span>
+    </a>
+    <a href="" class="fix-top">
+        <span class="blind">상단 올라가기 버튼</span>
+    </a>
+  </div>
+  <!--script-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>  
+  <script src="./assets/js/databinding.js"></script>
+  <script src="./assets/js/custom.js"></script>
+
+</body>
+</html>

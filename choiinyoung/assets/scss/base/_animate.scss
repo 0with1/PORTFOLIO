@@ -1,0 +1,21 @@
+
+@keyframes rotate {
+    0% {
+      transform: rotateY(360deg);
+    }
+  
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+
+   @keyframes slider2023 {
+    0% {
+      margin-left: 0%
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }

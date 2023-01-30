@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'appleKR';
+  src: url(../font/SFProKRDisplay_light.woff2) format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'appleKR';
+  src: url(../font/SFProKRDisplay_regular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'appleKR';
+  src: url(../font/SFProKRDisplay_medium.woff2) format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'appleKR';
+  src: url(../font/SFProKRDisplay_semibold.woff2) format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'appleKR';
+  src: url(../font/SFProKRDisplay_bold.woff2) format('woff2');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'apple';
+  src: url(../font/sf-pro-display_regular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'apple';
+  src: url(../font/sf-pro-display_medium.woff2) format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'apple';
+  src: url(../font/sf-pro-display_semibold.woff2) format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'apple';
+  src: url(../font/sf-pro-display_bold.woff2) format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(../font/poppins.woff2) format('woff2');
+  font-weight: 400;
+}

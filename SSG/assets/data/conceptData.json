@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "thumb": "./assets/images/concept-outer01.jpg",
+            "title": "에프터홈파티",
+            "price": 140800,
+            "cate": 60
+        },
+        {
+            "id": 2,
+            "thumb": "./assets/images/concept-outer01.jpg",
+            "title": "에프터홈파티",
+            "price": 140800,
+            "cate": 60
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/concept-outer02.jpg",
+            "title": "에프터홈파티",
+            "price": 75200,
+            "cate": 61
+        },
+        {
+            "id": 4,
+            "thumb": "./assets/images/concept-outer03.jpg",
+            "title": "에프터홈파티",
+            "price": 148800,
+            "cate": 62
+        },
+        {
+            "id": 5,
+            "thumb": "./assets/images/concept-outer04.jpg",
+            "title": "에프터홈파티",
+            "price": 151300,
+            "cate": 63
+        }
+    ]
+}

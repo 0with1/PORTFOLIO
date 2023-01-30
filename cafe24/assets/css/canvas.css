@@ -1,0 +1,242 @@
+
+
+
+/* -- 유투브 재생버튼 도형 -- */
+
+.youtube-play { position: absolute; width: 0; height: 0; }
+
+
+@keyframes youtube-play-animation-1 { 100% { transform: translate3d(1vw, 30vh, 152px); } 
+ }
+
+.youtube-play:nth-child(1) { animation: youtube-play-animation-1 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #f6e58d; animation-delay: -0.2s; transform: translate3d(27vw, 23vh, 48px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-2 { 100% {transform: translate3d(65vw, 61vh, 32px); } 
+ }
+
+
+.youtube-play:nth-child(2) { animation: youtube-play-animation-2 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #ffbe76; animation-delay: -0.4s; transform: translate3d(9vw, 51vh, 10px) rotate(270deg); } 
+
+
+
+@keyframes youtube-play-animation-3 { 100% { transform: translate3d(79vw, 42vh, 84px); } 
+ }
+
+.youtube-play:nth-child(3) { border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #ff7979; animation: youtube-play-animation-3 60s infinite;  animation-delay: -0.6s; transform: translate3d(10vw, 17vh, 43px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-4 { 100% { transform: translate3d(22vw, 57vh, 61px); } 
+ }
+
+.youtube-play:nth-child(4) { animation: youtube-play-animation-4 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #badc58;  animation-delay: -0.8s;  transform: translate3d(16vw, 77vh, 3px) rotate(90deg); } 
+
+
+@keyframes youtube-play-animation-5 { 100% { transform: translate3d(86vw, 2vh, 87px); } 
+ }
+
+.youtube-play:nth-child(5) {animation: youtube-play-animation-5 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #f9ca24;animation-delay: -1s;  transform: translate3d(13vw, 86vh, 10px) rotate(360deg); } 
+
+@keyframes youtube-play-animation-6 { 100% { transform: translate3d(2vw, 59vh, 29px); } 
+ }
+
+.youtube-play:nth-child(6) {animation: youtube-play-animation-6 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #f0932b; animation-delay: -1.2s; transform: translate3d(13vw, 9vh, 86px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-7 { 100% {transform: translate3d(6vw, 38vh, 14px); } 
+ }
+
+.youtube-play:nth-child(7) {animation: youtube-play-animation-7 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #eb4d4b;animation-delay: -1.4s; transform: translate3d(24vw, 82vh, 80px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-8 { 100% { transform: translate3d(44vw, 90vh, 49px); } 
+ }
+
+.youtube-play:nth-child(8) { animation: youtube-play-animation-8 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #6ab04c; animation-delay: -1.6s; transform: translate3d(18vw, 14vh, 72px) rotate(90deg); } 
+
+@keyframes youtube-play-animation-9 { 100% {transform: translate3d(75vw, 71vh, 21px); } 
+ }
+
+.youtube-play:nth-child(9) {animation: youtube-play-animation-9 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #7ed6df;  animation-delay: -1.8s;  transform: translate3d(24vw, 48vh, 40px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-10 { 100% { -webkit-transform: translate3d(25vw, 51vh, 61px); transform: translate3d(25vw, 51vh, 61px); } 
+ }
+
+.youtube-play:nth-child(10) { animation: youtube-play-animation-10 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #e056fd;  animation-delay: -2s;  transform: translate3d(29vw, 29vh, 54px) rotate(270deg); } 
+
+
+
+@keyframes youtube-play-animation-11 { 100% { transform: translate3d(14vw, 16vh, 98px); } 
+ }
+
+.youtube-play:nth-child(11) {animation: youtube-play-animation-11 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #686de0; animation-delay: -2.2s;  transform: translate3d(39vw, 86vh, 28px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-12 { 100% { transform: translate3d(8vw, 47vh, 35px); } 
+ }
+
+.youtube-play:nth-child(12) { animation: youtube-play-animation-12 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #30336b;  animation-delay: -2.4s;  transform: translate3d(27vw, 43vh, 21px) rotate(90deg); } 
+
+
+@keyframes youtube-play-animation-13 { 100% { transform: translate3d(12vw, 68vh, 96px); } 
+ }
+
+.youtube-play:nth-child(13) {  animation: youtube-play-animation-13 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #22a6b3;  animation-delay: -2.6s;  transform: translate3d(33vw, 72vh, 25px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-14 { 100% { transform: translate3d(44vw, 47vh, 100px); } 
+ }
+
+.youtube-play:nth-child(14) {  animation: youtube-play-animation-14 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #be2edd;  animation-delay: -2.8s;  transform: translate3d(2vw, 7vh, 12px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-15 { 100% { transform: translate3d(81vw, 40vh, 19px); } 
+ }
+
+.youtube-play:nth-child(15) {  animation: youtube-play-animation-15 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #4834d4;  animation-delay: -3s;  transform: translate3d(-16vw, 86vh, 81px) rotate(180deg); } 
+
+@keyframes youtube-play-animation-16 { 100% { transform: translate3d(24vw, 31vh, 36px); } 
+ }
+
+.youtube-play:nth-child(16) {  animation: youtube-play-animation-16 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #130f40;  animation-delay: -3.2s;  transform: translate3d(33vw, 38vh, 33px) rotate(90deg); } 
+
+
+@keyframes youtube-play-animation-17 { 100% { transform: translate3d(22vw, 74vh, 83px); } 
+ }
+
+.youtube-play:nth-child(17) { animation: youtube-play-animation-17 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #f6e58d;  animation-delay: -3.4s;  transform: translate3d(8vw, 19vh, 51px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-18 { 100% { transform: translate3d(12vw, 12vh, 11px); } 
+ }
+
+.youtube-play:nth-child(18) { animation: youtube-play-animation-18 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #ffbe76;  animation-delay: -3.6s;  transform: translate3d(2vw, 47vh, 4px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-19 { 100% {  transform: translate3d(25vw, 19vh, 65px); } 
+ }
+
+.youtube-play:nth-child(19) { animation: youtube-play-animation-19 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #ff7979; animation-delay: -3.8s; transform: translate3d(19vw, 4vh, 36px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-20 { 100% {  transform: translate3d(9vw, 59vh, 70px); } 
+ }
+
+.youtube-play:nth-child(20) {  animation: youtube-play-animation-20 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #badc58; animation-delay: -4s; transform: translate3d(13vw, 49vh, 23px) rotate(90deg); } 
+
+
+@keyframes youtube-play-animation-21 { 100% {  transform: translate3d(4vw, 15vh, 12px); } 
+ }
+
+.youtube-play:nth-child(21) {  animation: youtube-play-animation-21 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #f9ca24; animation-delay: -4.2s;  transform: translate3d(2vw, 94vh, 21px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-22 { 100% { -webkit-transform: translate3d(35vw, 4vh, 63px); transform: translate3d(35vw, 4vh, 63px); } 
+ }
+
+.youtube-play:nth-child(22) { animation: youtube-play-animation-22 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #f0932b; animation-delay: -4.4s;  transform: translate3d(34vw, 17vh, 64px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-23 { 100% {  transform: translate3d(37vw, 54vh, 58px); } 
+ }
+
+.youtube-play:nth-child(23) { animation: youtube-play-animation-23 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #eb4d4b; animation-delay: -4.6s;  transform: translate3d(26vw, 49vh, 80px) rotate(180deg); } 
+
+@keyframes youtube-play-animation-24 { 100% {  transform: translate3d(14vw, 48vh, 53px); } 
+ }
+
+.youtube-play:nth-child(24) { animation: youtube-play-animation-24 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #6ab04c; animation-delay: -4.8s;  transform: translate3d(32vw, 96vh, 83px) rotate(90deg); } 
+
+@keyframes youtube-play-animation-25 { 100% {  transform: translate3d(18vw, 80vh, 8px); } 
+ }
+
+.youtube-play:nth-child(25) {  animation: youtube-play-animation-25 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #7ed6df;  animation-delay: -5s; transform: translate3d(33vw, 92vh, 42px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-26 { 100% {  transform: translate3d(5vw, 54vh, 34px); } 
+ }
+
+.youtube-play:nth-child(26) { animation: youtube-play-animation-26 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #e056fd; animation-delay: -5.2s;  transform: translate3d(9vw, 71vh, 58px) rotate(270deg); } 
+
+@keyframes youtube-play-animation-27 { 100% { transform: translate3d(15vw, 83vh, 70px); } 
+ }
+
+.youtube-play:nth-child(27) {  animation: youtube-play-animation-27 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #686de0; animation-delay: -5.4s;  transform: translate3d(15vw, 83vh, 28px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-28 { 100% {  transform: translate3d(6vw, 34vh, 83px); } 
+ }
+
+.youtube-play:nth-child(28) {  animation: youtube-play-animation-28 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #30336b;  animation-delay: -5.6s;  transform: translate3d(19vw, 27vh, 48px) rotate(90deg); } 
+
+@keyframes youtube-play-animation-29 { 100% {  transform: translate3d(5vw, 33vh, 45px); } 
+ }
+
+.youtube-play:nth-child(29) { animation: youtube-play-animation-29 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #22a6b3;  animation-delay: -5.8s;  transform: translate3d(18vw, 82vh, 23px) rotate(360deg); } 
+
+
+@keyframes youtube-play-animation-30 { 100% {  transform: translate3d(0vw, 29vh, 55px); } 
+ }
+
+.youtube-play:nth-child(30) {  animation: youtube-play-animation-30 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #be2edd; animation-delay: -6s;  transform: translate3d(21vw, 65vh, 18px) rotate(270deg); } 
+
+
+
+@keyframes youtube-play-animation-31 { 100% { transform: translate3d(5vw, 87vh, 172px); } 
+ }
+
+.youtube-play:nth-child(31) { animation: youtube-play-animation-31 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #f6e58d; animation-delay: -0.2s; transform: translate3d(7vw, 89vh, 48px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-32 { 100% { transform: translate3d(5vw, 11vh, 32px); } 
+ }
+
+
+.youtube-play:nth-child(32) { animation: youtube-play-animation-32 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #badc58;; animation-delay: -0.4s; transform: translate3d(9vw, 31vh, 10px) rotate(270deg); } 
+
+
+
+@keyframes youtube-play-animation-33 { 100% { transform: translate3d(29vw, 8vh, 84px); } 
+ }
+
+.youtube-play:nth-child(33) { border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #ff7979; animation: youtube-play-animation-33 60s infinite;  animation-delay: -0.6s; transform: translate3d(29vw, 17vh, 43px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-34 { 100% {transform: translate3d(32vw, 90vh, 61px); } 
+ }
+
+.youtube-play:nth-child(34) {animation: youtube-play-animation-34 60s infinite; opacity: 1; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 18px solid #badc58;  animation-delay: -0.8s; transform: translate3d(-5vw, 77vh, 3px) rotate(90deg); } 
+
+
+@keyframes youtube-play-animation-35 { 100% {transform: translate3d(36vw, 80vh, 87px); } 
+ }
+
+.youtube-play:nth-child(35) {animation: youtube-play-animation-35 60s infinite; opacity: 1; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid #f9ca24;  animation-delay: -1s;  transform: translate3d(33vw, 76vh, 10px) rotate(360deg); } 
+
+@keyframes youtube-play-animation-36 { 100% {transform: translate3d(2vw, 3vh, 29px); } 
+ }
+
+.youtube-play:nth-child(36) {animation: youtube-play-animation-36 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid pink;  animation-delay: -1.2s; transform: translate3d(13vw, -1vh, 86px) rotate(270deg); } 
+
+
+@keyframes youtube-play-animation-37 { 100% {transform: translate3d(30vw, 3vh, 14px); } 
+ }
+
+.youtube-play:nth-child(37) {animation: youtube-play-animation-37 60s infinite; opacity: 1; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid #eb4d4b;  animation-delay: -1.4s; -webkit-transform: translate3d(84vw, 82vh, 80px) rotate(180deg); transform: translate3d(34vw, 4vh, 80px) rotate(180deg); } 
+
+
+@keyframes youtube-play-animation-38 { 100% { transform: translate3d(18vw, 5vh, 49px); } 
+ }
+
+.youtube-play:nth-child(38) { animation: youtube-play-animation-38 60s infinite; opacity: 1; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #6ab04c; animation-delay: -1.6s;  transform: translate3d(18vw, 10vh, 72px) rotate(90deg); } 
+
+
+
+@keyframes youtube-play-animation-39 { 100% { transform: translate3d(25vw, 67vh, 61px); } 
+ }
+
+.youtube-play:nth-child(39) { animation: youtube-play-animation-39 60s infinite; opacity: 1; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #eb4d4b;  animation-delay: -2s; transform: translate3d(29vw, 59vh, 54px) rotate(270deg); } 
+
+
+

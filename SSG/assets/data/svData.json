@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "thumb": "./assets/images/service01.jpg",
+            "title": "가치상점",
+            "info": "지자체와 중소상공인을 돕는 가치 있는 소비의 시작"
+        },
+        {
+            "id": 2,
+            "thumb": "./assets/images/service02.jpg",
+            "title": "Higher Standard of Living",
+            "info": "신세계 리빙 셀렉샵"
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/service03.jpg",
+            "title": "오늘 뭐 먹지?",
+            "info": "즐겁고 맛있는 고민"
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/service04.jpg",
+            "title": "Cafe at HOME",
+            "info": "누구나 방구석 한 켠에 카페가 있다"
+        }
+       
+
+    ]
+}

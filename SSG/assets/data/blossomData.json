@@ -1,0 +1,41 @@
+{
+    "items": [
+        {
+            "id": 8000,
+            "thumb": "./assets/images/blossom-product01.png",
+            "title": "풀무원",
+            "info" :"나와 지구를 위한 뿌듯한 변화, 지구식단",
+            "cate" : 1
+        },
+        {
+            "id": 8001,
+            "thumb": "./assets/images/blossom-product02.jpg",
+            "title": "랄프로렌",
+            "info": "프리미엄 라이프 스타일 랄프 로렌",
+            "cate": 2
+        },
+        {
+            "id": 8002,
+            "thumb": "./assets/images/blossom-product03.jpg",
+            "title": "다이슨",
+            "info": "혁신 기술로 일상의 문제를 해결하는 브랜드",
+            "cate": 3
+        },
+        {
+            "id": 8003,
+            "thumb": "./assets/images/blossom-product04.jpg",
+            "title": "바이오퍼블릭",
+            "info": "백화점상품부터 해외직구까지 건강 전문관",
+            "cate": 4
+        },
+        {
+            "id": 8004,
+            "thumb": "./assets/images/blossom-product05.jpg",
+            "title": "비비고",
+            "info": "Share Korean Flavor",
+            "cate": 5
+        }
+ 
+
+    ]
+}

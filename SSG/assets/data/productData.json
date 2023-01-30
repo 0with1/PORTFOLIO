@@ -1,0 +1,60 @@
+{
+    "items":[
+        {
+            "id":"00001",
+            "thumb":"./assets/images/guide-product.jpg",
+            "title":"모로칸오일(MOROCCANOIL)",
+            "price":58000,
+            "cate":2
+        },
+        {
+            "id":"00002",
+            "thumb":"./assets/images/guide-product02.jpg",
+            "title":"펜디(FENDI)",
+            "price":114300,
+            "cate":1
+        },
+        {
+            "id":"00003",
+            "thumb":"./assets/images/guide-product03.jpg",
+            "title":"발렌티노(VALENTINO)",
+            "price":305100,
+            "cate":1
+        },
+        {
+            "id":"00004",
+            "thumb":"./assets/images/guide-product04.jpg",
+            "title":"모22222로칸오일(MOROCCANOIL)",
+            "price":58000,
+            "cate":1
+        },
+        {
+            "id": "00005",
+            "thumb": "./assets/images/guide-product05.jpg",
+            "title": "모로칸오일(MOROCCANOIL)",
+            "price": 58000,
+            "cate": 1
+        },
+        {
+            "id": "00006",
+            "thumb": "./assets/images/guide-product.jpg",
+            "title": "a오일(MOROCCANOIL)",
+            "price": 58000,
+            "cate": 1
+        },
+        {
+            "id": "00007",
+            "thumb": "./assets/images/guide-product06.jpg",
+            "title": "모22222로칸오일(MOROCCANOIL)",
+            "price": 58000,
+            "cate": 1
+        },
+        {
+            "id": "00008",
+            "thumb": "./assets/images/guide-product07.jpg",
+            "title": "모22222로칸오일(MOROCCANOIL)",
+            "price": 58000,
+            "cate": 1
+        }
+    ]
+}

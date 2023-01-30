@@ -1,0 +1,63 @@
+html { cursor: none; } 
+
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); margin: -1px; } 
+
+
+
+.inner { max-width: 1280px; width: calc(100% - 20px); margin: 0 auto; } 
+.sc-visual .link-book { text-align: center; transform-origin: center; }
+.link-book .frame { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; background: #146af0; border-radius: 70px; z-index: -1; transition: 0.2s cubic-bezier(0.36, -0.09, 0.5, 1.23); } 
+.link-book:hover .frame { transform: scale(1.1, 0.9); } 
+.link-book .link-circle { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scaleX(0); transform-origin: right; /*기준점을 오른쪽에! 오른쪽을 향하여 움직이는 것 처럼*/
+ border-radius: 80px; } 
+.link-book .circle1 { z-index: 3; background: #3F83F0; transition: transform 0.3s; } 
+.link-book .circle2 { z-index: 2; background: #4C8CEF; transition: transform 0.3s 0.1s; } 
+.link-book .circle3 { z-index: 1; background: #6DA8EE; transition: transform 0.3s 0.2s; } 
+.link-book:hover .link-circle { transform: scaleX(1); /*호버 시 가로 스케일 1로 전체가 되게*/
+ transform-origin: left; /*호버 시 기준점 왼쪽/ 왼쪽에서 -> 마우스떼면 오른쪽으로 향하게*/ } 
+.link-book:hover .circle1 { z-index: 1; } 
+.link-book:hover .circle2 { z-index: 2; } 
+.link-book:hover .circle3 { z-index: 3; } 
+
+
+
+.sc-visual h2,
+.sc-success h2,
+.sc-comm h2,
+.sc-comm .comm-item .title-area,
+.sc-hori-why .group-why h2,
+.sc-dont h2,
+.sc-meetings .inner .title-area h2 {
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+.sc-comm h2 .deco,
+.sc-comm .steps-item .title-area .deco,
+.sc-comm .steps-item .title-area .deco2,
+.sc-busi h2 .deco,
+.sc-meetings .deco,
+.sc-hori-why .deco
+ {
+ position: relative; z-index: 1; color: #000; } 
+
+.sc-comm h2 .deco:before,
+.sc-comm .steps-item .title-area .deco:before,
+.sc-busi h2 .deco:before,
+.sc-meetings .deco:before,
+.sc-hori-why .deco::before
+ {
+ content: ""; display: block; position: absolute; top: 0.2rem; left: -0.5rem; right: -0.7rem; bottom: 0.07rem; z-index: -1; background: #fff; border-radius: 0.8em; background: #c5e4ff; } 
+
+.sc-comm .comm-item .title-area .deco2:before
+ {
+ content: ""; display: block; position: absolute; top: 0.2em; left: -0.1em; right: -0.2em; bottom: 0.07em; z-index: -1; background: #fff; border-radius: 0.8em; background: #ccbaff; } 

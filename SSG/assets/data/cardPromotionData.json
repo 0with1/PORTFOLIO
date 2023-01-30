@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "id": 2000,
+            "cost": "~8만",
+            "sale": "",
+            "brandIco": "./assets/images/promotion-ssg.png",
+            "brandName": "SSG.COM카드",
+            "brandInfo01": "첫결제/",
+            "brandInfo02": "즉시할인",
+            "brand":"ssg"
+        },
+        {
+            "id": 2001,
+            "cost": "",
+            "sale": "15%",
+            "brandIco": "./assets/images/promotion-samsung.png",
+            "brandName": "SSG.COM 삼성카드",
+            "brandInfo01": "SSG머니",
+            "brandInfo02": "적립 외",
+            "brand": "samsung"
+        }
+
+    ]
+}

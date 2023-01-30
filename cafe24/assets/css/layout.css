@@ -1,0 +1,46 @@
+@import './reset.css'; @import './common.css'; @import './font.css';body.black .header .login { color: #fff; } 
+body.black .header h1 svg path { fill: #fff; } 
+/*header*/
+.header { display: flex; justify-content: space-around; align-items: center; padding: 60px 40px; position: fixed; width: 100%; z-index: 10; } 
+.header .group-logo { flex:0.5; } 
+.header .group-logo h1 { width: 150px; height: 38px; } 
+/* .header .group-logo h1 a { display: block; background:url(../images/logo_155x28.svg) center/155px 28px no-repeat; width: 155%; height: 28px; } */
+.header .gnb { flex:1; text-align: center; } 
+.header .nav-list { display: inline-flex; padding: 0 15px; background: #fff; border-radius: 70px; box-shadow: 2px 3px 64px 0px rgb(0 0 0 / 10%); overflow: hidden; } 
+.header .nav-item { padding: 19px 23px; font-size: 20px; font-weight: 500; color:#000; } 
+.header .nav-item:hover a { color: #146af0; } 
+.header .group-service { flex:0.5; text-align: right; white-space: nowrap;} 
+.header .group-service a { display: inline-block; padding: 19px 23px; font-size: 20px; font-weight: 500; } 
+.header .group-service a.login:hover { color: #146af0; } 
+.header .group-service .link-book { color: #fff; border-radius: 50px; position: relative; } 
+
+
+/*footer*/
+.footer { height: 50vh; background: #000; color:#fff; display: flex; justify-content: center; align-items: center; }
+.footer .inner{width: calc(100% - 120px);} 
+.footer .group-flex { display: flex; justify-content: center; } 
+.footer .group-flex .logo-area { flex:1; } 
+.footer .group-flex .logo-area h2 a { display: block; background: url(../images/footer-logo_135x24.svg) center/135px 24px no-repeat; width: 135px; height: 28px; } 
+.footer .group-flex .logo-area p { font-size: 36px; font-weight: 600; margin-top: 30px; line-height: 1.2; letter-spacing: -0.04em; } 
+.footer .group-flex .nav-list { flex:1; display: flex; flex-wrap: wrap; padding-top: 100px; } 
+.footer .group-flex .nav-item { width: calc(100% / 2); padding: 12px 0; font-size: 24px; display: block; font-weight: 500; line-height: 115%; letter-spacing: -.02em; text-decoration: none; } 
+.footer .group-policy { margin-top: 53px; display: flex; gap:15px } 
+.footer .group-policy a { color:grey; font-size: 18px; font-weight: 500; line-height: 100%; letter-spacing: -.02em; text-decoration: none; } 
+.footer .group-policy a.mail { color:#fff; } 
+
+
+@media screen and (max-width:1024px){
+.header {padding: 30px 40px;}
+ .header .gnb { display: none; } 
+ .header .group-service {display: none;}
+ .header .group-logo {flex:unset;}
+ .footer .group-flex {flex-direction: column;}
+ .footer .group-flex .nav-list {padding-top: 50px;}
+ .footer .group-policy {flex-direction: column;}
+}
+
+@media screen and (max-width:480px) {
+  .footer .inner { width: calc(100% - 60px);}
+.footer .group-flex .logo-area p,.footer .group-flex .nav-item {font-size: 20px;}
+.footer .group-flex .nav-list {padding-top: 15px;}
+}
