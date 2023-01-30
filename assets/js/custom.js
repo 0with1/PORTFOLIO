@@ -217,3 +217,9 @@ revealText02.each((idx, el) => {
 
 
 
+$(document).ready(function ($) {
+  $(".btn-contact").click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 5000);
+  });
+});
