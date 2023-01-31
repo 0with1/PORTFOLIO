@@ -1,5 +1,5 @@
 
-@keyframes rotate {
+  @keyframes rotate {
     0% {
       transform: rotateY(360deg);
     }
@@ -10,12 +10,22 @@
   }
   
 
-   @keyframes slider2023 {
+  @keyframes slider2023 {
     0% {
       margin-left: 0%
     }
   
     100% {
       transform: translateX(-100%);
+    }
+  }
+
+  @keyframes clickView {
+    0% {
+      margin-left: 0%
+    }
+
+    100% {
+      transform: translateX(-4800px);
     }
   }

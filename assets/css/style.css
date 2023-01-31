@@ -291,6 +291,24 @@ body.black .sc-works .slider {
             transform: translateX(-100%);
   }
 }
+@-webkit-keyframes clickView {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(-4800px);
+            transform: translateX(-4800px);
+  }
+}
+@keyframes clickView {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(-4800px);
+            transform: translateX(-4800px);
+  }
+}
 .header {
   position: fixed;
   width: 100%;
@@ -929,25 +947,6 @@ main {
   padding: 5px 0px;
 }
 
-@-webkit-keyframes clickView {
-  0% {
-    margin-left: 0%;
-  }
-  100% {
-    -webkit-transform: translateX(-4800px);
-            transform: translateX(-4800px);
-  }
-}
-
-@keyframes clickView {
-  0% {
-    margin-left: 0%;
-  }
-  100% {
-    -webkit-transform: translateX(-4800px);
-            transform: translateX(-4800px);
-  }
-}
 .sc-about {
   width: 100%;
   position: relative;
