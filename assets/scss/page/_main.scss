@@ -146,8 +146,8 @@ main {
 .sc-works {
   padding-bottom: 120px;
   text-align: center;
-
-  .slider {
+ 
+  .inner + .slider {
     display: inline-flex;
     width: 13vw;
     overflow: hidden;

@@ -641,7 +641,7 @@ main {
   padding-bottom: 120px;
   text-align: center;
 }
-.sc-works .slider {
+.sc-works .inner + .slider {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -654,7 +654,7 @@ main {
   margin-top: 150px;
 }
 @media (max-width: 1024px) {
-  .sc-works .slider {
+  .sc-works .inner + .slider {
     position: relative;
     right: 0;
     top: 0;
@@ -662,7 +662,7 @@ main {
     width: 250px;
   }
 }
-.sc-works .slider .slider-list {
+.sc-works .inner + .slider .slider-list {
   -webkit-animation: slider2023 20s infinite linear;
           animation: slider2023 20s infinite linear;
   display: -webkit-box;
@@ -670,7 +670,7 @@ main {
   display: flex;
   padding: 10px 0;
 }
-.sc-works .slider .slider-list sub {
+.sc-works .inner + .slider .slider-list sub {
   padding: 0 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
