@@ -1,42 +1,34 @@
 $(function () {
 
-  
 
 
 
-  setTimeout(() => {
-    $('.load').addClass('hide')
-  }, 1000);
+
+  // setTimeout(() => {
+  //   $('.load').addClass('hide')
+  // }, 1000);
 
 
-
- //반복문 관련 ......
   $(".bg-change01").mouseover(function () {
-
-    //$(".sc-about").css('background-image', 'url(../images/coding.jpg)');
     $("body").addClass('coding');
   });
 
   $(".bg-change01").mouseout(function () {
     $("body").removeClass('coding');
-
   });
 
 
 
   $(".bg-change02").mouseover(function () {
-
-    //$(".sc-about").css('background', 'url(../../images/seoul.jpg)');
     $("body").addClass('seoul');
   });
 
   $(".bg-change02").mouseout(function () {
     $("body").removeClass('seoul');
-
   });
 
 
-  
+
   $(".rotate-img").mouseover(function () {
     $(this).addClass("rotate");
     setTimeout(() => {
@@ -110,86 +102,72 @@ $(function () {
 
 
 
-
+  $(document).ready(function ($) {
+    $(".btn-contact").click(function (e) {
+      e.preventDefault();
+      $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 5000);
+    });
+  });
 
 });
 
 
 /**
- * @영역도달시배경체인지
- * 
- * @a
- * @b
- */
+* all
+* 구간 배경색 변경.
+*/
 $('[data-background]').each(function (a, b) {
   console.log(b);
 
-    ScrollTrigger.create({
-        trigger:b,
-        start:"-30% 0%",
-        end:"100% 0%",
-        //markers:true,
-        // toggleClass:"active"
-        toggleClass: {targets: "body", className: "black"}
-    })
-})
-
-
-
-gsap.from('.sc-about .about-txt span',{
-    scrollTrigger: {
-      trigger: ".sc-about",
-      start: "0% 50%",
-      end: "100% 0%",
-      // markers: true,
-      // scrub: 0,
-    },
-    opacity:0,
-    stagger:{
-      from:'random',
-      amount:1,
-    }
-})
-
-
-
-$('.sc-about .change-bg').hover(function(){
-  target = $(this).data('target');
-  $('.sc-about .bg').addClass('show');
-  $('.sc-about .bg').find(target).addClass('show').siblings().removeClass('show')
-},function(){
-  $('.sc-about .bg').removeClass('show');
-  $('.sc-about .bg img').removeClass('show')
+  ScrollTrigger.create({
+    trigger: b,
+    start: "-30% 0%",
+    end: "100% 0%",
+    //markers:true,
+    // toggleClass:"active"
+    toggleClass: { targets: "body", className: "black" }
+  })
 })
 
 
 /**
-   * 
-   * @텍스트드러나는동작
-   * 
-  */
-
-
-/*
-$('[data-motion=text]').each(function (idx, el) {
-
-  child = $(this).find('span')
-  startData = ($(this).data('start')) ? $(this).data('start') : '70%';
-  endData = $(this).data('end');
-  scData = $(this).parent('section').data('sc');
-
-  gsap.from(child, {
-    yPercent: 100,
-    duration: 1,
-    scrollTrigger: {
-      trigger: '.sc-visual',
-      start: 'top center',
-      toggleActions: 'restart none restart restart',
-    },
-  });
-})
+* all
+* 랜덤으로 텍스트 나타남
 */
+gsap.from('.sc-about .about-txt span', {
+  scrollTrigger: {
+    trigger: ".sc-about",
+    start: "0% 50%",
+    end: "100% 0%",
+    // markers: true,
+    // scrub: 0,
+  },
+  opacity: 0,
+  stagger: {
+    from: 'random',
+    amount: 1,
+  }
+})
 
+
+/**
+* all
+* 호버시 이미지 등장
+*/
+// $('.sc-about .change-bg').hover(function () {
+//   target = $(this).data('target');
+//   $('.sc-about .bg').addClass('show');
+//   $('.sc-about .bg').find(target).addClass('show').siblings().removeClass('show')
+// }, function () {
+//   $('.sc-about .bg').removeClass('show');
+//   $('.sc-about .bg img').removeClass('show')
+// })
+
+
+/**
+* all
+* 비주얼 텍스트 아래에서 위로 드러남
+*/
 const revealText = $('.sc-visual .visual-txt > span');
 revealText.each((idx, el) => {
   gsap.from(el, {
@@ -203,6 +181,10 @@ revealText.each((idx, el) => {
   });
 });
 
+/**
+* all
+* 푸터 텍스트 아래에서 위로 드러남
+*/
 const revealText02 = $('.footer h2 a');
 revealText02.each((idx, el) => {
   gsap.from(el, {
@@ -215,11 +197,3 @@ revealText02.each((idx, el) => {
   });
 });
 
-
-
-$(document).ready(function ($) {
-  $(".btn-contact").click(function (e) {
-    e.preventDefault();
-    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 5000);
-  });
-});

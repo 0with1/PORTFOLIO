@@ -146,8 +146,8 @@ main {
 .sc-works {
   padding-bottom: 120px;
   text-align: center;
- 
-  .inner + .slider {
+
+  .inner+.slider {
     display: inline-flex;
     width: 13vw;
     overflow: hidden;
@@ -293,6 +293,10 @@ main {
         top: 0;
         transition: opacity .6s ease-out;
         width: 100%;
+
+        @include desktop {
+          display: none;
+        }
       }
 
       .slider {
@@ -304,9 +308,11 @@ main {
         opacity: 0;
         transition: opacity .5s ease-out;
         z-index: 2;
-
+        @include desktop {
+            display: none;
+          }
         ul {
-          width: 4800px;
+          width: 250vw;
           display: flex;
           padding: 30px 0;
 
@@ -317,7 +323,7 @@ main {
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-size: 70px;
+            font-size: 4.375vw;
             font-weight: 300;
           }
 
@@ -359,6 +365,7 @@ main {
     }
 
     &.black-screen {
+
       .works-thumb-wrap {
         &::after {
           opacity: 1;
@@ -475,8 +482,6 @@ main {
         height: 34px;
         margin-right: 40px;
         top: 21px;
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
         flex: 1;
       }
     }

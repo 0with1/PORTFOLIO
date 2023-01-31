@@ -69,7 +69,7 @@ gsap.to('.sc-hori-bmm', {
  * 
  * */
 $(function () {
-  ////////////// matchMedia
+ // GSAP matchMedia
   gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.matchMedia({
 
