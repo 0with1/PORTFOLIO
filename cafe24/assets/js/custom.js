@@ -289,7 +289,7 @@ $(function () {
           scrub: 0,
         },
         scale: 0.97,
-        yPercent: -30 /*481 ~ 1024 수정사항*/
+        yPercent: -50 /*481 ~ 1024 수정사항*/
       })
 
 
@@ -311,7 +311,7 @@ $(function () {
           scrub: 0,
         },
         ease: 'none',
-        yPercent: 40 /*481 ~ 1024 수정사항*/
+        yPercent: 50 /*481 ~ 1024 수정사항*/
       })
 
 
