@@ -324,7 +324,7 @@ body { overflow-y: scroll !important; position: relative !important; }
 
 
  @media (max-width:480px){
- .sc-visual { min-height: unset; padding-top: 150px; } 
+ .sc-visual { min-height: unset; padding: 150px 0; } 
  .sc-busi .busi-item { width: 100%; } 
 
  .sc-visual h2,
