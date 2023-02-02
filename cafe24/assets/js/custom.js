@@ -231,7 +231,7 @@ $(function () {
 
       circle
         .addLabel('a')
-        .to('.sc-visual .video-area .circle', { scale: 11 }, 'a') /*1024 수정사항*/
+        .to('.sc-visual .video-area .circle', { scale: 6.7 }, 'a') /*1024 수정사항*/
         .to('.group-bmm', 0, { background: '#6FAAF0', }, 'a')
 
 
