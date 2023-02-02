@@ -223,7 +223,6 @@ $(function () {
         scrollTrigger: {
           trigger: ".sc-visual .video-area",
           start: "top 60%", /*1024 수정사항*/
-          end: "bottom 0%",
           scrub: 1,
           //markers: true,
         },
@@ -232,7 +231,7 @@ $(function () {
       circle
         .addLabel('a')
         .to('.sc-visual .video-area .circle', { scale: 6.7 }, 'a') /*1024 수정사항*/
-        .to('.group-bmm', 0, { background: '#6FAAF0', }, 'a')
+        .fromTo('.group-bmm', 0, { background: 'unset', }, { background: '#6FAAF0', }, 'a')
 
 
       /**
