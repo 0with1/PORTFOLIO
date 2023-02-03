@@ -348,6 +348,7 @@ body.black .sc-works .slider {
 }
 .header .inner .btn-contact {
   font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .header .inner .btn-contact {
