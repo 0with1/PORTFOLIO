@@ -1,4 +1,11 @@
 
+function toggle() {
+  var mgnb = document.getElementById('group-mgnb');
+  var body = document.body;
+  mgnb.classList.toggle('active');
+  body.classList.toggle('active');
+}
+
 
 
 
@@ -594,5 +601,4 @@ function eyeball() {
     ring.style.transform = "rotate(" + rotation + "deg)"
   });
 }
-
 

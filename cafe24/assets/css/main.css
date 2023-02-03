@@ -1,6 +1,6 @@
 
 body { overflow-y: scroll !important; position: relative !important; } 
-
+body::-webkit-scrollbar{display: none;}
 
 
 .sc-visual { overflow: hidden; text-align: center; min-height: 180vh; display: flex; flex-direction: column; justify-content: center; align-items: center; } 
