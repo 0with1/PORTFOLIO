@@ -172,7 +172,7 @@ $(function () {
       * 스크롤 시 전체가 작아짐
       */
       gsap.set('.group-dont', {
-        yPercent: -7,
+        yPercent: -10,
       })
       gsap.to('.group-dont', {
         scrollTrigger: {
