@@ -340,8 +340,18 @@ body.black .sc-works .slider {
 .header .inner .btn-menu {
   font-size: 16px;
 }
+@media (max-width: 1024px) {
+  .header .inner .btn-menu {
+    font-size: 4vw;
+  }
+}
 .header .inner .btn-contact {
   font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .header .inner .btn-contact {
+    font-size: 4vw;
+  }
 }
 .header .inner .logo a {
   font-weight: 600;

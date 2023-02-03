@@ -12,12 +12,29 @@
     padding: 50px 0;
     align-items: center;
     width: calc(100% - 30px);
+
     @include desktop {
       padding: 20px 0;
       width: calc(100% - 30px);
     }
-    .btn-menu{font-size: 16px;}
-    .btn-contact{font-size: 16px;}
+
+    .btn-menu {
+      font-size: 16px;
+
+      @include desktop {
+        font-size: 4vw;
+      }
+    }
+
+    .btn-contact {
+      font-size: 16px;
+
+      @include desktop {
+        font-size: 4vw;
+      }
+
+    }
+
     .logo {
       a {
         font-weight: 600;
@@ -41,9 +58,10 @@
       .logo {
         a {
           font-size: 2vw;
+
           @include mobile {
-              font-size: 4vw;
-            }
+            font-size: 4vw;
+          }
         }
       }
     }
