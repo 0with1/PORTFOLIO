@@ -242,7 +242,9 @@ main {
       padding-top: 60px;
       padding-bottom: 20px;
       transition: background 0.3s;
-
+      @include mobile {
+          padding-top: 40px;
+        }
       .black & {
         background: rgb(40, 40, 41);
       }
