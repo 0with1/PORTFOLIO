@@ -340,7 +340,7 @@ body.black .sc-works .slider {
 .header .inner .btn-menu {
   font-size: 16px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .header .inner .btn-menu {
     font-size: 4vw;
   }
@@ -348,7 +348,7 @@ body.black .sc-works .slider {
 .header .inner .btn-contact {
   font-size: 16px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .header .inner .btn-contact {
     font-size: 4vw;
   }
