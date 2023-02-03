@@ -61,6 +61,10 @@ main {
 
         &.word {
           margin-left: 20px;
+
+          @include desktop {
+            margin-left: 5px;
+          }
         }
       }
 
@@ -308,9 +312,11 @@ main {
         opacity: 0;
         transition: opacity .5s ease-out;
         z-index: 2;
+
         @include desktop {
-            display: none;
-          }
+          display: none;
+        }
+
         ul {
           width: 250vw;
           display: flex;

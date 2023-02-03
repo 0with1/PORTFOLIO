@@ -343,7 +343,7 @@ body.black .sc-works .slider {
 }
 @media (max-width: 767px) {
   .header .inner .btn-menu {
-    font-size: 4vw;
+    font-size: 12px;
   }
 }
 .header .inner .btn-contact {
@@ -351,7 +351,7 @@ body.black .sc-works .slider {
 }
 @media (max-width: 767px) {
   .header .inner .btn-contact {
-    font-size: 4vw;
+    font-size: 12px;
   }
 }
 .header .inner .logo {
@@ -598,6 +598,11 @@ main {
 }
 .sc-visual .inner .visual-txt span.word {
   margin-left: 20px;
+}
+@media (max-width: 1024px) {
+  .sc-visual .inner .visual-txt span.word {
+    margin-left: 5px;
+  }
 }
 .sc-visual .inner .visual-txt .point-color {
   color: var(--color1);
