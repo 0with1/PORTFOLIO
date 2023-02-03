@@ -330,6 +330,7 @@ body.black .sc-works .slider {
       -ms-flex-align: center;
           align-items: center;
   width: calc(100% - 30px);
+  position: relative;
 }
 @media (max-width: 1024px) {
   .header .inner {
@@ -352,6 +353,13 @@ body.black .sc-works .slider {
   .header .inner .btn-contact {
     font-size: 4vw;
   }
+}
+.header .inner .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .header .inner .logo a {
   font-weight: 600;
