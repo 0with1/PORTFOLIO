@@ -16,11 +16,13 @@
       padding: 20px 0;
       width: calc(100% - 30px);
     }
-
+    .btn-menu{font-size: 16px;}
+    .btn-contact{font-size: 16px;}
     .logo {
       a {
         font-weight: 600;
         font-size: clamp(30px, 4vw, 50px);
+        display: block;
       }
 
     }

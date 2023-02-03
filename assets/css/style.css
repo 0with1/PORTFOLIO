@@ -337,9 +337,16 @@ body.black .sc-works .slider {
     width: calc(100% - 30px);
   }
 }
+.header .inner .btn-menu {
+  font-size: 16px;
+}
+.header .inner .btn-contact {
+  font-size: 16px;
+}
 .header .inner .logo a {
   font-weight: 600;
   font-size: clamp(30px, 4vw, 50px);
+  display: block;
 }
 .header.on {
   background: #fff;
