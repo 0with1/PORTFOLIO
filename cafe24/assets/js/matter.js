@@ -182,11 +182,11 @@ function resize() {
   if (two.width < 480) {
     size = two.width * 0.12;
   } else if (two.width > 1080 && two.width < 1600) {
-    size = two.width * 0.07;
+    size = two.width * 0.06;
   } else if (two.width > 1600) {
     size = two.width * 0.04;
   } else {
-    size = two.width * 0.07;
+    size = two.width * 0.08;
   }
 
   var leading = size * 0.8;
