@@ -229,10 +229,10 @@ $(function () {
       circle = gsap.timeline({
         scrollTrigger: {
           trigger: ".sc-visual .video-area",
-          start: "top 60%", /*1024 수정사항*/
+          start: "top 55%", /*1024 수정사항*/
           end: "bottom 0%",
           scrub: 1,
-          //markers: true,
+          markers: true,
         },
       });
 
@@ -559,7 +559,7 @@ $(function () {
  */
 var swiper = new Swiper(".review-slide", {
   slidesPerView: 1.5,
-  spaceBetween: 30,
+  spaceBetween: 15,
   centeredSlides: true,
   loop: true,
   loopFillGroupWithBlank: true,
