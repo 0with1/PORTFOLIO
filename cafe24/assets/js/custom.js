@@ -230,7 +230,7 @@ $(function () {
         scrollTrigger: {
           trigger: ".sc-visual .video-area",
           start: "top 55%", /*1024 수정사항*/
-          end: "bottom 0%",
+          end: "bottom 55%",
           scrub: 1,
           markers: true,
         },
