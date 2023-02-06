@@ -1,0 +1,52 @@
+/*반응형 화면 크기*/
+$mini02: 374px; //374
+$mini: 480px; //480
+$mobile: 734px; //734 최소 320을 보고 작업
+$tablet: 833px; // 833
+$desktop02: 1024px; //1024  최소 735를 보고 작업
+$desktop: 1068px; //1068  최소 735를 보고 작업
+
+
+/*반응형 화면 크기*/
+
+/*반응형, 브라우저 크기가 374px 까지*/
+@mixin mini02 {
+  @media (max-width: $mini02) {
+    @content;
+  }
+}
+
+
+/*반응형, 브라우저 크기가 480px 까지*/
+@mixin mini{
+  @media (max-width: $mini) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 734px 까지*/
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 833px 까지*/
+@mixin tablet{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 까지*/
+@mixin desktop02 {
+  @media (max-width: $desktop02) {
+    @content;
+  }
+}
+/*반응형, 브라우저 크기가 1068px 까지*/
+@mixin desktop{
+  @media (max-width: $desktop){
+    @content;
+  }
+}

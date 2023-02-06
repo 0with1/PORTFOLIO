@@ -1,0 +1,2240 @@
+//이미지 리셋값 max-width:100%가 없어야함.
+
+
+.sc-fallin {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  align-items: center;
+  height: 88vh;
+
+  @include desktop {
+    height: unset;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+
+
+  //flex로 나눈 다음,
+  //중앙으로 모아주기 위해서
+  //img-wrap 오른쪽으로 강제로 당겨주고, width값은 디자인 시안 상 조절한듯.
+  //txt-wrap은 transform으로 살짝 조정.
+  .group-fallin {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .img-wrap {
+    height: auto;
+    max-width: 833px;
+    min-width: 583px;
+    width: 72vh;
+    margin-right: -193px;
+
+    @include mobile {
+      align-items: center;
+      height: max(355px, min(100vh, 786px));
+    }
+  }
+
+  .txt-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 313px;
+    position: relative;
+    transform: translateX(9px);
+
+    @include mobile {
+      margin-left: 0px;
+      margin-right: 0px;
+      transform: translateX(0px);
+      margin-top: 29px;
+
+    }
+  }
+
+  .ipad-icon {
+    width: 62px;
+    height: 27px;
+    margin-bottom: 11px;
+  }
+
+  .main-txt {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 600;
+
+    @include desktop {
+      font-size: 48px;
+    }
+
+  }
+
+  .sub-txt {
+    margin: 31px 0;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: .0075em;
+  }
+}
+
+.sc-withyou {
+  position: relative;
+  height: 340vh;
+
+  @include desktop{
+    height: auto;
+  }
+  @include mobile {
+    margin-top: 38px;
+  }
+
+
+
+  .sticky-shape {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+
+
+    @include desktop {
+      display: none;
+    }
+
+    figure {
+      width: 100%;
+      left: 0;
+    }
+
+    .shape-top {
+      background: url(../images/withyou-top.svg) no-repeat;
+      height: 42.5vw;
+      top: 0;
+    }
+
+    .shape-bottom {
+      background: url(../images/withyou-bottom.svg) no-repeat;
+      height: 36vw;
+      margin-bottom: -1vh;
+    }
+  }
+
+  .sticky-video {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    @include desktop {
+      display: none;
+    }
+
+    video {}
+
+  }
+
+  .autoplay {
+
+    position: sticky;
+    z-index: 4;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity .3s;
+    pointer-events: none;
+    width: 34px;
+    height: 34px;
+
+        @include desktop {
+          display: none;
+        }
+
+    .btn-autoplay {
+      display: block;
+      width: 34px;
+      height: 34px;
+      background: url(../images/withyou-pause-icon_34x34.svg) center/34px 34px no-repeat;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      opacity: 0;
+    }
+
+    &.fixed {
+      position: fixed;
+      opacity: 1;
+      cursor: pointer;
+      pointer-events: initial;
+      right: 20px;
+      bottom: 20px;
+
+      .btn-autoplay {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+
+    &.settled {
+      position: unset;
+      opacity: 1;
+      pointer-events: initial;
+
+      .btn-autoplay {
+        opacity: 1;
+        z-index: 10;
+      }
+    }
+
+    .btn-autoplay {
+      &.active {
+        background: url(../images/withyou-play-icon_34x34.svg) center/34px 34px no-repeat;
+      }
+
+    }
+
+
+  }
+
+  .txt-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+    gap: 200px;
+    &.video-txt-wrap{
+      display: none;
+    }
+  }
+
+  .main-txt {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+
+  .group-img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    margin-top: 60px;
+
+    @include desktop {
+      font-size: 40px;
+      line-height: 1.775;
+      font-weight: 700;
+    }
+
+    @include mobile {
+      font-size: 32px;
+
+      span {
+        display: block;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .img-wrap {
+
+    .txt-wrap {
+      gap: 0px;
+      color: #000;
+      top: 25%;
+
+      @include mobile {
+        left: 0%;
+        top: 19%;
+        transform: translateX(0%);
+        gap: 26px;
+      }
+
+      .main-txt {
+        font-size: 64px;
+
+        @include desktop {
+          font-size: 40px;
+          line-height: 1.775;
+          font-weight: 700;
+        }
+
+        @include mobile {
+          font-size: 32px;
+
+          span {
+            display: block;
+            text-align: center;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  &.change-image {
+    height: auto;
+
+    .sticky-shape {
+      display: none
+    }
+
+    .sticky-video {
+      display: none;
+    }
+
+    .video-txt-wrap {
+      display: none;
+    }
+
+    .autoplay{
+      display: none;
+    }
+  }
+
+}
+
+
+.sc-newdesign {
+  margin-top: 181px;
+  margin-bottom: 231px;
+
+  @include desktop {
+    margin-bottom: 186px;
+  }
+
+  @include mobile {
+    margin-bottom: 141px;
+
+    .newdesign01-img {
+      transform: translateX(37px);
+    }
+  }
+
+  .headline {
+    &+p {
+      max-width: 57%;
+
+      /*  @include desktop {
+          max-width: 83%;
+        } */
+
+
+    }
+  }
+
+  .group-newdesign01 {
+    margin-top: 51px;
+    margin-bottom: 27px;
+
+    @include mobile {
+      margin-top: 113px;
+      margin-bottom: 0px;
+    }
+
+    .img-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+
+      .newdesign01-txt-img01 {
+        width: 95px;
+        height: 115px;
+        display: block;
+        transform: translate(29px, 373px);
+        position: absolute;
+        top: -4px;
+        left: 2px;
+
+        @include desktop {
+          left: 11px;
+          top: -10px;
+          transform: translate(6px, 235px);
+        }
+
+        @include mobile {
+          transform: translate(-124px, -34px);
+          left: 52%;
+          top: -4px;
+        }
+      }
+
+      .newdesign01-txt-img02 {
+        width: 85px;
+        height: 50px;
+        display: block;
+        transform: translate(769px, 912px);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include desktop {
+          transform: translate(535px, 625px);
+        }
+
+        @include mobile {
+          transform: translate(-151px, 84px);
+          left: 50%;
+        }
+      }
+    }
+
+    /*중요 이미지가 계속 중앙으로 가려면*/
+  }
+
+  //img-wrap은 flex: 1 0 auto; max-width: calc(100% - 326px);로 두고
+  //내부 이미지 자체를 왼쪽으로 강제 이동.
+  //txt-wrap은 980 - 654  max-width: 326px;
+  .group-newdesign02 {
+    display: flex;
+    margin-bottom: 212px;
+
+    @include desktop {
+      margin-bottom: 107px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .img-wrap {
+      flex: 1 0 auto;
+      max-width: calc(100% - 326px);
+
+      @include desktop {
+        max-width: 59%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+
+      .newdesign02-img01 {
+        transform: translateX(-60px);
+
+        @include desktop {
+          transform: translateX(-137px);
+        }
+
+        @include mobile {
+          transform: translateX(-84px);
+        }
+      }
+    }
+
+    .txt-wrap {
+      margin-top: 30px;
+      max-width: 326px;
+
+      @include desktop {
+        max-width: 41%;
+        margin-top: -3px;
+      }
+
+      @include mobile {
+        margin-top: 14px;
+      }
+
+      .img-wrap02 {
+        position: relative;
+
+        .newdesign02-img02 {
+          width: 382px;
+          transform: translate(7px);
+
+          @include mobile {
+            display: flex;
+            justify-content: center;
+            width: unset;
+            transform: translate(0px);
+          }
+        }
+
+        .newdesign02-txt-img02 {
+          transform: translate(31px, 283px);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+
+          @include desktop {
+            transform: translate(7px, 217px);
+          }
+
+          @include mobile {
+            transform: translate(-140px, 283px);
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    .video02 {
+      transform: translateX(-60px);
+    }
+
+    .painting01 {
+      transform: translate(7px);
+    }
+
+    .exp-txt {
+      display: block;
+      max-width: 326px;
+      margin-bottom: 34px;
+
+      @include mobile {
+        max-width: 100%;
+        margin-bottom: 51px;
+      }
+    }
+
+    .painting-img {
+      display: block;
+      max-width: 382px;
+      width: 100%;
+    }
+
+
+  }
+
+
+  //txt-wrap가 max-width: 245px;
+  //img-wrap은 max-width: calc(92% - 245px);로 두고
+  //사이 간격 8%.
+
+  .group-newdesign03 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+
+    @include desktop {
+      flex-direction: row-reverse;
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 56px;
+    }
+
+    .txt-wrap {
+      max-width: 245px;
+      margin-top: 130px;
+
+      @include desktop {
+        max-width: 41%;
+        margin-top: 87px;
+        margin-left: 8%;
+      }
+
+      @include mobile {
+        max-width: unset;
+        margin-top: 0;
+        margin-bottom: 106px;
+        margin-left: 0;
+      }
+    }
+
+    .img-wrap {
+      max-width: calc(92% - 245px);
+      position: relative;
+
+      @include desktop {
+        max-width: 51%;
+        margin-left: 0;
+        margin-bottom: 55px;
+      }
+
+      @include mobile {
+        margin-bottom: 0;
+      }
+
+      .newdesign03-txt-img01 {
+        width: 110px;
+        height: 50px;
+        display: block;
+        transform: translate(517px, 574px);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        @include desktop {
+          transform: translate(206px, 399px);
+        }
+
+        @include mobile {
+          transform: translate(-2px, -53px);
+          left: 50%;
+        }
+      }
+    }
+
+    //flex로 이미지 조절
+    //1px로 살짝 주어짐
+    @include desktop {
+      .newdesign03-img02 {
+        display: flex;
+        justify-content: flex-end;
+        transform: translate(1px);
+
+        @include mobile {
+          transform: translateX(-50px);
+        }
+      }
+
+      .exp-txt {
+        word-break: normal;
+      }
+
+    }
+  }
+
+  .group-newdesign04 {
+    .img-wrap {
+      max-width: 778px;
+      width: 100%;
+
+      @include desktop {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+  }
+}
+
+
+.sc-rapidly {
+  margin-bottom: 500px;
+
+  @include desktop {
+    margin-bottom: 186px;
+  }
+
+  @include mobile {
+    margin-bottom: 140px;
+  }
+
+  .headline {
+    /* @include desktop {
+      margin-left: 8%;
+    } */
+
+    &+p {
+      max-width: 58%;
+
+
+      /*  @include desktop {
+        max-width: 83%;
+        margin-left: 8%;
+      } */
+    }
+  }
+
+  //전체가 왼쪽으로 이동되어있음.
+  // img-wrap을 91px만큼 왼쪽으로 이동
+  .group-rapidly01 {
+    margin-top: 102px;
+
+    @include desktop {
+      margin-top: 66px;
+    }
+
+    .img-wrap {
+      transform: translate(-91px);
+
+      .rapidly01-txt-img01 {
+        transform: translate(797px, 260px);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include desktop {
+          transform: translate(555px, 181px);
+        }
+
+        @include mobile {
+          left: 50%;
+          transform: translate(85px, -52px);
+        }
+      }
+    }
+  }
+
+
+  //Grid를 이용해서 1:1 비율로 나누어 놓음.
+  //grid-template-columns: repeat(2, 1fr);
+  //첫번째 이미지는 한줄을 다 차지하게 grid-column: 1 / -1;
+  //두번째 세번째 이미지는 공간 비율을 위해 position:absolute로 해서 이미지 크기 무시하며 조정해야함. 
+  .group-rapidly02 {
+    margin-top: 97px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include desktop {
+      margin-top: 68px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 100%);
+      margin-top: 59px;
+    }
+
+    .rapidly-img-wrap01 {
+      grid-column: 1 / -1;
+      /*한줄을 다 차지하게*/
+      margin: 0 auto;
+
+      @include desktop {
+        margin-top: 80px;
+      }
+
+      @include mobile {
+        margin: unset;
+        margin-top: 53px;
+        align-items: center;
+      }
+    }
+
+    .rapidly-txt-wrap02 {
+      max-width: 326px;
+      width: 100%;
+      transform: translateY(-20px);
+
+      @include desktop {
+        grid-row-start: 1;
+        transform: translateY(0px);
+        max-width: 83%;
+        margin-left: 8%;
+      }
+
+      @include mobile {
+        grid-row-start: 1;
+      }
+    }
+
+    .rapidly-img-wrap02 {
+      margin-top: 98px;
+      transform: translateX(-100px);
+
+      @include desktop {
+        position: relative;
+        transform: translateX(0px);
+        margin-left: 25%;
+      }
+
+      @include mobile {
+        margin-top: 54px;
+      }
+
+      .rapidly02-img02 {
+        position: absolute;
+
+        @include desktop {
+          position: relative;
+        }
+      }
+    }
+
+    .rapidly-txt-wrap03 {
+      max-width: 326px;
+      width: 100%;
+      transform: translateX(120px);
+      z-index: 1;
+      margin-top: 150px;
+
+      @include desktop {
+        grid-row-start: 3;
+        margin-top: 57px;
+        max-width: 83%;
+        transform: translateX(0px);
+        margin-left: 8%;
+      }
+
+      @include mobile {
+        margin-top: 52px;
+        grid-row-start: 3;
+      }
+    }
+
+    .rapidly02-img03 {
+      position: absolute;
+      /*absolute를 해서 옆으로 움직여야*/
+      transform: translate(-80px, 250px);
+
+      @include desktop {
+        position: relative;
+        transform: translate(0px, 0px);
+        margin-left: 25%;
+        margin-top: 74px;
+      }
+
+      @include mobile {
+        margin-left: 0;
+        transform: translateX(20px);
+        margin-top: 38px;
+      }
+    }
+
+    /*한줄을 다 차지하게*/
+  }
+}
+
+
+
+.sc-creative {
+  margin-bottom: 227px;
+
+  @include desktop {
+    margin-bottom: 186px;
+  }
+
+  @include mobile {
+    padding-bottom: 64px;
+    margin-bottom: 89px;
+  }
+
+  .headline {
+    &+p {
+      max-width: 571px;
+      width: 100%;
+    }
+  }
+
+  .group-creative01 {
+    margin-top: 100px;
+
+    @include desktop {
+      margin-top: 66px;
+      margin-left: 8%;
+      transform: translate(23px);
+    }
+
+    @include mobile {
+      margin-top: 106px;
+    }
+
+    .img-wrap {
+      // max-width: 1714px;
+      margin-left: auto;
+      position: relative;
+
+      .creative01-img01 {
+
+        // max-width: 91%;
+        @include mobile {
+          transform: translateX(66px);
+        }
+      }
+
+      .creative01-txt-img01 {
+        transform: translate(896px, 56px);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include desktop {
+          transform: translate(537px, 30px);
+        }
+
+        @include mobile {
+          left: 50%;
+          transform: translate(-45px, -30px);
+        }
+      }
+    }
+  }
+
+  //txt-wrap은 max-width: 245px;
+  //img-wrap은 flex: 1 0 auto; max-width: calc(100% - 245px);로 두고
+  //디자인 상 돌출 되어 있어 내부 이미지 자체를 왼쪽으로 강제 이동.
+
+  .group-creative02 {
+    display: flex;
+    margin-top: 48px;
+
+    @include desktop {
+      flex-direction: column-reverse;
+      margin-top: 61px;
+    }
+
+    .img-wrap {
+      max-width: calc(100% - 245px);
+      flex: 1 0 auto;
+
+      @include desktop {
+        max-width: 83%;
+        margin-top: 50px;
+        margin-left: 8%;
+      }
+
+      .creative02-img01 {
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(-60px);
+
+        @include desktop {
+          transform: translateX(-19px);
+        }
+
+        @include mobile {
+          transform: translateX(0px);
+          justify-content: center;
+        }
+      }
+    }
+
+    .txt-wrap {
+      max-width: 245px;
+      margin-top: 134px;
+
+      @include desktop {
+        margin-top: 0;
+        max-width: 83%;
+        margin-left: 8%;
+      }
+
+      .exp-icon {
+        width: 62px;
+        display: block;
+      }
+    }
+  }
+
+  //Grid를 이용해서 1:1 비율로 나누어 놓음. gap으로 거리 100px;
+  //grid-template-columns: repeat(2, 1fr);
+  //첫번째 이미지는 1열을 다 차지하게 grid-column: 1 / 3;
+  //첫번째 이미지는 공간 비율을 위해 position:absolute로 해서 이미지 크기 무시하며 조정해야함. 
+  .group-creative03 {
+    display: grid;
+    margin-top: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+
+    @include desktop {
+      column-gap: 0px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 100%);
+      margin-top: 58px;
+    }
+
+
+    .img-wrap {
+      grid-row: 1 / 3;
+
+      @include desktop {
+        grid-row: unset;
+        grid-row-start: 3;
+        grid-column: auto / span 2;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      @include mobile {
+        grid-column: unset;
+        grid-row-start: 2;
+        margin-left: unset;
+        margin-right: unset;
+      }
+
+      .creative03-img01 {
+        transform: translateX(-395px);
+        position: absolute;
+
+        @include desktop {
+          transform: translateX(-20px);
+          position: relative;
+        }
+
+        @include mobile {
+          transform: translateX(0px);
+        }
+      }
+    }
+
+    .txt-wrap {
+      max-width: 300px;
+      margin-top: 74px;
+
+      @include desktop {
+        grid-column-start: 1;
+        margin-top: 0;
+        max-width: 346px;
+        width: 100%;
+        margin-left: 8%;
+      }
+    }
+
+    .img-wrap02 {
+      position: relative;
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+
+      @include mobile {
+        margin-top: 58px;
+      }
+
+      .creative03-txt-img02 {
+        /* transform: translate(15px, 347px); */
+        transform: translate(-48px, 347px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        @include desktop {
+          transform: translate(15px, 305px);
+        }
+
+        @include mobile {
+          transform: translate(54px, 339px);
+          left: 50%;
+        }
+      }
+
+      .creative03-img02 {
+        @include desktop {
+          transform: translate(43px);
+        }
+
+        @include mobile {
+          transform: translate(0px);
+        }
+      }
+    }
+  }
+}
+
+
+
+.sc-center {
+  margin-bottom: 227px;
+
+  @include desktop {
+    margin-bottom: 160px;
+  }
+
+  @include mobile {
+    margin-bottom: 140px;
+  }
+
+  .headline {
+    &+p {
+      max-width: 571px;
+      width: 100%;
+    }
+  }
+
+
+  //아웃라인 이미지에 감싸져있는 동영상
+  //아웃라인 이미지 크기를 체크 후, 감싸는 부모에 지정
+  //감싸는 부모는 이미지 flex center 값으로 전체 중앙으로 배치
+  //아웃라인 이미지는 absolute로 지정
+  .group-center01 {
+    margin-top: 100px;
+    @include desktop {
+      margin-top: 58px;
+    }
+
+    @include mobile {
+      margin-top: 88px;
+      margin-bottom: 88px;
+    }
+
+    .img-wrap {
+      margin: 0 auto;
+      max-width: 780px;
+      text-align: center;
+
+      @include desktop {
+        max-width: 540px;
+      }
+
+      @include mobile {
+        flex-direction: column;
+
+        align-items: center;
+      }
+
+      .img-nearly {
+        position: relative;
+        height: 564px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+
+        @include desktop {
+          height: 392px;
+        }
+
+        @include mobile {
+          width: 308px;
+          height: 222px;
+        }
+
+        .center01-img01 {
+          img {
+            max-width: 100%;
+          }
+
+          /*이미지 전체설정*/
+        }
+
+        .center01-img01-outline {
+          position: absolute;
+          left: 0%;
+          right: 0%;
+          z-index: 2;
+
+          img {
+            max-width: 100%;
+            /*이미지 전체설정*/
+          }
+        }
+      }
+
+      .btn-blue {
+        justify-content: center;
+        font-size: 14px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .center01-txt-img01 {
+        transform: translateX(50px);
+
+        @include desktop {
+          transform: translateX(25px);
+        }
+
+        @include mobile {
+          transform: translate(-11px, -54px);
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 50%;
+        }
+      }
+    }
+
+
+  }
+
+  .group-center02 {
+    .img-wrap {
+      margin: 0 auto;
+      max-width: 624px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+
+      @include desktop {
+        max-width: 530px;
+      }
+
+      .center02-img01 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .center02-txt-img01 {
+        transform: translate(-3px, 4px);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @include desktop {
+          transform: translate(-13px, 13px);
+        }
+
+        @include mobile {
+          transform: translate(0px, 68px);
+        }
+      }
+    }
+  }
+
+  .group-center03 {
+
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 127px;
+    }
+
+    .img-wrap {
+      margin: 0 auto;
+      margin-top: 66px;
+      max-width: 779px;
+      margin-bottom: 25px;
+
+      @include desktop {
+        max-width: 540px;
+        margin-bottom: 46px;
+      }
+
+      @include mobile {
+        margin-bottom: 0;
+        align-items: center;
+        margin-left: auto !important;
+      }
+
+    }
+
+    .txt-wrap {
+      max-width: 490px;
+
+      @include desktop {
+        max-width: 83%;
+        margin-left: 8%;
+      }
+    }
+  }
+
+  .video03 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    video {
+      @include desktop {
+        transform: scale(0.72);
+      }
+
+      @include mobile {
+        transform: scale(0.4);
+      }
+    }
+  }
+
+  .center-video-paused {
+    span {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 2px;
+    }
+
+    &.paused {
+      &::after {
+        content: "\f31e";
+      }
+    }
+
+    &.replay {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  .painting03 {}
+}
+
+
+.sc-watch-learn-play {
+  margin-bottom: 75px;
+
+  .headline {
+    &+p {
+      max-width: 490px;
+      width: 100%;
+
+      @include desktop {
+        max-width: 83%;
+      }
+    }
+  }
+
+  .group-watch-learn-play01 {
+    margin-top: 100px;
+
+    @include desktop {
+      margin-top: 65px;
+    }
+
+    .img-wrap {
+      max-width: 778px;
+      margin: 0 auto;
+
+    }
+  }
+
+  .group-watch-learn-play02 {
+    margin-top: 83px;
+    display: flex;
+
+    @include desktop {
+      flex-direction: column;
+      margin-top: 59px;
+    }
+
+    .txt-wrap {
+      margin-top: 65px;
+      max-width: 326px;
+
+      @include desktop {
+        margin-top: 0px;
+        max-width: 83%;
+        margin-left: 8%;
+      }
+    }
+
+    .img-wrap {
+      transform: translateX(50px);
+      max-width: calc(100% - 326px);
+
+      @include desktop {
+        margin-top: 47px;
+        margin-left: 16%;
+      }
+
+      .watch-learn-play02-txt-img01 {
+        transform: translate(-109px, 20px);
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+
+        @include desktop {
+          right: -180px;
+          transform: translate(-37px, 10px);
+          top: 10px;
+        }
+
+        @include mobile {
+          transform: translate(-20px, -36px);
+          right: 0;
+          top: 25px;
+          bottom: 19px;
+        }
+      }
+    }
+  }
+
+  //제일 왼쪽 여백 8% 준 상태.
+  //txt-wrap가 max-width: 326px;
+  //img-wrap은 max-width: calc(92% - 326px);로 두고
+
+  .group-watch-learn-play03 {
+    margin-top: 16px;
+    display: flex;
+    margin-left: 8%;
+
+    @include desktop {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      margin-top: 58px;
+    }
+
+    .txt-wrap {
+      margin-top: 93px;
+      width: 100%;
+      z-index: 1;
+      max-width: 326px;
+
+      @include desktop {
+        max-width: 83%;
+        margin-top: 0;
+        margin-left: 8%;
+      }
+    }
+
+    .img-wrap {
+      transform: translateX(50px);
+      max-width: calc(92% - 326px);
+
+      @include desktop {
+        margin-top: 46px;
+        margin-left: 33%;
+        transform: translateX(0px);
+      }
+    }
+  }
+
+
+  @include desktop {
+
+    .watch-learn-play01-img01 {
+      display: flex;
+      justify-content: center;
+    }
+
+
+  }
+
+}
+
+.sc-enjoy-writing {
+  margin-bottom: 50px;
+
+  @include desktop {
+    margin-bottom: 173px;
+  }
+
+  .headline {
+    &+p {
+      max-width: 571px;
+      width: 100%;
+    }
+  }
+
+  .group-enjoy-writing01 {
+    margin-top: 123px;
+    display: flex;
+
+    @include desktop {
+      margin-top: 53px;
+      flex-direction: column;
+    }
+
+    .img-wrap {
+      position: relative;
+
+      .enjoy-writing01-img01 {
+        transform: translate(99px, -1px);
+        position: relative;
+
+        @include mobile {
+          transform: translate(0px);
+        }
+      }
+
+      .enjoy-writing01-txt-img01 {
+        position: absolute;
+        transform: translate(535px, 155px);
+        top: 0;
+        left: 0;
+
+        @include desktop {
+          transform: translate(365px, 62px);
+        }
+
+        @include mobile {
+          transform: translate(27px, 20px);
+          left: unset;
+        }
+      }
+    }
+
+    .txt-wrap {
+      margin-top: 356px;
+      z-index: 1;
+
+      @include desktop {
+        margin-top: 33px;
+        max-width: 83%;
+        margin-left: 8%;
+      }
+
+      @include mobile {
+        margin-top: -35px;
+      }
+
+    }
+
+  }
+
+  .group-enjoy-writing02 {
+    display: flex;
+
+    @include desktop {
+      margin-top: 61px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .img-wrap {
+      position: relative;
+
+      .enjoy-writing02-img01 {
+        transform: translateY(-120px);
+
+        @include desktop {
+          transform: translateY(0px);
+        }
+      }
+
+      .enjoy-writing02-img02 {
+        margin-top: 120px;
+
+        @include mobile {
+          margin-top: 55px;
+        }
+      }
+
+      .enjoy-writing02-txt-img01 {
+        transform: translate(-45px, -130px);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+        @include desktop {
+          transform: translate(-60px, 40px);
+        }
+
+        @include mobile {
+          transform: translate(-19px, 28px);
+        }
+      }
+    }
+  }
+
+  .group-enjoy-writing03 {
+    display: flex;
+
+    @include desktop {
+      flex-direction: column-reverse;
+      margin-top: 83px;
+    }
+
+    .img-wrap {
+      max-width: calc(100% - 326px);
+      position: relative;
+
+      @include desktop {
+        margin-top: 30px;
+      }
+
+      .enjoy-writing03-img01 {
+        transform: translate(-250px, -100px);
+
+        @include desktop {
+          transform: translate(-69px);
+        }
+
+        @include mobile {
+          transform: translate(0px);
+        }
+      }
+
+      .enjoy-writing03-txt-img01 {
+        position: absolute;
+        transform: translate(90px, -110px);
+        left: 0;
+        bottom: 0;
+
+        @include desktop {
+          transform: translate(450px, -180px);
+        }
+
+        @include mobile {
+          transform: translate(-100px, 50px);
+          left: unset;
+        }
+
+      }
+    }
+
+    .txt-wrap {
+      z-index: 1;
+      max-width: 326px;
+
+      @include desktop {
+        max-width: 83%;
+        margin-left: 8%;
+      }
+    }
+  }
+
+  .btn-blue.more {
+    margin-top: 27px;
+    display: block;
+
+    &::after {
+      content: "";
+      vertical-align: 3px;
+    }
+
+    span {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+
+  .painting04 {
+    margin-top: 120px;
+  }
+
+  .video04 {
+    transform: translate(-250px, -100px);
+  }
+}
+
+.sc-apps {
+  .headline {
+    &+p {
+      max-width: 571px;
+      width: 100%;
+    }
+  }
+
+  /*display해서 justify-content:center
+        항상 중앙에 오게 하기 위해
+      */
+  .img-wrap {
+    margin-top: 81px;
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    @include desktop {
+      margin-top: 53px;
+    }
+
+    @include mobile {
+      margin-top: 90px;
+      flex-direction: column;
+    }
+
+    .img-txt {
+      color: #888;
+      position: absolute;
+      top: 1385px;
+      font-size: 12px;
+      max-width: 16%;
+      left: 0;
+
+      @include desktop {
+        top: 865px;
+      }
+
+      @include mobile {
+        top: 0;
+        position: relative;
+
+        margin-top: 38px;
+        max-width: 200px;
+        font-size: 14px;
+        padding-left: 28px;
+      }
+    }
+  }
+
+  .btn-blue {
+    margin-top: 27px;
+    display: block;
+
+    @include desktop {
+      margin-left: 8%;
+    }
+
+    @include mobile {
+      margin-left: 0;
+    }
+
+    span {
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    &::after {
+      content: "";
+      vertical-align: 3px;
+    }
+  }
+}
+
+
+
+/*배경 그레이 콘텐츠*/
+.sc-gray {
+  background-color: #f5f5f7;
+  padding-top: 25px;
+
+  .inner-content {
+
+
+    @include desktop {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+
+  @include mobile {
+    padding-top: 72px;
+  }
+
+  .btn-blue {
+    margin-top: 14px;
+    display: block;
+
+    span {
+      line-height: 1;
+      font-size: 17px;
+    }
+
+    &::after {
+      content: "";
+      vertical-align: 3px;
+    }
+  }
+
+  .group-tile {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 25px; */
+    border-radius: 30px;
+    overflow: hidden;
+
+    @include mini02 {
+      border-radius: 0;
+    }
+  }
+
+
+  .exp-txt02 {
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 400;
+    word-break: keep-all;
+
+    @include desktop {
+      font-size: 17px;
+    }
+  }
+
+  .sc-ar {
+    max-width: 1390px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+
+    .group-ar {
+      .inner-content {
+        gap: 27px;
+
+        @include mobile {
+          padding-top: 49px;
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      .exp-icon {
+        width: 38px;
+      }
+
+      .headline02 {
+        max-width: 430px;
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 26px;
+
+
+
+        &+p {
+          max-width: 270px;
+          width: 100%;
+          margin-top: 15px;
+          word-break: keep-all;
+        }
+      }
+
+      .img-wrap {
+        margin-top: 75px;
+
+        @include mobile {
+          margin-top: 30px;
+        }
+      }
+
+      .txt-wrap {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .sc-envir {
+    background-color: #f5f5f7;
+    padding-top: 132px;
+    padding-bottom: 132px;
+
+    @include mobile {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .headline02 {
+      margin-bottom: 23px;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .envir-list {
+      display: grid;
+      gap: 64px;
+      width: 100%;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 88px;
+
+      @include desktop {
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        grid-row-gap: 80px;
+      }
+
+      @include mobile {
+        max-width: 362px;
+      }
+
+      .envir-item {
+        width: calc(100% - 60px) / 2;
+
+        &.envir h3::before {
+          content: '';
+          width: 36px;
+          height: 43px;
+          display: inline-block;
+          background: url(../images/envir-icon01.png) 0 0/36px 43px no-repeat;
+          margin-right: 10px;
+
+          @include mobile {
+            width: 23px;
+            height: 28px;
+            display: block;
+            background: url(../images/envir-icon01-m.png) 0 0/23px 28px no-repeat;
+            margin: 0 auto 10px;
+          }
+        }
+
+        &.priv h3::before {
+          content: '';
+          width: 34px;
+          height: 43px;
+          display: inline-block;
+          background: url(../images/envir-icon02.png) 0 0/34px 43px no-repeat;
+          margin-right: 10px;
+
+          @include mobile {
+            width: 22px;
+            height: 29px;
+            display: block;
+            background: url(../images/envir-icon02-m.png) 0 0/22px 29px no-repeat;
+            margin: 0 auto 10px;
+          }
+        }
+
+        &.conv h3::before {
+          content: '';
+          width: 46px;
+          height: 43px;
+          display: inline-block;
+          background: url(../images/envir-icon03.png) 0 0/46px 43px no-repeat;
+          margin-right: 10px;
+
+          @include mobile {
+            width: 31px;
+            height: 31px;
+            display: block;
+            background: url(../images/envir-icon03-m.png) 0 0/31px 31px no-repeat;
+            margin: 0 auto 10px;
+          }
+        }
+
+        &.acc h3::before {
+          content: '';
+          width: 30px;
+          height: 43px;
+          display: inline-block;
+          background: url(../images/envir-icon04.png) 0 0/30px 43px no-repeat;
+          margin-right: 10px;
+
+          @include mobile {
+            width: 24px;
+            height: 35px;
+            display: block;
+            background: url(../images/envir-icon04-m.png) 0 0/24px 35px no-repeat;
+            margin: 0 auto 10px;
+          }
+        }
+
+        .txt-wrap {
+          @include mobile {
+            text-align: center;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+
+  .sc-credit {
+    background-color: #f5f5f7;
+    max-width: 1390px;
+    width: calc(100% - 60px);
+    margin: 25px auto 0;
+
+    .inner-content {
+      @include mobile {
+        flex-direction: column;
+        margin-top: 0px;
+      }
+    }
+
+    .btn-blue {
+      margin-top: 15px;
+    }
+
+    .headline02 {
+      max-width: 540px;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 26px;
+
+      @include desktop {
+        margin-top: 0;
+      }
+
+      &+p {
+        max-width: 540px;
+        width: 100%;
+        margin-top: 15px;
+        word-break: keep-all;
+      }
+    }
+
+    .img-wrap {
+      margin-top: 106px;
+
+      @include desktop {
+        max-width: 41%;
+        margin-left: 8%;
+      }
+
+      @include mobile {
+        margin-top: 50px;
+      }
+    }
+
+    .txt-wrap {
+      @include desktop {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      @include mobile {
+        padding: 40px 20px 0;
+        max-width: 346px;
+      }
+    }
+  }
+
+  .sc-yours {
+    background-color: #f5f5f7;
+
+    max-width: 1390px;
+    width: calc(100% - 60px);
+    margin: 25px auto 0;
+
+    .headline02 {
+      text-align: center;
+      width: 100%;
+
+      @include mobile {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+
+    .group-yours {
+      padding: 100px 0 82px;
+
+      @include mobile {
+        padding: 66px 0 60px;
+      }
+
+      .yours-list {
+        margin-top: 68px;
+        //display: grid;
+        //grid-template-columns: repeat(5, 1fr);
+        gap: 34px;
+        display: flex;
+
+        @include desktop {
+          margin: 0 auto;
+          margin-top: 57px;
+          //grid-template-columns: repeat(2, 1fr);
+          flex-wrap: wrap;
+          max-width: 500px;
+          gap: unset;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        .yours-item {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding-bottom: 30px;
+          border-bottom: 1px solid #d2d2d7;
+
+          @include desktop {
+            width: calc((100% - 21px) / 2);
+            flex: unset;
+
+            &:last-child {
+              margin: 0 auto;
+            }
+          }
+
+          .product-img {
+            margin-bottom: 23px;
+            min-height: 191px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+
+            @include mobile {
+              min-height: 139px;
+            }
+          }
+
+          .product-color {
+            margin-bottom: 31px;
+          }
+
+          .product-tit {
+            font-size: 24px;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: 40px;
+
+            @include desktop {
+              font-size: 21px;
+              margin-bottom: 5px;
+            }
+          }
+
+          .product-info {
+            font-size: 14px;
+            font-weight: 600;
+
+            @include desktop {
+              font-size: 14px;
+            }
+          }
+
+          .product-cost {
+            margin-top: 16px;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          .new-label {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            display: block;
+            color: #bf4800;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          .gen-label {
+            position: absolute;
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            top: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+
+            @include desktop {
+              .gen-label {
+                font-size: 14px;
+                position: relative;
+                top: 0;
+              }
+            }
+          }
+
+          .btn-purchase {
+            margin-top: 14px;
+            margin-bottom: 12px;
+            margin-left: 0px;
+
+            @include desktop {
+              margin: 0 auto;
+              margin-top: 14px;
+              margin-bottom: 12px;
+            }
+          }
+
+          .btn-blue span {
+            font-size: 14px;
+          }
+        }
+      }
+
+
+      .link-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        margin-top: 74px;
+
+
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+          gap: 7px;
+          margin-top: 44px;
+
+          .btn-blue {
+            margin-top: 0;
+          }
+        }
+
+        .btn-blue.more span {
+          font-size: 21px;
+
+          @include desktop {
+            font-size: 17px;
+          }
+        }
+      }
+
+    }
+  }
+
+  [class*='sc-'] {
+    @include mini02 {
+      width: 100%;
+    }
+  }
+}
+
+.section:not(.sc-withyou) {
+  overflow: hidden;
+}
+
+@include desktop {
+
+  main {
+    .inner-content {
+      max-width: 692px;
+
+      @include mobile {
+        max-width: 87.5%;
+      }
+    }
+  }
+
+  [class*='sc-'] {
+
+
+    .headline {
+      margin-left: 8%;
+      font-size: 72px;
+
+      @include mobile {
+        font-size: 48px;
+        margin-left: unset;
+        margin-bottom: 26px;
+      }
+
+    }
+
+    .headline+p {
+      margin-left: 8%;
+      max-width: 83%;
+
+      @include mobile {
+        margin-left: unset;
+        max-width: 100%;
+      }
+    }
+
+    .headline02 {
+      font-size: 44px;
+
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+
+    [class*='group-'] {
+      margin-left: 0;
+    }
+  }
+
+  .video-wrap:not(.video03) {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "items":[
+        {
+            "id":0,
+            "thumb":"./assets/images/compare01.png",
+            "thumb02":"./assets/images/compare01-m.png",
+            "color":"./assets/images/yours-ipad-pro-color.png",
+            "new":"new",
+            "gen":"",
+            "title":"iPad Pro",
+            "info":"최첨단 기술이 구현하는<br>궁극의 iPad 경험.",
+            "cost":"₩1,249,000부터",
+            "desc":"iPad Pro에 대해 더 알아보기"
+        },
+        {
+            "id": 1,
+            "thumb": "./assets/images/compare02.png",
+            "thumb02": "./assets/images/compare02-m.png",
+            "color": "./assets/images/yours-ipad-air-color.png",
+            "new": "",
+            "gen": "",
+            "title": "iPad Air",
+            "info": "얇고 가벼운 디자인.<br>결코 가볍지 않은 성능.",
+            "cost": "₩929,000부터",
+            "desc": "iPad Air에 대해 더 알아보기"
+            
+        },
+        {
+            "id": 2,
+            "thumb": "./assets/images/compare03.png",
+            "thumb02": "./assets/images/compare03-m.png",
+            "color": "./assets/images/yours-ipad-10-color.png",
+            "new": "new",
+            "gen": "10세대",
+            "title": "iPad",
+            "info": "다양한 일상 작업에 맞는<br>완전히 새롭고, 컬러풀한 iPad.",
+            "cost": "₩929,000부터",
+            "desc": "iPad 10세대에 대해 더 알아보기"
+        },
+        {
+            "id": 3,
+            "thumb": "./assets/images/compare04.png",
+            "thumb02": "./assets/images/compare04-m.png",
+            "color": "./assets/images/yours-ipad-9-color.png",
+            "new": "",
+            "gen": "9세데",
+            "title": "iPad",
+            "info": "가장 핵심적 요소들을 담은<br>가장 부담 없는 iPad.",
+            "cost": "₩929,000부터",
+            "desc": "iPad 9세대에 대해 더 알아보기"
+        },
+        {
+            "id": 4,
+            "thumb": "./assets/images/compare05.png",
+            "thumb02": "./assets/images/compare05-m.png",
+            "color": "./assets/images/yours-ipad-mini-color.png",
+            "new": "",
+            "gen": "",
+            "title": "iPad mini",
+            "info": "한 손에 쏙 들어오는<br>손색없는 iPad 경험.",
+            "cost": "₩929,000부터",
+            "desc": "iPad mini에 대해 더 알아보기"
+        }
+    ]
+}

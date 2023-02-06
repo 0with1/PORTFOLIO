@@ -1,0 +1,204 @@
+.header {
+  position: relative;
+  z-index: 10;
+
+  .inner-content {
+    max-width: 1024px;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+
+    @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .group-header {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    a {
+      font-size: 12px;
+      line-height: 3.7;
+      font-weight: 400;
+      color: #f5f5f7;
+      display: block;
+      opacity: 0.8;
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .link-home:before {
+    content: '';
+    width: 14px;
+    height: 44px;
+    background: url(../images/header-apple-logo.svg) center/14px 44px no-repeat;
+    display: block;
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+      background: url(../images/header-apple-logo.svg) center/48px 48px no-repeat;
+    }
+  }
+
+  .btn-search:before {
+    content: '';
+    width: 15px;
+    height: 44px;
+    background: url(../images/header-search-icon.svg) center/15px 88px no-repeat;
+    display: block;
+    background-position: 0px 0;
+
+  }
+
+  .btn-bag:before {
+    content: '';
+    width: 13px;
+    height: 44px;
+    background: url(../images/header-bag-icon.svg) center/13px 44px no-repeat;
+    display: block;
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+      background: url(../images/header-bag-icon.svg) center/48px 48px no-repeat;
+    }
+  }
+}
+
+.header-pc {
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header-mobile {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  .nav-item {
+    a {
+      padding: 0px;
+    }
+
+    &.btn-menu {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .hbg {
+        display: block;
+        width: 17px;
+        height: 1px;
+        background: #fff;
+        border-radius: 0.5px;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
+
+  .inner-content {
+    max-width: 1024px;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+
+    @include tablet {
+      padding-left: max(16px, env(safe-area-inset-left));
+      padding-right: max(16px, env(safe-area-inset-right));
+    }
+  }
+
+  .sticky-btn-wrap {
+    display: flex;
+  }
+
+  .menu-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0px;
+
+    @include mobile {
+      padding: 12px 0px;
+    }
+
+    .title {
+      font-size: 19px;
+      font-weight: 600;
+    }
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 24px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .menu-item {
+    a {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .current a {
+      opacity: .56;
+    }
+  }
+}
+
+.btn-purchase {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 24px;
+}
