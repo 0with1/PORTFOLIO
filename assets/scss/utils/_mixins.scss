@@ -1,7 +1,16 @@
 /*반응형 화면 크기*/
+$mini: 500px; //320
 $mobile: 767px; //320
 $tablet: 1023px; // 768
 $desktop: 1024px; //1024
+
+/*반응형, 브라우저 크기가 500px 이하일때*/
+@mixin mini {
+  @media (max-width: $mini) {
+    @content;
+  }
+}
+
 
 /*반응형, 브라우저 크기가 767px 이하일때*/
 @mixin mobile{

@@ -14,9 +14,11 @@
   .inner {
     text-align: center;
     width: calc(100% - 240px);
+
     @include desktop {
-        width: calc(100% - 30px);
-      }
+      width: calc(100% - 30px);
+    }
+
     h2 {
       font-size: 6.5vw;
       overflow: hidden;
@@ -38,31 +40,35 @@
       letter-spacing: -0.03em;
       text-transform: uppercase;
       z-index: 5;
+
       @include desktop {
-          margin-bottom: 0px;
-        }
+        margin-bottom: 0px;
+      }
     }
 
     .ft-info-wrap {
       display: flex;
       justify-content: space-between;
       position: relative;
+
       @include desktop {
-          flex-direction: column;
-          row-gap: 50px;
-        }
+        flex-direction: column;
+        row-gap: 50px;
+      }
+
       .ft-soc {
         font-size: 35px;
         text-align: left;
         display: flex;
         gap: 100px;
+
         @include desktop {
-            position: relative;
-            order: 1;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-          }
+          position: relative;
+          order: 1;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+        }
       }
 
       .ft-idea {
@@ -70,21 +76,26 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+
         @include desktop {
-            position: relative;
-            order:0;
-          }
+          position: relative;
+          order: 0;
+        }
       }
 
       .ft-links {
         @include desktop {
-            position: relative;
-            order: 2;
-          }
+          position: relative;
+          order: 2;
+        }
       }
     }
   }
 
 
-
+  @include mini {
+    .mini-br-none {
+      display: none;
+    }
+  }
 }

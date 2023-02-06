@@ -6,6 +6,7 @@
 }
 
 /*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 500px 이하일때*/
 /*반응형, 브라우저 크기가 767px 이하일때*/
 /*반응형, 브라우저 크기가 1023px 이하일때*/
 /*반응형, 브라우저 크기가 1024px 이하*/
@@ -512,6 +513,11 @@ body.black .sc-works .slider {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+@media (max-width: 500px) {
+  .footer .mini-br-none {
+    display: none;
   }
 }
 
