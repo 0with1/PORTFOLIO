@@ -1041,6 +1041,9 @@ body.is-active {
     display: none;
   }
 }
+.sc-withyou .sticky-video video {
+  width: 100%;
+}
 .sc-withyou .autoplay {
   position: sticky;
   z-index: 4;
@@ -1555,7 +1558,7 @@ body.is-active {
 }
 
 .sc-rapidly {
-  margin-bottom: 500px;
+  margin-bottom: 179px;
 }
 @media (max-width: 1068px) {
   .sc-rapidly {
@@ -1615,12 +1618,14 @@ body.is-active {
   margin-top: 97px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 263px;
   /*한줄을 다 차지하게*/
 }
 @media (max-width: 1068px) {
   .sc-rapidly .group-rapidly02 {
     margin-top: 68px;
     grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 0px;
   }
 }
 @media (max-width: 734px) {

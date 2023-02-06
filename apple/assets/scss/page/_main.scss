@@ -95,9 +95,10 @@
   position: relative;
   height: 340vh;
 
-  @include desktop{
+  @include desktop {
     height: auto;
   }
+
   @include mobile {
     margin-top: 38px;
   }
@@ -149,7 +150,9 @@
       display: none;
     }
 
-    video {}
+    video {
+      width: 100%;
+    }
 
   }
 
@@ -165,9 +168,9 @@
     width: 34px;
     height: 34px;
 
-        @include desktop {
-          display: none;
-        }
+    @include desktop {
+      display: none;
+    }
 
     .btn-autoplay {
       display: block;
@@ -229,7 +232,8 @@
     color: #fff;
     z-index: 2;
     gap: 200px;
-    &.video-txt-wrap{
+
+    &.video-txt-wrap {
       display: none;
     }
   }
@@ -320,7 +324,7 @@
       display: none;
     }
 
-    .autoplay{
+    .autoplay {
       display: none;
     }
   }
@@ -640,7 +644,7 @@
 
 
 .sc-rapidly {
-  margin-bottom: 500px;
+  margin-bottom: 179px;
 
   @include desktop {
     margin-bottom: 186px;
@@ -705,10 +709,11 @@
     margin-top: 97px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    padding-bottom: 263px;
     @include desktop {
       margin-top: 68px;
       grid-template-columns: repeat(1, 1fr);
+      padding-bottom: 0px;
     }
 
     @include mobile {
@@ -1071,6 +1076,7 @@
   //아웃라인 이미지는 absolute로 지정
   .group-center01 {
     margin-top: 100px;
+
     @include desktop {
       margin-top: 58px;
     }
@@ -2180,9 +2186,13 @@
   }
 }
 
-.section:not(.sc-withyou) {
+.section{
+&:not(.sc-withyou) {
   overflow: hidden;
 }
+
+}
+
 
 @include desktop {
 

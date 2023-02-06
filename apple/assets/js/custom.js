@@ -58,13 +58,13 @@ $(function () {
   $(window).scroll(function () {
     curr = $(this).scrollTop();
     console.log(curr);
-    if (curr >= 100 && curr <= 3300) {
+    if (curr >= 100 && curr <= 3600) {
       $('.autoplay').addClass('fixed');
       $('.autoplay').removeClass('settled');
     } else if (curr < 100) {
       $('.autoplay').removeClass('fixed');
       $('.autoplay').removeClass('settled');
-    } else if (curr > 3300) {
+    } else if (curr > 3600) {
       $('.autoplay').removeClass('fixed');
       $('.autoplay').addClass('settled');
     }
