@@ -149,7 +149,7 @@ $(function () {
             start: "0% 60%",
             end: "100% 50%",
             scrub: 0,
-            markers: true,
+            //markers: true,
           },
           ease: 'none'
         })
