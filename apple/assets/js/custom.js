@@ -133,15 +133,11 @@ $(function () {
         yPercent: -300,
         stagger: 0.1,
       })
+
     },
 
     "all": function () {
 
-      /**
-      * ~ 전체
-      * (1068 이후에만 비디오 존재)
-      * 비디오 내 텍스트 동작
-      */
       const wityoutxtList = document.querySelectorAll('.sc-withyou .video-txt');
       gsap.set('.sc-withyou .video-txt', { opacity: 0, })
 
@@ -153,7 +149,7 @@ $(function () {
             start: "0% 60%",
             end: "100% 50%",
             scrub: 0,
-            //markers: true,
+            markers: true,
           },
           ease: 'none'
         })
@@ -165,3 +161,53 @@ $(function () {
     }
   })
 });
+
+
+
+
+
+
+
+/**
+      * ~ 전체
+      * (1068 이후에만 비디오 존재)
+      * 비디오 내 텍스트 동작
+      */
+/* const wityoutxtList = document.querySelectorAll('.sc-withyou .video-txt');
+gsap.set('.sc-withyou .video-txt', { opacity: 1, })
+
+wityoutxtList.forEach(element => {
+
+  const stickyTxt = gsap.timeline({
+    scrollTrigger: {
+      trigger: element,
+      start: "0% 60%",
+      end: "100% 50%",
+      scrub: 0,
+      markers: true,
+    },
+    ease: 'none'
+  })
+  stickyTxt
+    .to(element, { opacity: 1 })
+    .to(element, { opacity: 0 })
+
+}); */
+
+
+/*비주얼*/
+/* gsap.to('.sc-fallin .main-txt', {
+  scrollTrigger: {
+    start: "0% 0%",
+    end: "100% 0%",
+    //markers: true,
+    scrub: 0,
+
+  },
+  ease: 'none',
+  yPercent: -300,
+  stagger: 0.1,
+})
+ */
+
+

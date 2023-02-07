@@ -233,9 +233,13 @@
     z-index: 2;
     gap: 200px;
 
-    &.video-txt-wrap {
-      display: none;
+
+    @include desktop {
+      &.video-txt-wrap {
+        display: none;
+      }
     }
+
   }
 
   .main-txt {
@@ -710,6 +714,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 263px;
+
     @include desktop {
       margin-top: 68px;
       grid-template-columns: repeat(1, 1fr);
@@ -2186,10 +2191,10 @@
   }
 }
 
-.section{
-&:not(.sc-withyou) {
-  overflow: hidden;
-}
+.section {
+  &:not(.sc-withyou) {
+    overflow: hidden;
+  }
 
 }
 

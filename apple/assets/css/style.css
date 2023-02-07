@@ -1118,8 +1118,10 @@ body.is-active {
   z-index: 2;
   gap: 200px;
 }
-.sc-withyou .txt-wrap.video-txt-wrap {
-  display: none;
+@media (max-width: 1068px) {
+  .sc-withyou .txt-wrap.video-txt-wrap {
+    display: none;
+  }
 }
 .sc-withyou .main-txt {
   font-size: 80px;
