@@ -11,7 +11,7 @@ body::-webkit-scrollbar { display: none; }
 .sc-visual .link-book .frame { border-radius: 70px; z-index: -1; } 
 .sc-visual .video-area { position: relative; margin-top: 100px; } 
 .sc-visual .video-area .circle { width: 960px; height: 540px; background: #6FAAF0; position: absolute; top: 0; left: 0; border-radius: 270px; z-index: -1; transform: scale(0.9); } 
-.sc-visual .video-wrap { width: 960px; height: 540px; border-radius: 270px; overflow: hidden; } 
+.sc-visual .video-wrap { width: 960px; height: 540px; border-radius: 270px; overflow: hidden; background: #fff;} 
 .sc-visual .video-wrap video { width: 100%; height: 100%; object-fit: cover; } 
 
 /*첫번째 가로스크롤*/
