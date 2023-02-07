@@ -65,7 +65,7 @@ var defaultStyles = {
 
 let a = 0;
 let $matterArea = $('.matter-area');
-let $offset = 400;
+let $offset = 1000;
 let $matterAreaOST = $matterArea.offset().top - $offset;
 
 
