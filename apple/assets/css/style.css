@@ -1119,8 +1119,10 @@ body.is-active {
   gap: 200px;
 }
 @media (max-width: 1068px) {
-  .sc-withyou .txt-wrap.video-txt-wrap {
-    display: none;
+  .sc-withyou .txt-wrap {
+    /* &.video-txt-wrap {
+        display: none;
+      } */
   }
 }
 .sc-withyou .main-txt {
