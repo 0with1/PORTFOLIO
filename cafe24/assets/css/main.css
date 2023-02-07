@@ -19,7 +19,7 @@ body::-webkit-scrollbar { display: none; }
 .sc-hori-bmm .group-bmm { height: 100vh; display: flex; justify-content: flex-start; align-items: center; /* padding: 50px 10vw; */ position: relative; } 
 .sc-hori-bmm .group-bmm > strong { display: flex; justify-content: center; line-height: 1.2; } 
 .sc-hori-bmm .group-bmm > * { width: 100vw; min-width: 60vw; padding: 0 5vw; text-align: left; font-size: 4vw; font-weight: 600; letter-spacing: -.05em; } 
-.sc-hori-bmm .group-bmm::after { content:''; display: block; height: 100px; border-radius: 0 0 60px 60px; background: #000; width:100vw; position: absolute; top:99%; background:#6FAAF0; box-sizing: border-box; } 
+.sc-hori-bmm::after { content:''; display: block; height: 100px; border-radius: 0 0 60px 60px; background: #000; width:100%; position: absolute; bottom:1px; background:#6FAAF0; box-sizing: border-box; } 
 
 
 .sc-success { text-align: center; min-height: 100vh; background:#fff; color:#000; } 
