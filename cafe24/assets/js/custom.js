@@ -230,14 +230,15 @@ $(function () {
         scrollTrigger: {
           trigger: ".sc-visual .video-area",
           start: "top 55%", /*1024 수정사항*/
-          end: "bottom 100%",
+          end: "bottom 0%",
           scrub: 1,
+          markers:'true',
         },
       });
 
       circle
         .addLabel('a')
-        .to('.sc-visual .video-area .circle', { scale: 6.7 }, 'a') /*1024 수정사항*/
+        .to('.sc-visual .video-area .circle', { scale: 5 }, 'a') /*1024 수정사항*/
         .to('.group-bmm', 0, { background: '#6FAAF0', }, 'a')
 
 
