@@ -2099,27 +2099,47 @@ body.is-active {
   max-width: 100%;
   /*이미지 전체설정*/
 }
-.sc-center .group-center01 .img-wrap .btn-blue {
+.sc-center .group-center01 .img-wrap .btn-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
+  color: #06c;
+  line-height: 1.6;
 }
-.sc-center .group-center01 .img-wrap .btn-blue span {
-  font-size: 14px;
+.sc-center .group-center01 .img-wrap .btn-box .btn-play {
+  display: none;
 }
-.sc-center .group-center01 .img-wrap .center01-txt-img01 {
+.sc-center .group-center01 .img-wrap .btn-box .btn-play::after {
+  content: "\f31f";
+  display: inline-block;
+  margin-left: 2px;
+}
+.sc-center .group-center01 .img-wrap .btn-box .btn-paused::after {
+  content: "\f31e";
+  display: inline-block;
+  margin-left: 2px;
+}
+.sc-center .group-center01 .img-wrap .btn-box .btn-replay {
+  display: none;
+}
+.sc-center .group-center01 .img-wrap .btn-box .btn-replay::after {
+  content: "\f321";
+  display: inline-block;
+  margin-left: 2px;
+}
+.sc-center .group-center01 .center01-txt-img01 {
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
 }
 @media (max-width: 1068px) {
-  .sc-center .group-center01 .img-wrap .center01-txt-img01 {
+  .sc-center .group-center01 .center01-txt-img01 {
     -webkit-transform: translateX(25px);
             transform: translateX(25px);
   }
 }
 @media (max-width: 734px) {
-  .sc-center .group-center01 .img-wrap .center01-txt-img01 {
+  .sc-center .group-center01 .center01-txt-img01 {
     -webkit-transform: translate(-11px, -54px);
             transform: translate(-11px, -54px);
     position: absolute;
@@ -2230,20 +2250,6 @@ body.is-active {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
-}
-.sc-center .center-video-paused span {
-  margin-right: 0;
-}
-.sc-center .center-video-paused::after {
-  content: "\f31f";
-  display: inline-block;
-  margin-left: 2px;
-}
-.sc-center .center-video-paused.paused::after {
-  content: "\f31e";
-}
-.sc-center .center-video-paused.replay::after {
-  content: "\f321";
 }
 .sc-watch-learn-play {
   margin-bottom: 75px;

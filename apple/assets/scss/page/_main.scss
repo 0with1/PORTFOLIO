@@ -1145,34 +1145,60 @@
         }
       }
 
-      .btn-blue {
+      .btn-box {
         justify-content: center;
         font-size: 14px;
+        color: #06c;
+        line-height: 1.6;
 
-        span {
-          font-size: 14px;
+        .btn-play {
+          display: none;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            margin-left: 2px;
+          }
         }
-      }
 
-      .center01-txt-img01 {
-        transform: translateX(50px);
-
-        @include desktop {
-          transform: translateX(25px);
+        .btn-paused {
+          &::after {
+            content: "\f31e";
+            display: inline-block;
+            margin-left: 2px;
+          }
         }
 
-        @include mobile {
-          transform: translate(-11px, -54px);
-          position: absolute;
-          top: 0;
-          right: 0;
-          left: 50%;
+
+        .btn-replay {
+          display: none;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            margin-left: 2px;
+          }
         }
       }
     }
 
+    .center01-txt-img01 {
+      transform: translateX(50px);
 
+      @include desktop {
+        transform: translateX(25px);
+      }
+
+      @include mobile {
+        transform: translate(-11px, -54px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 50%;
+      }
+    }
   }
+
 
   .group-center02 {
     .img-wrap {
@@ -1261,29 +1287,9 @@
     }
   }
 
-  .center-video-paused {
-    span {
-      margin-right: 0;
-    }
 
-    &::after {
-      content: "";
-      display: inline-block;
-      margin-left: 2px;
-    }
 
-    &.paused {
-      &::after {
-        content: "\f31e";
-      }
-    }
 
-    &.replay {
-      &::after {
-        content: "";
-      }
-    }
-  }
 
   .painting03 {}
 }

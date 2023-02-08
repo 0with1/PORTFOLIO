@@ -1,17 +1,17 @@
-/* 실행 */
 
-/**
+$(function () {
+
+  /**
  * footer 디렉토리 영역 모바일 시 탭으로 변경.
  */
-$(function () {
   $(".footer .directory-area strong").click(function () {
     $(this).toggleClass("is-active");
     $(this).next(".directory-list").toggleClass("is-active");
   })
 
   /**
-   * withyou 비디오 영역 1068 축소시 change-image 클래스 추가.
-   */
+  * withyou 비디오 영역 1068 축소시 change-image 클래스 추가.
+  */
   $(window).on('resize', function () {
     ww = $(window).width();
     if (ww < 1068) {
@@ -22,8 +22,8 @@ $(function () {
   });
 
   /**
-     * 비디오 영역 감지 후 종료 시 이미지로 교체 
-     */
+  * 비디오 영역 감지 후 종료 시 이미지로 교체 
+  */
   setInterval(function (e) {
     $.each($(".video-wrap video").not("#dance-video"), function () {
       if ($(this).prop('ended')) {
@@ -36,8 +36,8 @@ $(function () {
 
 
   /**
-      * 메인 비디오 컨트롤
-      */
+  * 메인 비디오 컨트롤
+  */
   const mainVideo = document.getElementById('withyou-video')
 
 
@@ -70,58 +70,44 @@ $(function () {
     }
   })
 
+
   /**
-       * .sc-fallin
-       * 1068 이후 텍스트 위로 움직이는 동작
-      */
-  gsap.to('.sc-fallin .main-txt', {
-    scrollTrigger: {
-      start: "0% 0%",
-      end: "100% 0%",
-      //markers: true,
-      scrub: 0,
+  * 댄스비디오 버튼 컨트롤
+  * '다시 재생' 버튼 추가필요
+  */
 
-    },
-    ease: 'none',
-    yPercent: -300,
-    stagger: 0.1,
-  })
+  const btnReplay = $('.sc-center .btn-replay');
+  const btnPaused = $('.sc-center .btn-paused');
+  const btnPlay = $('.sc-center .btn-play');
+  const danceVideo = $('#dance-video');
 
-  /*댄스 비디오 종료 시 다시 재생 버튼으로 변경.*/
-  const danceVideo = document.getElementById('dance-video')
+  btnReplay.on('click', function () {
+    btnReplay.hide();
+    danceVideo.get(0).play();
+    btnPlay.hide();
+    btnPaused.show();
+  });
+  btnPlay.on('click', function () {
+    danceVideo.get(0).play();
+    btnReplay.hide();
+    btnPlay.hide();
+    btnPaused.show();
+  });
+  btnPaused.on('click', function () {
+    danceVideo.get(0).pause();
+    btnReplay.hide();
+    btnPlay.show();
+    btnPaused.hide();
+  });
   setInterval(function () {
-    if ($("#dance-video").prop("ended")) {
-      //영상종료 후 진행할 함수 입력부분
-      $('.center-video-paused').addClass('replay');
-      $('.center-video-paused').children('span').text('다시 재생');
+    if (danceVideo.prop("ended")) {
+      btnReplay.show();
+      btnPlay.hide();
+      btnPaused.hide();
     }
   });
 
 
-  /*replay 버튼*/
-  $('.center-video-paused').click(function (e) {
-    if ($(this).hasClass('replay')) {
-      danceVideo.play();
-      $(this).removeClass('replay');
-    }
-  });
-
-  /*댄스비디오 버튼 컨트롤 */
-  $('.center-video-paused').click(function (e) {
-    //e.preventDefault();
-    if ($(this).hasClass('paused')) {
-      danceVideo.play();
-      $(this).removeClass('paused');
-      $(this).children('span').text('일시 정지');
-    } else if ($(this).hasClass('replay')) {
-      danceVideo.get(0).play();
-      $(this).removeClass('replay');
-    } else {
-      $(this).addClass('paused');
-      $(this).children('span').text('재생');
-      danceVideo.pause();
-    }
-  });
 });
 
 
@@ -155,6 +141,11 @@ $(function () {
 
     "all": function () {
 
+
+      /**
+       * .sc-withyou
+       * 비디오 텍스트는 opacity 0 -> 1 -> 0 동작 필요.
+      */
       const wityoutxtList = document.querySelectorAll('.sc-withyou .video-txt');
       gsap.set('.sc-withyou .video-txt', { opacity: 0, })
 

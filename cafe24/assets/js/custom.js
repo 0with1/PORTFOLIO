@@ -1,14 +1,3 @@
-
-function toggle() {
-  var mgnb = document.getElementById('group-mgnb');
-  var body = document.body;
-  mgnb.classList.toggle('active');
-  body.classList.toggle('active');
-}
-
-
-
-
 /**
 * ~ 전체
 * 가로 스크롤을 all에 넣을 시 뒤에 gsap 동작이 안되는 부분이 많아 따로 빼둠
@@ -232,7 +221,7 @@ $(function () {
           start: "top 60%", /*1024 수정사항*/
           end: "bottom 0%",
           scrub: 1,
-          markers:'true',
+          //markers:'true',
         },
       });
 
@@ -270,9 +259,6 @@ $(function () {
     
       
     },
-
-
-    
 
     // 481 ~ 1024
     "(min-width: 481px) and (max-width: 1024px)": function () {
@@ -552,6 +538,14 @@ $(function () {
   })
 });
 
+
+/*모바일 메뉴 토글*/
+function toggle() {
+  const mgnb = document.getElementById('group-mgnb');
+  var body = document.body;
+  mgnb.classList.toggle('active');
+  body.classList.toggle('active');
+}
 
 /**
  * 브랜드 로고 스와이퍼

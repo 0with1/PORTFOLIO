@@ -226,6 +226,6 @@
  .notice .close a:before { content:''; display: inline-block; width: 12px; height: 12px; background: url(../images/cc-close.png) center/12px 12px no-repeat; vertical-align: -2px; } 
 
 /*고정 스크롤 업*/
-.fix-top { width: 34px; height: 34px; background: url(../images/cc-scrollup.png) center/34px 34px no-repeat; position: fixed; bottom: -50px; left: 50%; margin-left: 600px; transition: 1s; opacity: 0; visibility: hidden; } 
+.btn-fix-top { width: 34px; height: 34px; background: url(../images/cc-scrollup.png) center/34px 34px no-repeat; position: fixed; bottom: -50px; left: 50%; margin-left: 600px; transition: 1s; opacity: 0; visibility: hidden; } 
  /*중심축을 지정한 다음 margin-left로 이동*/
-.fix-top.active { opacity: 1; visibility: visible; bottom: 50px; } 
+.btn-fix-top.active { opacity: 1; visibility: visible; bottom: 50px; } 
