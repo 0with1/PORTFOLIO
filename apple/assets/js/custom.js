@@ -1,4 +1,3 @@
-
 $(function () {
 
   /**
@@ -120,6 +119,25 @@ $(function () {
   ScrollTrigger.matchMedia({
 
     "(min-width: 1068px)": function () {
+
+      /**
+       * 화면 실행 시.
+       * 1068 이후 텍스트 동작.
+      */
+      const loadMotion = gsap.timeline();
+      loadMotion
+        .addLabel('a')
+        .to(".title-blue", { y: +60, opacity: 1, duration: 1 }, 'a')
+        .to(".title-blue", { y: 0, opacity: 0, duration: 0.3 }, 'a+1')
+        .to(".title-pink", { opacity:0, duration: 0.3}, 'a+1')
+        .to(".title-yellow", { y: -60, opacity: 1, duration: 1 }, 'a')
+        .to(".title-yellow", { y: 0, opacity: 0, duration: 0.3 }, 'a+1')
+        .to(".main-txt.wri", { y: -70, opacity: 1, duration: 0.3}, 'a+1')
+        .to(".main-txt.drw", { y: 0, opacity: 1, duration: 0.3 }, 'a+1')
+        .to(".main-txt.fal", { y: 70, opacity: 1, duration: 0.3 }, 'a+1')
+        .to(".sub-wrap", {opacity:1, duration:0.3}, 'a+1')
+      
+      
       /**
        * .sc-fallin
        * 1068 이후 텍스트 위로 움직이는 동작
