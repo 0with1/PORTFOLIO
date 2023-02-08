@@ -1,42 +1,26 @@
 $(function () {
 
 
-
-
-
-
-
-
-
-
-  
-
-
-  var $maintab = $('.maintab-list');
-  
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 0) {
-  //     $maintab.addClass('fixed');
-  //   } else {
-  //     $maintab.removeClass('fixed');
-  //   }
-  // })
-
-
-
-
-
-
 /*메인 비주얼 슬라이드*/
 var visualSlide = new Swiper(".visual-slide", {
   pagination: {
     el: ".fraction",
-    type: "fraction",
+    type: "custom",
+    renderCustom: function (swiper, cur, t) {
+
+      curNum = (cur < 10) ? '0' + cur : cur;
+      tNum = (t < 10) ? '0' + t : t;
+
+      return `<span class="page_cur">${curNum}</span> /
+              <span class="page_t">${tNum}</span>`;
+    }
   },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
+
+  
 });
 
 $('.visual-slide .autoplay').click(function (e) {
@@ -64,10 +48,6 @@ var bannerSlide = new Swiper(".banner-slide", {
     disableOnInteraction: false,
   },
 });
-
-/*가이드 슬라이드 잘 안됨*/
-
-/*컨셉 슬라이드 잘 안됨*/
 
 
 
