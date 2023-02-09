@@ -1,22 +1,29 @@
 .footer {
   height: 80vh;
-  background: #ccc;
+  background: #000;
   color: #fff;
   display: flex;
   align-items: center;
   position: relative;
 
-  .black & {
+/*   .black & {
     background: #000;
-  }
+  } */
 
   // z-index: -1;
   .inner {
     text-align: center;
     width: calc(100% - 240px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
 
     @include desktop {
       width: calc(100% - 30px);
+    }
+
+    @include mini{
+      row-gap: 50px;
     }
 
     h2 {
@@ -34,66 +41,91 @@
     }
 
     .ft-tit-wrap {
-      margin-bottom: 120px;
       font-size: 160px;
       line-height: 0.9;
       letter-spacing: -0.03em;
       text-transform: uppercase;
       z-index: 5;
-
-      @include desktop {
-        margin-bottom: 0px;
-      }
     }
 
     .ft-info-wrap {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       position: relative;
-
-      @include desktop {
-        flex-direction: column;
-        row-gap: 50px;
-      }
+      row-gap: 50px;
 
       .ft-soc {
         font-size: 35px;
-        text-align: left;
         display: flex;
-        gap: 100px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 200px;
 
-        @include desktop {
-          position: relative;
-          order: 1;
+        @include ftdesktop {
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           gap: 30px;
+        }
+
+        @include mini{
+          gap: 20px;
+        }
+
+        div {
+          display: flex;
+          text-align: center;
+          gap: 200px;
+
+          @include ftdesktop {
+            gap: unset;
+            width: 100%;
+          }
+
+          @include mini {
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        a {
+          display: block;
+
+          @include ftdesktop {
+            width: calc(100% / 2);
+          }
+
+          @include mini {
+            width: 100%;
+          }
         }
       }
 
       .ft-idea {
-        margin-top: 45px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
 
-        @include desktop {
+
+        @include ftdesktop {
           position: relative;
-          order: 0;
         }
       }
 
-      .ft-links {
+      /* .ft-links {
         @include desktop {
           position: relative;
           order: 2;
         }
-      }
+      } */
     }
   }
 
 
   @include mini {
+    height: 100vh;
     .mini-br-none {
       display: none;
     }

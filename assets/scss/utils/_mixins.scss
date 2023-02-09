@@ -3,6 +3,9 @@ $mini: 500px; //320
 $mobile: 767px; //320
 $tablet: 1023px; // 768
 $desktop: 1024px; //1024
+$ftdesktop: 1300px; //1300
+
+
 
 /*반응형, 브라우저 크기가 500px 이하일때*/
 @mixin mini {
@@ -29,6 +32,12 @@ $desktop: 1024px; //1024
 /*반응형, 브라우저 크기가 1024px 이하*/
 @mixin desktop{
   @media (max-width: $desktop){
+    @content;
+  }
+}
+/*반응형, 브라우저 크기가 1300px 이하*/
+@mixin ftdesktop {
+  @media (max-width: $ftdesktop) {
     @content;
   }
 }
