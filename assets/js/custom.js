@@ -129,7 +129,6 @@ $('[data-background]').each(function (a, b) {
   })
 })
 
-
 /**
 * all
 * 랜덤으로 텍스트 나타남
