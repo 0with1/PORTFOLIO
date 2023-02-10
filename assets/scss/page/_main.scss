@@ -307,12 +307,10 @@ main {
 
       .slider {
         display: flex;
-        animation: clickView 50s infinite linear;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         opacity: 0;
-        transition: opacity .5s ease-out;
         z-index: 2;
 
         @include desktop {
@@ -323,6 +321,9 @@ main {
           width: 250vw;
           display: flex;
           padding: 30px 0;
+          animation: clickView 50s infinite linear;
+          transition: opacity .5s ease-out;
+
 
           li {
             padding: 0 10px;
