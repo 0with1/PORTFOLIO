@@ -9,7 +9,7 @@ $(function () {
   // }, 1000);
 
 
-  $(".bg-change01").mouseover(function () {
+ /*  $(".bg-change01").mouseover(function () {
     $("body").addClass('coding');
   });
 
@@ -25,7 +25,7 @@ $(function () {
 
   $(".bg-change02").mouseout(function () {
     $("body").removeClass('seoul');
-  });
+  }); */
 
 
 
