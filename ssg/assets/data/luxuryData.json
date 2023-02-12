@@ -6,9 +6,10 @@
             "title": "신세계몰",
             "productName": "MSGM(엠에스지엠)",
             "productInfo": "페드로 MSGM 로고 남성 티셔츠 3040MM108 217098 01 3040MM1082170980102 11262282",
-            "cost":"160800",
-            "per":"23%",
-            "price":"123,077"
+            "price": {
+                "ori": "160800",
+                "curr": "123077"
+            }
         },
         {
             "id": 2,
@@ -16,20 +17,21 @@
             "title": "신세계몰",
             "productName": "펜디(FENDI)",
             "productInfo": "페드로  FF 로고 지퍼 반지갑 8M0407 AHM1 F1FNK 8M0407 AHM1F 1FNK 14349213",
-            "cost": "1007900",
-            "per": "23%",
-            "price": "771,447"
+            "price": {
+                "ori": "1007900",
+                "curr": "771447"
+            }
         },
-      
         {
             "id": 3,
             "thumb": "./assets/images/luxury03.jpg",
             "title": "신세계몰",
             "productName": "",
             "productInfo": "페드로 막스마라 가리보 발수 코트 GARIBO 006 GARIBO00600 15572014",
-            "cost": "625300",
-            "per": "23%",
-            "price": "478605"
+            "price": {
+                "ori": "625300",
+                "curr": "478605"
+            }
         },
         {
             "id": 4,
@@ -37,9 +39,10 @@
             "title": "신세계몰",
             "productName": "",
             "productInfo": "신발 FW21 UA52BO200B 블랙",
-            "cost": "1,012,100",
-            "per": "4%",
-            "price": "971616"
+            "price": {
+                "ori": "1012100",
+                "curr": "971616"
+            }
         },
         {
             "id": 1005,
@@ -47,10 +50,10 @@
             "title": "신세계몰",
             "productName": "마르틴 마르지엘라",
             "productInfo": "페드로  타비 발레리나 슈즈 S58WZ0042 P3753 T1003 S58WZ0042P3753T1003 15332289",
-            "cost": "649600",
-            "per": "23%",
-            "price": "497204"
+            "price": {
+                "ori": "649600",
+                "curr": "497204"
+            }
         }
-
     ]
 }

@@ -466,7 +466,7 @@ $(function () {
 
 
 
-        isPer = (element.cost === element.price) ? "hide" : ''
+        isPer = (element.price.ori === element.price.curr) ? "hide" : ''
 
 
 
@@ -484,12 +484,12 @@ $(function () {
                 ${element.productInfo}</p>
               <div class="" class="amount-box">
                 <p class="cost">
-                  <span class="cost-num ${isPer}">${numberformat(element.cost)}</span>
+                  <span class="cost-num ${isPer}">${numberformat(element.price.ori)}</span>
                   <span class="cost-unit">원</span>
                 </p>
                 <p class="dc">
-                  <span class="dc-per ${isPer}">${element.per}</span>
-                  <span class="dc-price">${numberformat(element.price)}</span>
+                  <span class="dc-per ${isPer}">${salepercent(element.price.ori, element.price.curr)}%</span>
+                  <span class="dc-price">${numberformat(element.price.curr)}</span>
                   <span class=dc-unit>원</span>
                 </p>
               </div>
@@ -499,6 +499,11 @@ $(function () {
       $('#luxuryData').html(html);
     })
 
+  
+  //discount rate
+  function salepercent(ori, curr) {
+    return Math.floor((ori - curr) / ori * 100);
+  }
 
 
   //officialData
