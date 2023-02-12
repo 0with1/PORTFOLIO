@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카페24 리뉴얼</title>
 
-  <!-- css -->
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+  <!--stylesheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/canvas.css">
 </head>
+
 <body>
 
 
 
-<!--header start-->
-<header class="header">
-  <div class="group-logo">
-    <h1 class="logo">
-      <a href=""><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="155px" height="28px" viewBox="0 0 155 28" enable-background="new 0 0 155 28" xml:space="preserve">
-<path fill="#0068B6" d="M125.2,2.5c2.5,1.5,4.1,4,4.1,6.9c0,1.9-0.7,3.8-2,5.2c-1.5,1.6-3.7,2.1-5.7,2.6c-1.4,0.3-3.1,0.5-4.5,1.1
+  <!--header start-->
+  <header class="header">
+    <div class="group-logo">
+      <h1 class="logo">
+        <a href=""><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="155px" height="28px" viewBox="0 0 155 28" enable-background="new 0 0 155 28"
+            xml:space="preserve">
+            <path fill="#0068B6" d="M125.2,2.5c2.5,1.5,4.1,4,4.1,6.9c0,1.9-0.7,3.8-2,5.2c-1.5,1.6-3.7,2.1-5.7,2.6c-1.4,0.3-3.1,0.5-4.5,1.1
 	c-1.5,0.6-3,1.5-3,3.4l15.6,0v5.1h-21.4v-4.4c0-2.7,1.2-5.2,4-7.1c2-1.4,4.3-2.1,6.7-2.5c2.1-0.4,4.9-0.6,4.9-3.4
-	c0-2.7-3.4-3.6-5.7-3.5c-2.7,0.2-4.6,1.2-6,2.7l-3.8-3.5c2-2.4,5.8-4.3,9.8-4.4C120.7,0.8,123.2,1.3,125.2,2.5z"/>
-<path fill="#0068B6" d="M131.2,15.6c-0.8,1-1.5,2.4-0.9,4.4c0.5,1.1,1.4,2.3,3.9,2.3h10.7v4.5h5.5v-4.5h4.5v-4.6h-4.5
-	c0,0,0-13.1,0-13.1c0-2-1.5-3.4-3.6-3.6c-1.7-0.2-3.6,0.4-4.7,1.9L131.2,15.6z M144.9,6.6v11.1h-9.4L144.9,6.6z"/>
-<path fill="#00101D" d="M76,16.9H61.8v10h-5.5l0-18.5c0-4.3,2.6-7.1,7.4-7.1l13.3,0v5.1l-12.4,0c-2.1,0-2.8,1-2.8,3c0,0.4,0,3,0,3
-	l14.2,0V16.9z"/>
-<path fill="#00101D" d="M105.5,12.3c-0.3-2.8-1.8-5.7-3.7-7.6c-2.4-2.4-5.7-3.9-9.4-3.9c-7.3,0-13.2,5.9-13.2,13.2
+	c0-2.7-3.4-3.6-5.7-3.5c-2.7,0.2-4.6,1.2-6,2.7l-3.8-3.5c2-2.4,5.8-4.3,9.8-4.4C120.7,0.8,123.2,1.3,125.2,2.5z" />
+            <path fill="#0068B6" d="M131.2,15.6c-0.8,1-1.5,2.4-0.9,4.4c0.5,1.1,1.4,2.3,3.9,2.3h10.7v4.5h5.5v-4.5h4.5v-4.6h-4.5
+	c0,0,0-13.1,0-13.1c0-2-1.5-3.4-3.6-3.6c-1.7-0.2-3.6,0.4-4.7,1.9L131.2,15.6z M144.9,6.6v11.1h-9.4L144.9,6.6z" />
+            <path fill="#00101D" d="M76,16.9H61.8v10h-5.5l0-18.5c0-4.3,2.6-7.1,7.4-7.1l13.3,0v5.1l-12.4,0c-2.1,0-2.8,1-2.8,3c0,0.4,0,3,0,3
+	l14.2,0V16.9z" />
+            <path fill="#00101D" d="M105.5,12.3c-0.3-2.8-1.8-5.7-3.7-7.6c-2.4-2.4-5.7-3.9-9.4-3.9c-7.3,0-13.2,5.9-13.2,13.2
 	c0,4.7,2.5,8.9,6.3,11.2c2.1,1.3,4.5,1.9,6.9,1.9c3.6,0,7-1.5,9.4-4L98,19.7c-1.4,1.3-3.4,2.2-5.5,2.2c-2.1,0-4.2-0.9-5.7-2.4
 	c-0.8-0.8-1.4-1.8-1.8-2.7h20.3C105.3,16.9,105.8,15,105.5,12.3z M84.6,12.3c0.3-1.4,1-2.8,2.1-3.9c2.6-2.6,6.6-3.1,9.6-1.4
-	c2.2,1.2,3.5,3.2,3.9,5.3H84.6z"/>
-<path fill="#00101D" d="M19.9,19.9l3.7,3.9c-2.5,2.5-5.9,4-9.8,4C6.2,27.8,0.1,21.6,0.1,14c0-7.6,6.2-13.8,13.8-13.8
+	c2.2,1.2,3.5,3.2,3.9,5.3H84.6z" />
+            <path fill="#00101D" d="M19.9,19.9l3.7,3.9c-2.5,2.5-5.9,4-9.8,4C6.2,27.8,0.1,21.6,0.1,14c0-7.6,6.2-13.8,13.8-13.8
 	c3.8,0,7.3,1.6,9.8,4.1l-4.1,3.6c-1.5-1.4-3.5-2.3-5.7-2.3c-4.6,0-8.4,3.8-8.4,8.4c0,4.6,3.8,8.4,8.4,8.4
-	C16.3,22.4,18.4,21.4,19.9,19.9z"/>
-<path fill="#00101D" d="M45.3,1.2v2.7c-1.6-2-4.8-3.1-7.6-3.1c-7.3,0-13.2,5.9-13.2,13.2c0,7.2,5.9,13.1,13,13.1
-	c2.8,0,5.9-0.8,7.8-3.1v2.8h5.6V1.2H45.3z M37.6,22c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8c4.4,0,8,3.6,8,8C45.6,18.4,42.1,22,37.6,22z"
-	/>
-</svg></a>
-    </h1>
-  </div>
+	C16.3,22.4,18.4,21.4,19.9,19.9z" />
+            <path fill="#00101D"
+              d="M45.3,1.2v2.7c-1.6-2-4.8-3.1-7.6-3.1c-7.3,0-13.2,5.9-13.2,13.2c0,7.2,5.9,13.1,13,13.1
+	c2.8,0,5.9-0.8,7.8-3.1v2.8h5.6V1.2H45.3z M37.6,22c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8c4.4,0,8,3.6,8,8C45.6,18.4,42.1,22,37.6,22z" />
+          </svg></a>
+      </h1>
+    </div>
 
-  <nav class="gnb">
+    <nav class="gnb">
       <ul class="nav-list">
         <li class="nav-item"><a href="">커머스</a></li>
         <li class="nav-item"><a href="">마케팅</a></li>
         <li class="nav-item"><a href="">호스팅</a></li>
         <li class="nav-item"><a href="">추천서비스</a></li>
       </ul>
-  </nav>
+    </nav>
 
-  <div class="group-service">
+    <div class="group-service">
       <a href="" class="login">로그인</a>
       <a href="" class="link-book">
-          쇼핑몰 만들기
-          <span class="frame">
-            <span class="link-circle circle1"></span>
-            <span class="link-circle circle2"></span>
-            <span class="link-circle circle3"></span>
-          </span>
-        </a>
-  </div>
+        쇼핑몰 만들기
+        <span class="frame">
+          <span class="link-circle circle1"></span>
+          <span class="link-circle circle2"></span>
+          <span class="link-circle circle3"></span>
+        </span>
+      </a>
+    </div>
 
 
-  <div id="group-mgnb">
-    <div class="mgnb-area">
-      <ul class="mgnb-list">
-        <li><a href="">커머스</a></li>
-        <li><a href="">마케팅</a></li>
-        <li><a href="">호스팅</a></li>
-        <li><a href="">추천서비스</a></li>
-      </ul>
-      <div class="mgnb-service">
-        <a href="" class="m-login">로그인</a>
-        <a href="" class="m-make">쇼핑몰 만들기</a>
+    <div id="group-mgnb">
+      <div class="mgnb-area">
+        <ul class="mgnb-list">
+          <li><a href="">커머스</a></li>
+          <li><a href="">마케팅</a></li>
+          <li><a href="">호스팅</a></li>
+          <li><a href="">추천서비스</a></li>
+        </ul>
+        <div class="mgnb-service">
+          <a href="" class="m-login">로그인</a>
+          <a href="" class="m-make">쇼핑몰 만들기</a>
+        </div>
+      </div>
+      <div class="toggle" onclick="toggle()">
+        <span class="blind">메뉴</span>
+        <span class="hbg"></span>
       </div>
     </div>
-    <div class="toggle" onclick="toggle()">
-      <span class="blind">메뉴</span>
-      <span class="hbg"></span>
-    </div>
-  </div>  
-</header>
+  </header>
 
 
 
-<div class="wrapper">
+  <div class="wrapper">
 
-  <!--main start-->
-  <main class="container">
-    <section class="sc-visual">
+    <!--main start-->
+    <main class="container">
+      <section class="sc-visual">
         <h2>
           <span>Global</span>
           <span>E-Commerce</span>
           <span>Platform</span>
         </h2>
-        
+
         <a href="" class="link-book">
           쇼핑몰 만들기
           <span class="frame">
@@ -112,235 +112,235 @@
         </a>
 
         <div class="video-area">
-            <div class="video-wrap">
-              <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                <source src="./assets/video/main03.mp4" type="video/webm">
-              </video>
-            </div>
-            <span class="circle"></span>
-        </div>
-
-    </section>
-
-    <section class="sc-hori-bmm">
-      <h2 class="blind">가로 텍스트 이동</h2>
-      <div class="group-bmm">
-        <strong class="text1">회원가입만 하면<br> 만들어지는 무료 쇼핑몰</strong>
-        <strong class="text2">9개 언어 글로벌 쇼핑몰을<br> 무료로 확장</strong>
-        <strong class="text3">더 빠른 매출 상승!<br> 스마트스토어도 카페24에서</strong>
-        <strong class="text4">기업 홍보부터 펜션, 병원까지<br>쉽고 빠른 홈페이지 제작</strong>
-      </div>
-    </section>
-
-    
-    <section class="sc-success" data-block>
-      
-      <div class="matter-area" >
-        <h2 data-motion="text" data-start="80%" data-end="100%">
-          <span class="point">200만의 성공 신화!</span>
-          <span>1인 창업자부터 대기업까지</span>
-          <span>모두 카페24
-            <span class="title-img">
-              <img src="./assets/images/user05.jpg" alt="유저 이미지1">
-              <img src="./assets/images/user06.jpg" alt="유저 이미지2">
-              <img src="./assets/images/user07.jpg" alt="유저 이미지3">
-            </span>
-          </span><span class="sub-tit">패션 · 뷰티 · 엔터테인먼트 · 식품 · 가구 등 성장하는 기업이 카페24로 활약하고 있습니다.</span>
-
-        </h2>
-        <div class="canvas-box"></div>
-      </div>
-      <div class="group-slide"><!--슬라이드 나오지 않음-->
-        <div class="swiper review-slide">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="img-box spao">
-                <img src="./assets/images/brand01.svg" alt="스파오">
-              </div>
-              <p>카페24의 오픈 API로 기존 시스템과 문제없이 연동해<br> 신규 브랜드 사이트를 빠르게 오픈할 수 있습니다.</p>
-            </div>
-            <div class="swiper-slide ">
-              <div class="img-box dcv">
-                <img src="./assets/images/brand02.svg" alt="디스커버리">
-              </div>
-              <p>이커머스 필수 기능을 바로 사용할 수 있어,<br> SI 방식보다 쇼핑몰 구축과 개선 시간이 단축됩니다.</p>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-box snd">
-                <img src="./assets/images/brand03.svg" alt="스타일난다">
-              </div>
-              <p>사업 초기부터 글로벌 브랜드가 된 지금까지,<br> 아낌없이 지원하는 카페24와 함께 합니다.</p>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-box sixsix">
-                <img src="./assets/images/brand04.png" alt="육육걸즈">
-              </div>
-              <p>글로벌로 비즈니스를 확장하며 연 매출 수백억 원 이상으로 성장한 지금도,<br> 카페24와 함께하고 있습니다.</p>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-box andar">
-                <img src="./assets/images/brand05.svg" alt="안다르">
-              </div>
-              <p>카페24와 함께 K 애슬레저 리딩 브랜드로<br> 지속 성장할 수 있습니다.</p>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-box nerdy">
-                <img src="./assets/images/brand06.png" alt="널디">
-              </div>
-              <p>쉬운 UI와 트렌디한 디자인의 사이트를 만들 수 있어,<br> 해외 소비자에게도 어필할 수 있습니다.</p>
-            </div>
-            
+          <div class="video-wrap">
+            <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+              <source src="./assets/video/main03.mp4" type="video/webm">
+            </video>
           </div>
+          <span class="circle"></span>
         </div>
-        <div class="swiper-control">
+
+      </section>
+
+      <section class="sc-hori-bmm">
+        <h2 class="blind">가로 텍스트 이동</h2>
+        <div class="group-bmm">
+          <strong class="text1">회원가입만 하면<br> 만들어지는 무료 쇼핑몰</strong>
+          <strong class="text2">9개 언어 글로벌 쇼핑몰을<br> 무료로 확장</strong>
+          <strong class="text3">더 빠른 매출 상승!<br> 스마트스토어도 카페24에서</strong>
+          <strong class="text4">기업 홍보부터 펜션, 병원까지<br>쉽고 빠른 홈페이지 제작</strong>
+        </div>
+      </section>
+
+
+      <section class="sc-success" data-block>
+
+        <div class="matter-area">
+          <h2 data-motion="text" data-start="80%" data-end="100%">
+            <span class="point">200만의 성공 신화!</span>
+            <span>1인 창업자부터 대기업까지</span>
+            <span>모두 카페24
+              <span class="title-img">
+                <img src="./assets/images/user05.jpg" alt="유저 이미지1">
+                <img src="./assets/images/user06.jpg" alt="유저 이미지2">
+                <img src="./assets/images/user07.jpg" alt="유저 이미지3">
+              </span>
+            </span><span class="sub-tit">패션 · 뷰티 · 엔터테인먼트 · 식품 · 가구 등 성장하는 기업이 카페24로 활약하고 있습니다.</span>
+
+          </h2>
+          <div class="canvas-box"></div>
+        </div>
+        <div class="group-slide"><!--슬라이드 나오지 않음-->
+          <div class="swiper review-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box spao">
+                  <img src="./assets/images/brand01.svg" alt="스파오">
+                </div>
+                <p>카페24의 오픈 API로 기존 시스템과 문제없이 연동해<br> 신규 브랜드 사이트를 빠르게 오픈할 수 있습니다.</p>
+              </div>
+              <div class="swiper-slide ">
+                <div class="img-box dcv">
+                  <img src="./assets/images/brand02.svg" alt="디스커버리">
+                </div>
+                <p>이커머스 필수 기능을 바로 사용할 수 있어,<br> SI 방식보다 쇼핑몰 구축과 개선 시간이 단축됩니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box snd">
+                  <img src="./assets/images/brand03.svg" alt="스타일난다">
+                </div>
+                <p>사업 초기부터 글로벌 브랜드가 된 지금까지,<br> 아낌없이 지원하는 카페24와 함께 합니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box sixsix">
+                  <img src="./assets/images/brand04.png" alt="육육걸즈">
+                </div>
+                <p>글로벌로 비즈니스를 확장하며 연 매출 수백억 원 이상으로 성장한 지금도,<br> 카페24와 함께하고 있습니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box andar">
+                  <img src="./assets/images/brand05.svg" alt="안다르">
+                </div>
+                <p>카페24와 함께 K 애슬레저 리딩 브랜드로<br> 지속 성장할 수 있습니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box nerdy">
+                  <img src="./assets/images/brand06.png" alt="널디">
+                </div>
+                <p>쉬운 UI와 트렌디한 디자인의 사이트를 만들 수 있어,<br> 해외 소비자에게도 어필할 수 있습니다.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-control">
             <div class="swiper-button-next brand-next"></div>
             <div class="swiper-button-prev brand-prev"></div>
           </div>
-  
-        <div class="group-slider">
-            <ul class="sales-list">
-                <li>
-                    <img src="./assets/images/logo1.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo2.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo3.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo4.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo5.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo6.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo7.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo8.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo9.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo10.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo11.png" alt="">
-                </li>
-                <li>
-                    <img src="./assets/images/logo12.png" alt="">
-                </li>
-                
-            </ul>
-            <ul class="sales-list">
-                <li>
-                    <img src="./assets/images/logo1.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo2.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo3.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo4.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo5.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo6.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo7.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo8.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo9.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo10.png" alt="브랜드 로고">
-                </li>
-                <li>
-                    <img src="./assets/images/logo11.png" alt="">
-                </li>
-                <li>
-                    <img src="./assets/images/logo12.png" alt="">
-                </li>
-                
-            </ul>
-        </div>
-      </div>
 
-    </section>
-    <section class="sc-comm" data-background="black">
-      <h2 data-motion="text" data-start="85%" data-end="100%">
-        <span>커머스 <em class="deco">Commerce</em></span>
-      </h2>
-      <ul class="comm-list">
-        <li class="comm-item select">
-          <div class="title-area" data-motion="text" data-start="60%" data-end="100%">
-            <strong>1.</strong>
-            <span>200만 쇼핑몰의 선택,</span>
-            <span class="effect-circle">카페24</span>
+          <div class="group-slider">
+            <ul class="sales-list">
+              <li>
+                <img src="./assets/images/logo1.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo2.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo3.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo4.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo5.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo6.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo7.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo8.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo9.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo10.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo11.png" alt="">
+              </li>
+              <li>
+                <img src="./assets/images/logo12.png" alt="">
+              </li>
+
+            </ul>
+            <ul class="sales-list">
+              <li>
+                <img src="./assets/images/logo1.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo2.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo3.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo4.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo5.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo6.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo7.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo8.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo9.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo10.png" alt="브랜드 로고">
+              </li>
+              <li>
+                <img src="./assets/images/logo11.png" alt="">
+              </li>
+              <li>
+                <img src="./assets/images/logo12.png" alt="">
+              </li>
+
+            </ul>
           </div>
-          <div class="img-area">
-            <div class="effect01-wrap">
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
-          
+        </div>
+
+      </section>
+      <section class="sc-comm" data-background="black">
+        <h2 data-motion="text" data-start="85%" data-end="100%">
+          <span>커머스 <em class="deco">Commerce</em></span>
+        </h2>
+        <ul class="comm-list">
+          <li class="comm-item select">
+            <div class="title-area" data-motion="text" data-start="60%" data-end="100%">
+              <strong>1.</strong>
+              <span>200만 쇼핑몰의 선택,</span>
+              <span class="effect-circle">카페24</span>
             </div>
-            <div class="img-wrap">
-              <img src="./assets/images/step01.svg" alt="카페24 배경01">
-              <div class="video-box">
-                <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                <source src="./assets/video/comm01.mp4" type="video/webm">
+            <div class="img-area">
+              <div class="effect01-wrap">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+
               </div>
-              
+              <div class="img-wrap">
+                <img src="./assets/images/step01.svg" alt="카페24 배경01">
+                <div class="video-box">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/comm01.mp4" type="video/webm">
+                </div>
+
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="comm-item domain">
+          </li>
+          <li class="comm-item domain">
             <div class="title-area" data-motion="text" data-start="60%" data-end="100%">
               <strong>2.</strong>
               <span>쇼핑몰 브랜딩의 시작,</span>
@@ -348,70 +348,70 @@
             </div>
             <div class="img-area">
               <div class="effect02-wrap">
-                    <div class="line">
-                            <div class="span-wrap">
-                                <span class="span-slow">is pleasure.</span>
-                                <span class="span-slow">is pleasure.</span>
-                                <span class="span-slow">is pleasure.</span>
-                            </div>
-                            <div class="span-wrap">
-                                <span class="span-fast">No.1 Domain</span>
-                                <span class="span-fast">No.1 Domain</span>
-                                <span class="span-fast">No.1 Domain</span>
-                            </div>
-                    </div>
-                    <div class="line">
-                            <div class="span-wrap">
-                                <span class="span-slow">cafe24.com</span>
-                                <span class="span-slow">cafe24.com</span>
-                                <span class="span-slow">cafe24.com</span>
-                            </div>
-                            <div class="span-wrap">
-                                <span class="span-fast">cafe24.kr</span>
-                                <span class="span-fast">cafe24.kr</span>
-                                <span class="span-fast">cafe24.kr</span>
-                            </div>
-                    </div>
-                    <div class="line">
-                            <div class="span-wrap">
-                                <span class="span-slow">cafe24.co.kr</span>
-                                <span class="span-slow">cafe24.co.kr</span>
-                                <span class="span-slow">cafe24.co.kr</span>
-                            </div>
-                            <div class="span-wrap">
-                                <span class="span-fast">cafe24.com</span>
-                                <span class="span-fast">cafe24.com</span>
-                                <span class="span-fast">cafe24.com</span>
-                            </div>
-                    </div>
-                    <div class="line">
-                            <div class="span-wrap">
-                                <span class="span-slow">cafe24.net</span>
-                                <span class="span-slow">cafe24.net</span>
-                                <span class="span-slow">cafe24.net</span>
-                            </div>
-                            <div class="span-wrap">
-                                <span class="span-fast">cafe24.com</span>
-                                <span class="span-fast">cafe24.com</span>
-                                <span class="span-fast">cafe24.com</span>
-                            </div>
-                    </div>
-
-                    
+                <div class="line">
+                  <div class="span-wrap">
+                    <span class="span-slow">is pleasure.</span>
+                    <span class="span-slow">is pleasure.</span>
+                    <span class="span-slow">is pleasure.</span>
+                  </div>
+                  <div class="span-wrap">
+                    <span class="span-fast">No.1 Domain</span>
+                    <span class="span-fast">No.1 Domain</span>
+                    <span class="span-fast">No.1 Domain</span>
+                  </div>
                 </div>
+                <div class="line">
+                  <div class="span-wrap">
+                    <span class="span-slow">cafe24.com</span>
+                    <span class="span-slow">cafe24.com</span>
+                    <span class="span-slow">cafe24.com</span>
+                  </div>
+                  <div class="span-wrap">
+                    <span class="span-fast">cafe24.kr</span>
+                    <span class="span-fast">cafe24.kr</span>
+                    <span class="span-fast">cafe24.kr</span>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="span-wrap">
+                    <span class="span-slow">cafe24.co.kr</span>
+                    <span class="span-slow">cafe24.co.kr</span>
+                    <span class="span-slow">cafe24.co.kr</span>
+                  </div>
+                  <div class="span-wrap">
+                    <span class="span-fast">cafe24.com</span>
+                    <span class="span-fast">cafe24.com</span>
+                    <span class="span-fast">cafe24.com</span>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="span-wrap">
+                    <span class="span-slow">cafe24.net</span>
+                    <span class="span-slow">cafe24.net</span>
+                    <span class="span-slow">cafe24.net</span>
+                  </div>
+                  <div class="span-wrap">
+                    <span class="span-fast">cafe24.com</span>
+                    <span class="span-fast">cafe24.com</span>
+                    <span class="span-fast">cafe24.com</span>
+                  </div>
+                </div>
+
+
+              </div>
               <div class="img-wrap">
-              <img src="./assets/images/step02.svg" alt="카페24 배경02">
-              <div class="video-box">
-                <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                <source src="./assets/video/comm02.mp4" type="video/webm">
+                <img src="./assets/images/step02.svg" alt="카페24 배경02">
+                <div class="video-box">
+                  <video autoplay="" playsinline="" muted="" loop="" draggable="true">
+                    <source src="./assets/video/comm02.mp4" type="video/webm">
+                </div>
               </div>
             </div>
-            </div>
-            
 
-        </li>
-        <li class="comm-item youtube">
-            
+
+          </li>
+          <li class="comm-item youtube">
+
             <div class="title-area" data-motion="text" data-start="60%" data-end="100%">
               <strong>3.</strong>
               <span>카페24 쇼핑몰 상품을</span>
@@ -420,57 +420,57 @@
             </div>
             <div class="img-area">
               <div class="effect03-wrap">
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-                  <div class="youtube-play"></div>
-              
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+                <div class="youtube-play"></div>
+
               </div>
               <div class="img-wrap">
                 <img src="./assets/images/step03.svg" alt="세번째 스텝">
                 <div class="video-box">
                   <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                  <source src="./assets/video/comm03-1.mp4" type="video/webm">
+                    <source src="./assets/video/comm03-1.mp4" type="video/webm">
                 </div>
               </div>
             </div>
-        </li>
-        <li class="comm-item overseas">
+          </li>
+          <li class="comm-item overseas">
             <div class="title-area" data-motion="text" data-start="60%" data-end="100%">
               <strong>4.</strong>
               <span>전 세계 200여 개국 어디든</span>
@@ -638,79 +638,80 @@
                 <img src="./assets/images/step04.svg" alt="네번째 스텝">
                 <div class="video-box">
                   <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                  <source src="./assets/video/comm04.mp4" type="video/webm">
+                    <source src="./assets/video/comm04.mp4" type="video/webm">
                 </div>
               </div>
             </div>
-        </li>
-      </ul>
-    </section>
-    <section class="sc-meetings">
-      <div class="inner">
-        <div class="title-area">
+          </li>
+        </ul>
+      </section>
+      <section class="sc-meetings">
+        <div class="inner">
+          <div class="title-area">
             <h2 data-motion="text" data-start="100%" data-end="100%">
               <span>스타일난다, 육육걸즈, 핫핑 등</span>
-            <span class="deco">아이디어만 있다면 누구나 </span> 
-            <span>카페24에서 온라인 쇼핑몰을</span>
-            <span>시작할 수 있습니다. </span>
+              <span class="deco">아이디어만 있다면 누구나 </span>
+              <span>카페24에서 온라인 쇼핑몰을</span>
+              <span>시작할 수 있습니다. </span>
             </h2>
 
-          <a href="" class="link-book">
-            쇼핑몰 만들기
-            <span class="frame">
-              <span class="link-circle circle1"></span>
-              <span class="link-circle circle2"></span>
-              <span class="link-circle circle3"></span>
-            </span>
-          </a>
-          <em>카페24가 늘 함께하겠습니다. 🤙</em>
+            <a href="" class="link-book">
+              쇼핑몰 만들기
+              <span class="frame">
+                <span class="link-circle circle1"></span>
+                <span class="link-circle circle2"></span>
+                <span class="link-circle circle3"></span>
+              </span>
+            </a>
+            <em>카페24가 늘 함께하겠습니다. 🤙</em>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="sc-hori-why">
-      <div class="group-why">
-        <h2 data-motion="text" data-start="80%" data-end="100%">
-          <span>왜 카페24에서</span>
-          <span><span class="deco">마케팅</span>을 해야할까?</span>
-        </h2>
-        <div class="horizontal-area area01">
-          <div class="img-wrap">
-            <img src="./assets/images/marketing01.jpg" alt="">
+      <section class="sc-hori-why">
+        <div class="group-why">
+          <h2 data-motion="text" data-start="80%" data-end="100%">
+            <span>왜 카페24에서</span>
+            <span><span class="deco">마케팅</span>을 해야할까?</span>
+          </h2>
+          <div class="horizontal-area area01">
+            <div class="img-wrap">
+              <img src="./assets/images/marketing01.jpg" alt="">
+            </div>
+            <strong>
+              내 쇼핑몰에 맞는<br>
+              최고의 광고 전략<br>
+              카페24 마케팅센터에서
+            </strong>
+            <p>명확한 목표 설정, 차별화 전략 수립, 정확한 타깃화, 세밀한 성과 측정까지!
+              <br>성공 마케팅은 카페24 마케팅센터에서 이뤄집니다.
+            </p>
           </div>
-          <strong>
-            내 쇼핑몰에 맞는<br>
-            최고의 광고 전략<br>
-            카페24 마케팅센터에서
-          </strong>
-          <p>명확한 목표 설정, 차별화 전략 수립, 정확한 타깃화, 세밀한 성과 측정까지!
-          <br>성공 마케팅은 카페24 마케팅센터에서 이뤄집니다.</p>
-        </div>
-        <div class="horizontal-area area02">
-          <div class="img-wrap">
-            <img src="./assets/images/marketing02.jpg" alt="">
+          <div class="horizontal-area area02">
+            <div class="img-wrap">
+              <img src="./assets/images/marketing02.jpg" alt="">
+            </div>
+            <strong>
+              전 세계에 있는 모든<br>
+              강력한 마케팅 채널을<br>
+              카페24에서
+            </strong>
+            <p>구글, 페이스북, 인스타그램, 유튜브 등 전 세계 강력한 파트너십을 갖춘<br> 카페24와 함께 글로벌 진출에 성공하세요.</p>
           </div>
-          <strong>
-            전 세계에 있는 모든<br>
-            강력한 마케팅 채널을<br>
-            카페24에서
-          </strong>
-          <p>구글, 페이스북, 인스타그램, 유튜브 등 전 세계 강력한 파트너십을 갖춘<br> 카페24와 함께 글로벌 진출에 성공하세요.</p>
-        </div>
-        <div class="horizontal-area area03">
-          <div class="img-wrap">
-            <img src="./assets/images/marketing03.jpg" alt="">
+          <div class="horizontal-area area03">
+            <div class="img-wrap">
+              <img src="./assets/images/marketing03.jpg" alt="">
+            </div>
+            <strong>
+              빅데이터 기반<br>
+              광고마케팅 전략 설정을<br>
+              카페24와 함께
+            </strong>
+            <p>200만 성공 쇼핑몰의 전자상거래 빅데이터를 기반으로<br> 최첨단 광고마케팅을 진행할 수 있습니다.</p>
           </div>
-          <strong>
-          빅데이터 기반<br>
-          광고마케팅 전략 설정을<br>
-          카페24와 함께
-          </strong>
-          <p>200만 성공 쇼핑몰의 전자상거래 빅데이터를 기반으로<br> 최첨단 광고마케팅을 진행할 수 있습니다.</p>
         </div>
-      </div>
-    </section>
-    <section class="sc-busi">
+      </section>
+      <section class="sc-busi">
         <div class="inner2">
           <h2>
             <span>온라인 <span class="deco">비즈니스 </span></span>
@@ -718,8 +719,8 @@
           </h2>
           <div class="video-wrap">
             <video autoplay="" playsinline="" muted="" loop="" draggable="true">
-                <source src="./assets/video/main02.mp4" type="video/webm">
-              </video>
+              <source src="./assets/video/main02.mp4" type="video/webm">
+            </video>
           </div>
           <ul class="busi-list">
             <li class="busi-item">
@@ -760,100 +761,100 @@
             </li>
           </ul>
         </div>
-    </section>
-    
-    <section class="sc-hosting">
-      <div class="title-area">
-        <h2>
-          <span>호스팅</span>
-        </h2>
-        <div class="video-wrap">
+      </section>
+
+      <section class="sc-hosting">
+        <div class="title-area">
+          <h2>
+            <span>호스팅</span>
+          </h2>
+          <div class="video-wrap">
             <p>145만 고객이 사용하는 국내 1위<br>
-                온라인 비즈니스 인프라
+              온라인 비즈니스 인프라
             </p>
-        </div>
-      </div>
-      <div class="price-area">
-        <div class="price-wrap">
-          <div class="price-box  free">
-            <span>일반형</span>
-            <strong>1,100원<span>/월</span></strong>
-            <p>규모가 작은 소상공인용</p>
-            <a href="" class="price-btn link-book">
-              신청하기
-              <span class="frame"></span>
-            </a>
           </div>
-          <ul class="price-list">
-            <li class="price-item"><span>1.4GB 웹용량</span></li>
-            <li class="price-item"><span>2.5GB 트래픽 용량</span></li>
-            <li class="price-item"><span>무제한 데이터베이스</span></li>
-          </ul>
         </div>
-        <div class="price-wrap">
-          <div class="price-box  enterprise">
-            <span>비즈니스</span>
-            <strong>5,500원<span>/월</span></strong>
-            <p>성장단계 기업에 추천</p>
-            <a href="" class="price-btn link-book">
-              신청하기
+        <div class="price-area">
+          <div class="price-wrap">
+            <div class="price-box  free">
+              <span>일반형</span>
+              <strong>1,100원<span>/월</span></strong>
+              <p>규모가 작은 소상공인용</p>
+              <a href="" class="price-btn link-book">
+                신청하기
+                <span class="frame"></span>
+              </a>
+            </div>
+            <ul class="price-list">
+              <li class="price-item"><span>1.4GB 웹용량</span></li>
+              <li class="price-item"><span>2.5GB 트래픽 용량</span></li>
+              <li class="price-item"><span>무제한 데이터베이스</span></li>
+            </ul>
+          </div>
+          <div class="price-wrap">
+            <div class="price-box  enterprise">
+              <span>비즈니스</span>
+              <strong>5,500원<span>/월</span></strong>
+              <p>성장단계 기업에 추천</p>
+              <a href="" class="price-btn link-book">
+                신청하기
+                <span class="frame">
+                  <span class="link-circle circle1"></span>
+                  <span class="link-circle circle2"></span>
+                  <span class="link-circle circle3"></span>
+                </span>
+              </a>
+            </div>
+            <ul class="price-list">
+              <li class="price-item">4GB 웹용량</li>
+              <li class="price-item">6.5GB 트래픽 용량</li>
+              <li class="price-item">무제한 데이터베이스</li>
+            </ul>
+          </div>
+          <div class="price-wrap">
+            <div class="price-box  free">
+              <span>퍼스트클래스</span>
+              <strong>11,000원<span>/월</span></strong>
+              <p>비즈니스 확장에 적합</p>
+              <a href="" class="price-btn link-book">
+                신청하기
+                <span class="frame"></span>
+              </a>
+            </div>
+            <ul class="price-list">
+              <li class="price-item">8GB 웹용량</li>
+              <li class="price-item">14.5GB 트래픽 용량</li>
+              <li class="price-item">무제한 데이터베이스</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <section class="sc-dont">
+        <div class="group-dont">
+          <div class="inner">
+            <h2 data-motion="text" data-start="90%" data-end="100%">
+              <span>어디서, 무엇을 팔든 </span>
+              <span>카페24에서 시작하고 매출UP</span>
+            </h2>
+            <a href="" class="link-book">
+              자세히보기
               <span class="frame">
                 <span class="link-circle circle1"></span>
-            <span class="link-circle circle2"></span>
-            <span class="link-circle circle3"></span>
+                <span class="link-circle circle2"></span>
+                <span class="link-circle circle3"></span>
               </span>
             </a>
           </div>
-          <ul class="price-list">
-            <li class="price-item">4GB 웹용량</li>
-            <li class="price-item">6.5GB 트래픽 용량</li>
-            <li class="price-item">무제한 데이터베이스</li>
-          </ul>
         </div>
-        <div class="price-wrap">
-          <div class="price-box  free">
-            <span>퍼스트클래스</span>
-            <strong>11,000원<span>/월</span></strong>
-            <p>비즈니스 확장에 적합</p>
-            <a href="" class="price-btn link-book">
-              신청하기
-              <span class="frame"></span>
-            </a>
-          </div>
-          <ul class="price-list">
-            <li class="price-item">8GB 웹용량</li>
-            <li class="price-item">14.5GB 트래픽 용량</li>
-            <li class="price-item">무제한 데이터베이스</li>
-          </ul>
-        </div>
-      </div>
-      
-    </section>
-    <section class="sc-dont">
-      <div class="group-dont">
-        <div class="inner">
-          <h2 data-motion="text" data-start="90%" data-end="100%">
-            <span>어디서, 무엇을 팔든 </span> 
-            <span>카페24에서 시작하고 매출UP</span> 
-          </h2>
-          <a href="" class="link-book">
-            자세히보기
-            <span class="frame">
-              <span class="link-circle circle1"></span>
-              <span class="link-circle circle2"></span>
-              <span class="link-circle circle3"></span>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
 
-  <!--footer start-->
-  <footer class="footer">
-    <div class="inner">
-      <div class="group-flex">
+    <!--footer start-->
+    <footer class="footer">
+      <div class="inner">
+        <div class="group-flex">
           <div class="logo-area">
             <h2 class="footer-logo"><a href=""></a></h2>
             <p>Create personalized<br> site at scale</p>
@@ -866,33 +867,34 @@
             <li class="nav-item"><a href="">파트너</a></li>
             <li class="nav-item"><a href="">기업정보</a></li>
           </ul>
-      </div>
-      <div class="group-policy">
+        </div>
+        <div class="group-policy">
           <a href="">Privacy Policy</a>
           <a href="" class="mail">hosting@cafe24corp.com</a>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
-<!--cursor start-->
-<div class="cursor"></div>
-
+  <!--cursor start-->
+  <div class="cursor"></div>
 
 
 
 
-<!-- partial -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/two.js@v0.7.0-stable.1/build/two.js"></script><!--그래픽을 만들기 위함-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
-<script  src="./assets/js/custom.js"></script>
-<script src="./assets/js/matter.js"></script>
-<script>
 
-</script>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/two.js@v0.7.0-stable.1/build/two.js"></script><!--그래픽을 만들기 위함-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <script src="./assets/js/matter.js"></script>
+  <script>
+
+  </script>
 </body>
+
 </html>
