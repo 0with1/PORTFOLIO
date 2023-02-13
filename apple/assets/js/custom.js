@@ -1,12 +1,12 @@
 $(function () {
 
-  /**
- * footer 디렉토리 영역 모바일 시 탭으로 변경.
- */
-  $(".footer .directory-area strong").click(function () {
-    $(this).toggleClass("is-active");
-    $(this).next(".directory-list").toggleClass("is-active");
-  })
+//   /**
+//  * footer 디렉토리 영역 모바일 시 탭으로 변경.
+//  */
+//   $(".footer .directory-area strong").click(function () {
+//     $(this).toggleClass("is-active");
+//     $(this).next(".directory-list").toggleClass("is-active");
+//   })
 
   /**
  * sc-sticky 비디오 영역 1068 축소시 video-appear 클래스 제거.
