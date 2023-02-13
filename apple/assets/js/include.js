@@ -1,9 +1,9 @@
 
-$("#header").load("header.html");
+$("#header").load("./assets/include/header.html");
 
   /**
  * footer 디렉토리 영역 모바일 시 탭으로 변경.
- */$("footer").load("footer.html", function () {
+ */$("footer").load("./assets/include/footer.html", function () {
     $(".footer .directory-wrap strong").click(function () {
       // $(this).toggleClass("is-active");
       // $(this).next(".directory-list").toggleClass("is-active");
