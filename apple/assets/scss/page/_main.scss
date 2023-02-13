@@ -177,248 +177,310 @@
 
 }
 
-.sc-withyou {
-  position: relative;
-  height: 340vh;
-
-  @include desktop {
-    height: auto;
-  }
+.sc-sticky {
+  min-height: unset;
 
   @include mobile {
     margin-top: 38px;
   }
 
-
-
-  .sticky-shape {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .group-sticky {
+    position: relative; //relative 부모요소 설정
     width: 100%;
-    top: 0;
-    bottom: 0;
 
+    /*비디오에만 나옴*/
+    .sticky-area {
+      display: none;
+    }
+
+    /*비디오에만 나옴*/
+    .mask-area {
+      display: none;
+    }
+
+    /*비디오에만 나옴*/
+    .btn-area {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .features-area {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%; //전체 가득
+      width: 100%; //전체 가득
+      display: flex;
+      justify-content: center; //정중앙으로
+      align-items: center; //정중앙으로
+      overflow: hidden; //o
+      z-index: 3;
+    }
+
+    .features-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-height: unset;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+
+    .withyou-img {
+      display: block;
+    }
+
+    .video-txt-box {
+      transform: translateY(-215px);
+      height: unset;
+      margin-top: unset;
+      position: absolute; //띄워주고
+      width: 100%; //전체 가득
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop {
+        transform: translateY(-155px);
+      }
+
+      @include mobile {
+        transform: translateY(-102px);
+      }
+
+
+    }
+
+    .video-txt {
+      font-size: 64px;
+      line-height: 1.5;
+      font-weight: 700;
+      text-shadow: unset;
+      padding: 0;
+      margin: 0;
+      color: rgba(29, 29, 31);
+      text-align: center;
+
+      @include desktop {
+        font-size: 40px;
+        line-height: 1.8;
+        font-weight: 700;
+      }
+
+      @include mobile {
+        font-size: 32px;
+        padding: 13px 0px;
+
+        span {
+          display: block;
+          line-height: 1.21875;
+        }
+      }
+    }
+  }
+
+  &.video-appear {
+    min-height: calc(150vh - 44px); //최소 높이 지정
+    overflow: unset; //이렇게 두어야 스티키 가능.
 
     @include desktop {
       display: none;
     }
 
-    figure {
+    &.btn-appear {
+
+      .btn-area {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    .sticky-area {
+      display: block; //비디오에서는 나타나게
+      position: sticky; //sticky되어질 공간 설정
+      top: 0; //sticky 필수요소 top:0으로 위치지정
+      overflow: hidden;
       width: 100%;
-      left: 0;
+
+    }
+
+    .sticky-video-wrap {
+      width: 100%;
+      height: 100vh; //높이 화면 전체값 설정
+    }
+
+    .sticky-video-box {
+      width: 100%; //비디오 감싸는 부모요소 너비값 가득
+      height: 100%; //비디오 감싸는 부모요소 높이값 가득
+      position: relative;
+      z-index: -1; //뒤로 보내기
+      background: #fff;
+    }
+
+    .sticky-video-box video {
+      position: absolute; //absolute로 띄워진 상태
+      object-fit: cover; //비디오 가득 채우기
+      width: 100%;
+      height: 100%;
+      z-index: 1; //앞으로 나오게 하기
+    }
+
+    .mask-area {
+      width: 100%;
+      margin-top: -100vh;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+
+      &:before {
+        //공백 가리기 위한 가상선택자
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        left: 0;
+        z-index: 1;
+        top: -2px;
+      }
+
+      &:after {
+        //공백 가리기 위한 가상선택자
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        left: 0;
+        z-index: 1;
+        bottom: -2px;
+      }
     }
 
     .shape-top {
       background: url(../images/withyou-top.svg) no-repeat;
-      height: 42.5vw;
+      height: 42.6vw;
       top: 0;
+      width: 100%;
+      display: block;
+      z-index: 1;
+      background-size: cover;
     }
 
     .shape-bottom {
       background: url(../images/withyou-bottom.svg) no-repeat;
       height: 36vw;
-      margin-bottom: -1vh;
-    }
-  }
-
-  .sticky-video {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow: hidden;
-
-    @include desktop {
-      display: none;
-    }
-
-    video {
       width: 100%;
+      display: block;
+      z-index: 1;
+      background-size: cover;
     }
 
-  }
+    .body-mask {
+      /*마스크 사이에 간격 주기 위한 공백 박스*/
+      visibility: visible;
+      min-height: calc(150vh + 4px);
+      margin-top: -2px;
+      margin-bottom: -2px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .autoplay {
 
-    position: sticky;
-    z-index: 4;
-    opacity: 0;
-    bottom: 0;
-    right: 0;
-    transition: opacity .3s;
-    pointer-events: none;
-    width: 34px;
-    height: 34px;
 
-    @include desktop {
+    .features-area {
+      position: absolute; //띄워주고
+      top: 0;
+      left: 0;
+      height: 100%; //전체 가득
+      width: 100%; //전체 가득
+      display: flex;
+      justify-content: center; //정중앙으로
+      align-items: center; //정중앙으로
+      overflow: hidden; //o
+      z-index: 3;
+    }
+
+    .features-wrap {
+      height: 100%;
+      width: 100%;
+      max-height: 55vh;
+      z-index: 1;
+    }
+
+
+    .withyou-img {
       display: none;
     }
 
-    .btn-autoplay {
-      display: block;
-      width: 34px;
-      height: 34px;
-      background: url(../images/withyou-pause-icon_34x34.svg) center/34px 34px no-repeat;
-      position: absolute;
-      right: 20px;
-      bottom: 20px;
-      opacity: 0;
+    .video-txt-box {
+      position: absolute; //띄워주고
+      width: 100%; //전체 가득
+      height: 100%; //전체 가득
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: calc(200px*-0.5);
+      transform: unset;
     }
 
-    &.fixed {
-      position: fixed;
-      opacity: 1;
-      cursor: pointer;
-      pointer-events: initial;
-      right: 20px;
-      bottom: 20px;
-
-      .btn-autoplay {
-        position: relative;
-        right: 0px;
-        bottom: 0px;
-        opacity: 1;
-      }
-    }
-
-    &.settled {
-      position: unset;
-      opacity: 1;
-      pointer-events: initial;
-
-      .btn-autoplay {
-        opacity: 1;
-        z-index: 10;
-      }
-    }
-
-    .btn-autoplay {
-      &.active {
-        background: url(../images/withyou-play-icon_34x34.svg) center/34px 34px no-repeat;
-      }
-
-    }
-
-
-  }
-
-  .txt-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    color: #fff;
-    z-index: 2;
-    gap: 200px;
-
-
-    @include desktop {
-      /* &.video-txt-wrap {
-          display: none;
-        } */
-    }
-
-  }
-
-  .main-txt {
-    font-size: 80px;
-    font-weight: 700;
-    text-align: center;
-
-  }
-
-  .group-img {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-    margin-top: 60px;
-
-    @include desktop {
-      font-size: 40px;
-      line-height: 1.775;
+    .video-txt {
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, .5) 0px 0px 200px;
+      padding: 200px;
+      margin: calc(200px*-0.5) calc(200px*-1);
+      font-size: 80px;
       font-weight: 700;
     }
 
-    @include mobile {
-      font-size: 32px;
-
-      span {
-        display: block;
-        text-align: center;
-        line-height: 1.2;
-      }
+    .btn-area {
+      position: sticky;
+      z-index: 4;
+      opacity: 0;
+      bottom: 0;
+      right: 0;
+      transition: opacity .3s;
     }
-  }
 
-  .img-wrap {
 
-    .txt-wrap {
-      gap: 0px;
-      color: #000;
-      top: 25%;
+    .btn-autoplay {
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 40px;
+      bottom: 40px;
 
-      @include mobile {
-        left: 0%;
-        top: 19%;
-        transform: translateX(0%);
-        gap: 26px;
-      }
+      /*
+              들어가면
+              position: unset;
+                right: unset;
+                bottom: unset;
+                */
 
-      .main-txt {
-        font-size: 64px;
 
-        @include desktop {
-          font-size: 40px;
-          line-height: 1.775;
-          font-weight: 700;
-        }
 
-        @include mobile {
-          font-size: 32px;
+      .btn-icon {
+        width: 100%;
+        height: 100%;
+        background: url(../images/withyou-pause-icon_34x34.svg) center/34px 34px no-repeat;
+        position: absolute;
 
-          span {
-            display: block;
-            text-align: center;
-            line-height: 1.2;
-          }
+        &.paused {
+          background: url(../images/withyou-play-icon_34x34.svg) center/34px 34px no-repeat;
         }
       }
-    }
 
+    }
 
   }
-
-
-  &.change-image {
-    height: auto;
-
-    .sticky-shape {
-      display: none
-    }
-
-    .sticky-video {
-      display: none;
-    }
-
-    .video-txt-wrap {
-      display: none;
-    }
-
-    .autoplay {
-      display: none;
-    }
-  }
-
 }
 
 
@@ -2284,7 +2346,7 @@
 }
 
 .section {
-  &:not(.sc-withyou) {
+  &:not(.sc-sticky) {
     overflow: hidden;
   }
 

@@ -117,55 +117,52 @@
         </div>
       </section>
 
-      <section class="section sc-withyou">
-        <h2 class="blind">아이패드 영상 인트로</h2>
-        <div class="autoplay">
-          <button class="btn-autoplay"></button>
-          <span class="blind">자동재생 정지</span>
-        </div>
-        <div class="sticky-video">
-          <video autoplay loop muted id="withyou-video">
-            <source src="./assets/video/video01.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="txt-wrap  video-txt-wrap">
-          <strong class="main-txt  video-txt">
-            <span>화면 한가득.</span>
-            <span>컬러 한가득.</span>
-          </strong>
-          <strong class="main-txt  video-txt">
-            <span>끄적이고.</span>
-            <span>타이핑하고.</span>
-          </strong>
-          <strong class="main-txt  video-txt"><span>어디서나 당신과 함께.</span></strong>
-        </div>
-        <div class="sticky-shape">
-          <figure class="shape-top"></figure>
-          <figure class="shape-bottom"></figure>
-        </div>
-        <div class="group-img">
-          <div class="img-wrap">
-            <picture class="withyou-img01">
-              <source srcset="./assets/images/2-s.jpg" media="(max-width: 734px)">
-              <source srcset="./assets/images/2-m.jpg" media="(max-width: 1068px)">
-              <source srcset="./assets/images/2.jpg" media="(min-width: 0px)">
-              <img src="./assets/images/2.jpg" alt="아이패드 영상 대체 이미지" />
-            </picture>
-            <div class="txt-wrap">
-              <strong class="main-txt">
-                <span>화면 한가득.</span><!-- <br class="m-show"> -->
-                <span>컬러 한가득.</span>
-              </strong>
-              <strong class="main-txt">
-                <span>끄적이고.</span>
-                <span>타이핑하고.</span>
-              </strong>
-              <strong class="main-txt"><span>어디서나 당신과 함께.</span></strong>
+      <section class="section sc-sticky video-appear">
+        <div class="group-sticky">
+          <div class="sticky-area">
+            <div class="sticky-video-wrap">
+              <div class="sticky-video-box">
+                <video autoplay loop muted id="withyou-video">
+                  <source src="./assets/video/video01.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="mask-area">
+            <figure class="shape-top"></figure>
+            <div class="body-mask"></div>
+            <figure class="shape-bottom"></figure>
+          </div>
+          <div class="btn-area">
+            <span class="blind">자동재생 정지</span>
+            <button class="btn-autoplay">
+              <span class="btn-icon"></span>
+            </button>
+          </div>
+          <div class="features-area">
+            <div class="features-wrap">
+              <picture class="withyou-img">
+                <source srcset="./assets/images/2-s.jpg" media="(max-width: 734px)">
+                <source srcset="./assets/images/2-m.jpg" media="(max-width: 1068px)">
+                <source srcset="./assets/images/2.jpg" media="(min-width: 0px)">
+                <img src="./assets/images/2.jpg" alt="아이패드 영상 대체 이미지" />
+              </picture>
+
+              <div class="video-txt-box">
+                <strong class="main-txt  video-txt">
+                  <span>화면 한가득.</span>
+                  <span>컬러 한가득.</span>
+                </strong>
+                <strong class="main-txt  video-txt">
+                  <span>끄적이고.</span>
+                  <span>타이핑하고.</span>
+                </strong>
+                <strong class="main-txt  video-txt"><span>어디서나 당신과 함께.</span></strong>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
 
       <section class="sc-ipad-design"><!--섹션안에 섹션 가능-->
         <section class="section sc-newdesign">
