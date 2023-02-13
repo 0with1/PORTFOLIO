@@ -589,7 +589,7 @@ body.black .sc-works .slider {
   background-image: url(../images/overlay.gif);
   background-position: 0 0;
   background-size: 250px;
-  opacity: 0.04;
+  opacity: 0.065;
   pointer-events: none;
   z-index: 300;
 }
