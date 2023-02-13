@@ -64,7 +64,7 @@ var defaultStyles = {
 };
 
 let a = 0;
-let $matterArea = $('.matter-area');
+let $matterArea = $('.group-matter');
 let $offset = 1000;
 let $matterAreaOST = $matterArea.offset().top - $offset;
 
@@ -79,64 +79,6 @@ $(window).scroll(function () {
     }
   }
 });
-// ScrollTrigger.create({
-//   trigger: ".matter-area",
-//   start: "0% 0%",
-//   end: "100% 0%",
-//   markers: true,
-//   onEnter: () => {
-//     addSlogan();
-//     resize();
-//   }
-// })
-
-// let a = 0;
-// let $matterArea = $('.matter-area');
-// let $offset = 2000;
-// let $matterAreaOST = $matterArea.offset().top + $offset;
-// let $blockAreaOST = $('.sc-success').offset().top;
-
-// $('[data-block]').each(function (a, b) {
-
-//   $(window).scroll(function () {
-//     console.log('현재스크롤은' + $(window).scrollTop());
-//     console.log('data-block위치는' + $blockAreaOST);
-//   });
-
-
-//   ScrollTrigger.create({
-//     trigger: b,
-//     start: "0% 0%",
-//     end: "100% 10%",
-//     //markers: true,
-//     // toggleClass:"active"
-//     toggleClass: { targets: "body", className: "goal" }
-//   })
-// })
-/**
-* ~ 전체
-* (전체 공통 사항)
-* 스크롤 시 블럭 떨어짐
-*/
-// $('[data-block]').each(function (a, l) {
-
-//   child = $(this).find('.matter-area')
-//   startData = ($(this).data('block-start')) ? $(this).data('block-start') : '70%';
-//   endData = $(this).data('block-end')
-
-//   gsap.from(child, {
-//     scrollTrigger: {
-//       trigger: l,
-//       start: `top ${startData}`,
-//       markers:true,
-//     },
-//     onEnter: () => {
-//       addSlogan();
-//       resize();
-//    }
-//   })
-
-// })
 
 mouse = addMouseInteraction();
 two.bind("resize", resize).bind("update", update);

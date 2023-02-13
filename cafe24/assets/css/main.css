@@ -23,11 +23,11 @@ body::-webkit-scrollbar { display: none; }
 
 
 .sc-success { text-align: center; min-height: 100vh; background:#fff; color:#000; } 
-.sc-success .matter-area { padding: 260px 0 360px; } 
+.sc-success .group-matter { padding: 260px 0 360px; } 
 .sc-success h2 { font-size: 4vw; font-weight: 600; line-height: 90%; text-align: center; letter-spacing: -.05em; position: relative; line-height: 1.2; z-index: 1; width: calc(100% - 20px); margin: 0 auto; } 
 .sc-success h2 span { display: block; } 
 .sc-success h2 span.point { color:#146af0; } 
-.sc-success .matter-area .sub-tit { font-weight: 500; letter-spacing: -.03em; text-align: center; font-size: 24px; z-index: 1; display: block; position: relative; margin-top: 30px; } 
+.sc-success .group-matter .sub-tit { font-weight: 500; letter-spacing: -.03em; text-align: center; font-size: 24px; z-index: 1; display: block; position: relative; margin-top: 30px; } 
 .sc-success .title-img { position: relative; width: 4vw; height: 4vw; display: inline-block; } 
 .sc-success .title-img img { position: absolute; top:0; height: 4vw; border-radius: 50%; margin-left:30px; margin-top:12px; transition: 0.3s; object-fit: cover; } 
 .sc-success .title-img:hover img:nth-child(2) { left:100px; } 
@@ -35,9 +35,9 @@ body::-webkit-scrollbar { display: none; }
 .sc-success .title-img img:nth-child(1) { left:-23px; z-index: 3; } 
 .sc-success .title-img img:nth-child(2) { left:0px; z-index: 2; } 
 .sc-success .title-img img:nth-child(3) { left:+23px; z-index: 1; } 
-.sc-success .matter-area { margin-bottom: 15px; position: relative; } 
+.sc-success .group-matter { margin-bottom: 15px; position: relative; } 
 .sc-success .canvas-box { position:absolute; bottom:0; } 
-.sc-success .matter-area canvas { position: relative !important; } 
+.sc-success .group-matter canvas { position: relative !important; } 
 
 
 .sc-success .review-slide .swiper-slide { padding: 55px 0; background: #faf9f6; border-radius: 35px; display: flex; justify-content: center; flex-direction: column; } 
@@ -237,7 +237,7 @@ body::-webkit-scrollbar { display: none; }
  .sc-hori-why .horizontal-area p br { display: none; } 
 .sc-hosting .price-box strong { font-size: 55px; } 
 .sc-hosting .price-list { padding: 0 50px; } 
-.sc-success .matter-area .sub-tit,
+.sc-success .group-matter .sub-tit,
 .sc-hori-why .horizontal-area p { font-size: 20px; } 
  }
 
@@ -295,7 +295,7 @@ body::-webkit-scrollbar { display: none; }
 .sc-visual .video-area .circle { width: 320px; height: 180px; } 
 .sc-success .title-img { width: 45px; height: 45px; } 
 .sc-success .title-img img { height: 45px; } 
-.sc-success .matter-area .sub-tit { font-size: 20px; } 
+.sc-success .group-matter .sub-tit { font-size: 20px; } 
 .sc-success .review-slide .img-box img { height: 30px; } 
 .sc-success .review-slide .img-box.snd img,
 .sc-success .review-slide .img-box.sixsix img { height: 50px; } 
