@@ -234,6 +234,7 @@ main {
     position: relative;
     border-bottom: 2px solid rgb(40, 40, 41);
 
+
     .works-tit-wrap {
       position: sticky;
       top: 0;
@@ -242,9 +243,10 @@ main {
       padding-top: 60px;
       padding-bottom: 20px;
       transition: background 0.3s;
+
       // @include mobile {
       //     padding-top: 40px;
-        // }
+      // }
       .black & {
         background: rgb(40, 40, 41);
       }
@@ -392,13 +394,17 @@ main {
     text-align: left;
 
     li {
-      display: flex;
-      align-items: center;
-      padding: 10px 0;
-      border-top: 1px solid #000;
+      a {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-top: 1px solid #000;
 
-      @include desktop {
-        display: block;
+        &:hover{background: var(--color3);}
+
+        @include desktop {
+          display: block;
+        }
       }
 
       .sub-info {

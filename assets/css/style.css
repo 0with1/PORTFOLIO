@@ -1000,7 +1000,7 @@ main {
 .sc-works .sub-item {
   text-align: left;
 }
-.sc-works .sub-item li {
+.sc-works .sub-item li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,8 +1010,11 @@ main {
   padding: 10px 0;
   border-top: 1px solid #000;
 }
+.sc-works .sub-item li a:hover {
+  background: var(--color3);
+}
 @media (max-width: 1024px) {
-  .sc-works .sub-item li {
+  .sc-works .sub-item li a {
     display: block;
   }
 }
