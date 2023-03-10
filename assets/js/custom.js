@@ -9,23 +9,23 @@ $(function () {
   // }, 1000);
 
 
- /*  $(".bg-change01").mouseover(function () {
-    $("body").addClass('coding');
-  });
-
-  $(".bg-change01").mouseout(function () {
-    $("body").removeClass('coding');
-  });
-
-
-
-  $(".bg-change02").mouseover(function () {
-    $("body").addClass('seoul');
-  });
-
-  $(".bg-change02").mouseout(function () {
-    $("body").removeClass('seoul');
-  }); */
+  /*  $(".bg-change01").mouseover(function () {
+     $("body").addClass('coding');
+   });
+ 
+   $(".bg-change01").mouseout(function () {
+     $("body").removeClass('coding');
+   });
+ 
+ 
+ 
+   $(".bg-change02").mouseover(function () {
+     $("body").addClass('seoul');
+   });
+ 
+   $(".bg-change02").mouseout(function () {
+     $("body").removeClass('seoul');
+   }); */
 
 
 
@@ -107,6 +107,25 @@ $(function () {
       e.preventDefault();
       $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 5000);
     });
+  });
+
+  // $(window).scroll(function () {
+  //   curr = $(this).scrollTop();
+  //   if (curr > 100) {
+  //     $('.fix-top').addClass('active');
+  //   } else {
+  //     $('.fix-top').removeClass('active');
+  //   }
+  // })
+
+  $('.ft-arrows').click(function (e) {
+    e.preventDefault();
+    // $('html,body').animate({
+    //     scrollTop:0
+    // },300);
+    //제이쿼리 방식
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    //자바스크립트 방식
   });
 
 });
